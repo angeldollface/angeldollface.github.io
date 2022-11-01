@@ -51,14 +51,9 @@ export function renderModel(
     const textureLoader: THREE.TextureLoader = new THREE.TextureLoader();
     const screenTexture = textureLoader.load(texURL);
     screenTexture.flipY = false;
-    screenTexture.wrapS = THREE.ClampToEdgeWrapping;
-    screenTexture.wrapT = THREE.RepeatWrapping;
-    //screenTexture.repeat.x = 1;
-    //screenTexture.minFilter = THREE.NearestFilter;
-    const screenMaterial: THREE.MeshBasicMaterial = new THREE.MeshBasicMaterial(
+    const screenMaterial: THREE.MeshMatcapMaterial= new THREE.MeshMatcapMaterial(
         {
-           map: screenTexture,
-           side: THREE.DoubleSide
+           matcap: screenTexture
         }
     );
 
@@ -248,13 +243,14 @@ export function renderModel(
         }
     );
 
-    // We set up the camera position.
-    camera.position.set(0,1,3.5);
-
     // And animate the whole scene
     // recursively.
     const animate = () => {
-        detectMobile();
+
+        // Changing the Z position depending
+        // on the user's device.
+        detectDevice();
+
         // Adding an event listener to resize
         // the scene for different devices.
         window.addEventListener(
@@ -295,15 +291,15 @@ export function renderModel(
         camera.position.z = camera.position.z - 0.001;
     }
 
-    // We try to detect if the user is 
-    // visiting the site from a mobile browser.
-    const detectMobile = () => {
+    // We try to detect where the user is 
+    // visiting the site from.
+    const detectDevice = () => {
         var mq = window.matchMedia("(max-width: 800px)");
         if (mq.matches) {
             camera.position.set(0,1,5);
         }
         else {
-            // Do nothing.
+            camera.position.set(0,1,3.5);
         }
     }
     
