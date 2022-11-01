@@ -1,0 +1,40 @@
+---
+import HeadCog from "../components/HeadCog.astro";
+import ModelCog from '../components/ModelCog.astro';
+import HeadingCog from "../components/HeadingCog.astro";
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+	};
+}
+const {
+	content: { 
+		title, 
+		description
+	}
+} = Astro.props;
+---
+
+<html lang="en">
+ <HeadCog/>
+ <body>
+  <HeadingCog/>
+
+  <ModelCog
+   modelURL="https://angeldollface.art/assets/models/StageCube.glb"
+   textureURL="https://angeldollface.art/assets/images/matcaps/04.png"
+   symbolName="Cube"
+   spinAxis="y"
+  />
+
+  <div class="itemContent">
+    <div class="content">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <slot/>
+    </div>
+    <br/>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,30 @@
+---
+var { textureURL, modelURL, symbolName, spinAxis } = Astro.props;
+---
+
+<script>
+import { renderModel } from '../mods/render';
+globalThis.renderModel = renderModel
+</script>
+    
+<script is:inline define:vars={
+    { 
+        textureURL,
+        symbolName,
+        modelURL,
+        spinAxis
+    }
+}>
+window.onload= (e) => {
+    const borderLightColor = 0xEA1573;
+    const stageLightColor = 0xFFFFFF;
+    renderModel(
+        textureURL,
+        symbolName,
+        modelURL,
+        borderLightColor,
+        stageLightColor,
+        spinAxis
+    )
+}
+</script>

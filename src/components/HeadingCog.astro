@@ -1,0 +1,18 @@
+---
+import * as site from '../config';
+
+const logoPath: string = site.logoPath;
+const name: string = site.name;
+const menuString: string = site.menuString;
+const navLinks: Object = site.navLinks;
+---
+
+<div class="header">
+ <h1>{name}</h1>
+</div>
+
+<div class="nav">
+ {Object.entries(navLinks).map(([key, val]) => (
+  <a class="nav" href={val}>{key}</a>
+ ))}
+</div>

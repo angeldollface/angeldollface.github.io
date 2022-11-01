@@ -1,0 +1,33 @@
+---
+import HeadCog from '../components/HeadCog.astro';
+import ModelCog from '../components/ModelCog.astro';
+import HeadingCog from '../components/HeadingCog.astro';
+const collections = (await Astro.glob('../pages/artworks/*.{md,}')).sort(
+	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+<!DOCTYPE html>
+<html lang="en">
+ <HeadCog/>
+ <body>
+  <HeadingCog/>
+  <ModelCog
+   modelURL="https://angeldollface.art/assets/models/StageCube.glb"
+   textureURL="https://angeldollface.art/assets/images/matcaps/04.png"
+   symbolName="Cube"
+   spinAxis="y"
+  />
+  <div class="itemList">
+  {collections.map(
+	(collection) => (
+	<h2 class="item">
+   <a class="item" href={collection.url}>
+	  {collection.frontmatter.title}
+   </a>
+	</h2>
+	)
+   )
+  }		
+ </div>
+</body>
+</html>

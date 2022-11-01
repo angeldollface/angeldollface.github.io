@@ -1,0 +1,24 @@
+---
+import HeadCog from "../components/HeadCog.astro";
+import ModelCog from '../components/ModelCog.astro';
+import HeadingCog from "../components/HeadingCog.astro";
+---
+
+<html lang="en">
+ <HeadCog/>
+ <body>
+  <HeadingCog/>
+  <ModelCog
+   modelURL="https://angeldollface.art/assets/models/StageMoon.glb"
+   textureURL="https://angeldollface.art/assets/images/matcaps/01.png"
+   symbolName="Moon"
+   spinAxis="z"
+  />
+  <div class="itemContent">
+   <div class="content">
+   	<slot/>
+   </div>
+   <br/>
+  </div>
+ </body>
+</html>

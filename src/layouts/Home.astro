@@ -1,0 +1,31 @@
+---
+import * as site from '../config';
+import HeadCog from '../components/HeadCog.astro';
+import ModelCog from '../components/ModelCog.astro';
+import HeadingCog from '../components/HeadingCog.astro';
+const title = site.name;
+const description = site.description;
+---
+<html lang="en">
+ <HeadCog/>
+ <body>
+  <HeadingCog/>
+  <ModelCog
+  textureURL="https://angeldollface.art/assets/images/matcaps/01.png"
+   modelURL="https://angeldollface.art/assets/models/StageMoon.glb"
+   symbolName="Moon"
+   spinAxis="z"
+  />
+  <div class="itemList">
+   <h2 class="item" onclick="window.location.href='/pages/blog'">
+    MY WRITING PORTFOLIO
+   </h2>
+   <h2 class="item" onclick="window.location.href='/pages/art'">
+    MY ARTISTIC PROJECTS
+   </h2>
+   <h2 class="item" onclick="window.location.href='/pages/projects'">
+    MY PROGRAMMING WORK
+   </h2> 
+  </div>
+ </body>
+</html>
