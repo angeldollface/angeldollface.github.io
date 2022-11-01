@@ -41,8 +41,8 @@
     --headingFont: 'Aileron';
     --contentFont: 'MC';
     --mainColor: #000000;
-    --accentColor: #FFFFFF;
-    --hoverColor: #FF7BAC;
+    --accentColor: #FF7BAC;
+    --hoverColor: #EA1573;
     --sexyDark: #171717;
     --stdPadding: 20px;
 }
@@ -51,16 +51,14 @@
 html,body {
     top: 0;
     right: 0;
-    width: 100vw;
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
     left: 0;
     bottom: 0;
-    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
     background-color: transparent;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 div.header {
@@ -114,7 +112,10 @@ a.nav {
     display: block;
     font-family: var(--contentFont);
     font-size: 25px;
-    padding: var(--stdPadding);
+    padding-top: var(--stdPadding);
+    padding-bottom: var(--stdPadding);
+    padding-right: var(--stdPadding);
+    padding-left: var(--stdPadding);
     margin: 0px;
     color: var(--accentColor);
     text-shadow: 1px 2px 15px var(--accentColor);
@@ -225,7 +226,6 @@ h4 {
 p {
     text-align: left;
     font-size: 25px;
-    width: 100%;
     font-family: var(--contentFont);
     color: var(--accentColor);
     text-shadow: none;
@@ -250,6 +250,10 @@ a {
     color: var(--mainColor);
     padding: 0px;
     margin: 0px;
+}
+
+a:hover {
+    color: var(--accentColor);
 }
 
 ul {
@@ -322,17 +326,17 @@ canvas {
 }
 
 @media screen and (max-width: 800px) {
-    html,body {
-        max-width: 100vw;
-        overflow: scroll;
-    }
     h1 {
         font-size: 35px;
     }
     div.content {
-        width: 90%;
+        width: 75%;
     }
     a.nav {
+        padding-top: var(--stdPadding);
+        padding-bottom: var(--stdPadding);
+        padding-right: var(--stdPadding);
+        padding-left: 0px;
         font-size: 25px;
     }
     div.nav {
