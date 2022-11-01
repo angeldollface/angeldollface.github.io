@@ -17,6 +17,7 @@ export const banner: string ="/assets/images/site/banner/banner.png";
 export const logoPath: string = "/assets/images/site/logo/logo.svg";
 export const menuString: string = "MENU";
 export const closeString: string = "CLOSE";
+export const gaID: string = "";
 export const owner: string = "Alexander Abraham";
 export const homePath: string = "/";
 export const navLinks: Object = {

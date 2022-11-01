@@ -247,6 +247,11 @@ export function renderModel(
     // recursively.
     const animate = () => {
 
+        // We blink the border lights 
+        // and one arch light
+        // for some animation.
+        setInterval(blinkLights, 500);
+
         // Changing the Z position depending
         // on the user's device.
         detectDevice();
@@ -300,6 +305,29 @@ export function renderModel(
         }
         else {
             camera.position.set(0,1,3.5);
+        }
+    }
+
+    const blinkLights = () => {
+        if (
+            lightOne.material.emissiveIntensity === lightIntensity &&
+            lightEight.material.emissiveIntensity === borderLightIntensity &&
+            lightNine.material.emissiveIntensity === borderLightIntensity &&
+            lightTen.material.emissiveIntensity === borderLightIntensity &&
+            lightEleven.material.emissiveIntensity === borderLightIntensity
+        ){
+            lightOne.material.emissiveIntensity = 0;
+            lightEight.material.emissiveIntensity = 0;
+            lightNine.material.emissiveIntensity = 0;
+            lightTen.material.emissiveIntensity = 0;
+            lightEleven.material.emissiveIntensity = 0;
+        }
+        else {
+            lightOne.material.emissiveIntensity = lightIntensity;
+            lightEight.material.emissiveIntensity = borderLightIntensity;
+            lightNine.material.emissiveIntensity = borderLightIntensity;
+            lightTen.material.emissiveIntensity = borderLightIntensity;
+            lightEleven.material.emissiveIntensity = borderLightIntensity;
         }
     }
     
