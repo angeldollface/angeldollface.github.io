@@ -1,5 +1,6 @@
 {
   "name": "dollface",
+  "description": "Everyone's favorite doll!",
   "type": "module",
   "version": "1.0.0",
   "private": true,
