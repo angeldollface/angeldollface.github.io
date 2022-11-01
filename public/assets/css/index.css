@@ -44,7 +44,7 @@
     --accentColor: #FF7BAC;
     --hoverColor: #EA1573;
     --sexyDark: #171717;
-    --stdPadding: 20px;
+    --stdPadding: 10px;
 }
 
 
@@ -155,7 +155,7 @@ h2.item, a.item {
     padding-right: 0px;
     padding-top: var(--stdPadding);
     padding-bottom: 0px;
-    padding-left: 0px;
+    padding-left: 10px;
     font-size: 50px;
     font-family: var(--headingFont);
     transition-duration: 0.6s;
@@ -248,6 +248,7 @@ a {
         1px 1px 0 var(--accentColor);
     font-family: var(--contentFont);
     color: var(--mainColor);
+    transition-duration: 0.6s;
     padding: 0px;
     margin: 0px;
 }
