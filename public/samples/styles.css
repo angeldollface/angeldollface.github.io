@@ -1,0 +1,310 @@
+/* OSTRICH FOR ALL BROWSERS! */
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Ostrich.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/otf/Ostrich.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/woff/Ostrich.woff') format('woff');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Ostrich.woff2') format('woff2');
+}
+
+/*GARAMOND FOR ALL BROWSERS!*/
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Garamond.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/otf/Garamond.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/woff/Garamond.woff') format('woff');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Garamond.woff2') format('woff2');
+}
+
+/* MAJOR MONO DISPLAY FOR ALL BROWSERS! */
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/ttf/MMD.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/otf/MMD.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/woff/MMD.woff') format('woff');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/woff2/MMD.woff2') format('woff2');
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+div.header {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    left:0;
+    top: 0;
+    right: 0;
+    border: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'MMD';
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+div.skillList {
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    width: 70%;
+    margin-top: 5vh !important;
+    margin-bottom: 20px !important;
+    background-color: transparent;
+    border: none;
+    min-height: 100vh;
+}
+
+h2.skillList {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Ostrich';
+    color: #000000;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.nav {
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0vw;
+    overflow: hidden;
+    position: fixed;
+    transition-duration: 0.6s;
+    height: 0vh;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+ul.nav {
+    padding: 0px;
+    margin-top: 15vh !important;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    
+    list-style: none;
+}
+
+li.nav {
+    text-align: left;
+    display: block;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 50px;
+}
+
+a.nav {
+    font-size: 50px;
+    font-family: 'Ostrich';
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+
+a.nav:hover {
+    color: #FF7BAC;
+}
+
+div.itemList {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: transparent;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+}
+
+h2.itemList {
+    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    padding-right: 50px;
+    margin: 0px;
+    font-size: 50px;
+    font-family: 'Garamond';
+    font-style: italic;
+    color: #000000;
+}
+
+div.content {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(4px);  
+    backdrop-filter: blur(8px); 
+    box-shadow: 0px 10px 15px 10px rgba(0 ,0 ,0 ,0.15);
+    background-color: rgba(228 ,228 ,228 ,0.10);
+}
+
+h2 {
+    font-size: 37px;
+    color: #000000;
+    font-family: 'Ostrich';
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 35px;
+    color: #000000;
+    font-family: 'Ostrich';
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+h4 {
+    font-size: 33px;
+    color: #000000;
+    font-family: 'Ostrich';
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+p {
+    font-size: 31px;
+    color: #000000;
+    font-family: 'Ostrich';
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+a {
+    font-size: 31px;
+    color: #000000;
+    font-family: 'Ostrich';
+    padding: 0px;
+    margin: 0px;
+    transition-duration: 0.6s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF7BAC;
+}
+
+img.art {
+    margin: 0 auto;
+    display: block;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    padding: 0px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+ul {
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: circle;
+}
+
+li {
+    text-align: left;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 31px;
+    color: #000000;
+    font-family: 'Ostrich';
+    margin: 0px;
+}
+
+div.footer {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background-color: #000000;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+p.footer {
+    text-align: left;
+    padding: 20px;
+    font-size: 31px;
+    font-style: italic;
+    color: #FFFFFF;
+    font-family: 'Ostrich';
+    margin: 0px;
+}
