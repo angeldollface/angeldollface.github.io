@@ -9,24 +9,23 @@ import * as THREE from 'three';
 // Importing the GLTF 2.0 loader.
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
+// A tinted blakc and white effect.
+import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass';
+
 // Importing the shader for object glow-up.
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 
 // Importing a glitch filter for some funk.
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass.js';
 
-import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass';
-
-import { DotScreenShader } from 'three/examples/jsm/shaders/DotScreenShader';
+// Importing the environment for rendering, lighting, etc.
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment';
 
 // Importing the "composer" to slap a filter on our scene.
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 
 // Importing the filter.
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
-
-// Importing the environment for rendering, lighting, etc.
-import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment';
 
 // A function to render our models.
 export function renderModel(

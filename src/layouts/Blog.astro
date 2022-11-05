@@ -6,6 +6,7 @@ Licensed under the MIT license.
 
 import HeadCog from '../components/HeadCog.astro';
 import ModelCog from '../components/ModelCog.astro';
+import FooterCog from '../components/FooterCog.astro';
 import HeadingCog from '../components/HeadingCog.astro';
 const posts = (await Astro.glob('../pages/blog/*.{md,}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
@@ -34,8 +35,8 @@ const posts = (await Astro.glob('../pages/blog/*.{md,}')).sort(
     )
    )
   }
+  <br/>
+  <br/>
   </div>
-  <br/>
-  <br/>
 </body>
 </html>
