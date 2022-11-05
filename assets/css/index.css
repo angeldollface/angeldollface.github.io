@@ -58,7 +58,7 @@ Licensed under the MIT license.
 }
 
 :root {
-    --mainColor: #FFFFFF;
+    --mainColor: #EA1573;
     --accentColor: #000000;
     --stdPadding: 20px;
     --hoverColor: #FF7BAC;
@@ -104,7 +104,7 @@ div.skillList {
     padding: var(--stdPadding);
     display: block;
     width: 70%;
-    margin-top: 5vh !important;
+    margin-top: 10vh !important;
     margin-bottom: var(--stdPadding) !important;
     background-color: transparent;
     border: none;
@@ -306,6 +306,8 @@ img {
     display: block;
     height: 300px;
     width: 100%;
+    border-radius: var(--stdPadding);
+    border: 3px solid var(--mainColor);
     object-fit: cover;
     padding: 0px;
     margin-top: var(--stdPadding) !important;
@@ -348,4 +350,22 @@ canvas {
     height: 100vh;
     background-color: transparent;
     box-sizing: border-box;
+}
+
+div.footer {
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: var(--accentColor);
+    padding: 0px;
+}
+
+p.footer {
+    font-size: 31px;
+    color: var(--mainColor);
+    font-family: var(--headingFont);
+    margin: 0px;
+    padding: 20px;
 }
