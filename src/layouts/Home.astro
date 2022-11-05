@@ -12,7 +12,10 @@ const title = site.name;
 const description = site.description;
 ---
 <html lang="en">
- <HeadCog/>
+ <HeadCog
+  name={title}
+  description={description}
+ />
  <body>
   <HeadingCog/>
   <ModelCog

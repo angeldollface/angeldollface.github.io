@@ -8,10 +8,25 @@ import HeadCog from "../components/HeadCog.astro";
 import ModelCog from '../components/ModelCog.astro';
 import FooterCog from '../components/FooterCog.astro';
 import HeadingCog from "../components/HeadingCog.astro";
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+	};
+}
+const {
+	content: { 
+		title, 
+		description
+	}
+} = Astro.props;
 ---
 
 <html lang="en">
- <HeadCog/>
+ <HeadCog
+  name={title}
+  description={description}
+ />
  <body>
   <HeadingCog/>
   <ModelCog

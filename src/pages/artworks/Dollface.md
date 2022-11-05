@@ -1,6 +1,6 @@
 ---
 title: "Dollface"
-description: "A satchel of demonic cuteness."
+description: "Facettes of emotions."
 layout: "../../layouts/ArtPost.astro"
 ---
 

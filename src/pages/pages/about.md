@@ -8,7 +8,7 @@ description: "About me. Info about this doll."
 
 Hi! :) My name is Alexander Abraham, or "Alex" for short. I am currently studying *English and American Studies* at the University of Vienna and working on many other projects besides this. The fields these projects fall into are listed below.
 
-### WRTING
+### WRITING
 
 I love writing and particulalry enjoy writing short stories. I use my blog to showcase and publish these stories. My inspiration for these stories comes from things I've experienced or things I've read or seen.
 

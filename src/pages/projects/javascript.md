@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/ProjectPost.astro"
-title: "My Javascript projects"
+title: "My Javascript projects."
 description: "Projects and libraires that I've developed in Javascript."
 ---
 
