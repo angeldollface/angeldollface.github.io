@@ -20,8 +20,8 @@ const collections = (await Astro.glob('../pages/artworks/*.{md,}')).sort(
   <div class="itemList">
   {collections.map(
 	(collection) => (
-	<h2 class="item">
-   <a class="item" href={collection.url}>
+	<h2 class="itemList">
+   <a class="itemList" href={collection.url}>
 	  {collection.frontmatter.title}
    </a>
 	</h2>
@@ -29,5 +29,6 @@ const collections = (await Astro.glob('../pages/artworks/*.{md,}')).sort(
    )
   }		
  </div>
+ <br/>
 </body>
 </html>

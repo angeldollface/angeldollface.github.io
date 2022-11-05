@@ -15,6 +15,10 @@ import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 // Importing a glitch filter for some funk.
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass.js';
 
+import { FilmPass } from 'three/examples/jsm/postprocessing/FilmPass';
+
+import { DotScreenShader } from 'three/examples/jsm/shaders/DotScreenShader';
+
 // Importing the "composer" to slap a filter on our scene.
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 
@@ -33,6 +37,9 @@ export function renderModel(
     stageLightColor: number,
     spinAxis: string
 ): void {
+
+    // How grainy is the black-and-white filter?
+    const grainCount: number = 0.5;
 
     // We make a new three.js scene.
     let scene: THREE.Scene = new THREE.Scene();
@@ -105,7 +112,20 @@ export function renderModel(
 	composer.addPass( renderScene );
 	composer.addPass( bloomPass );
 
-    // Loading a GIF in.
+    // Instantiating the black-and-white
+    // filter.
+    const bwFilter = new FilmPass(
+        grainCount, 
+        0.5, 
+        4096,
+        1
+    );
+
+    // Adding it to the scene.
+    composer.addPass(bwFilter);
+
+    const glitch: GlitchPass = new GlitchPass();
+    composer.addPass(glitch);
 
     // And generate the scene from an environment.
     scene.environment = pmremGenerator.fromScene( environment ).texture;

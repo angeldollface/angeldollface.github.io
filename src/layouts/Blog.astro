@@ -21,8 +21,8 @@ const posts = (await Astro.glob('../pages/blog/*.{md,}')).sort(
   <div class="itemList">
   {posts.map(
    (post) => (
-   <h2 class="item">
-    <a class="item" href={post.url}>
+   <h2 class="itemList">
+    <a class="itemList" href={post.url}>
      {post.frontmatter.title}
     </a>
    </h2>
@@ -30,5 +30,7 @@ const posts = (await Astro.glob('../pages/blog/*.{md,}')).sort(
    )
   }
   </div>
+  <br/>
+  <br/>
 </body>
 </html>

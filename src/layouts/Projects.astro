@@ -20,8 +20,8 @@ const projects = (await Astro.glob('../pages/projects/*.{md,}')).sort(
   <div class="itemList">
    {projects.map(
     (project) => (
-     <h2 class="item">
-      <a class="item" href={project.url}>
+     <h2 class="itemList">
+      <a class="itemList" href={project.url}>
 	   {project.frontmatter.title}
       </a>
 	</h2>
@@ -29,5 +29,6 @@ const projects = (await Astro.glob('../pages/projects/*.{md,}')).sort(
    )
   }
   </div>
+  <br/>
  </body>
 </html>
