@@ -1,40 +1,45 @@
-/* OSTRICH FOR ALL BROWSERS! */
+/*
+DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
+/* VT323 FOR ALL BROWSERS! */
 @font-face {
-    font-family: 'Ostrich';
-    src: url('https://angeldollface.art/assets/fonts/ttf/Ostrich.ttf') format('truetype');
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/ttf/VT323.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Ostrich';
-    src: url('https://angeldollface.art/assets/fonts/otf/Ostrich.otf') format('opentype');
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/otf/VT323.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Ostrich';
-    src: url('https://angeldollface.art/assets/fonts/woff/Ostrich.woff') format('woff');
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/woff/VT323.woff') format('woff');
 }
 @font-face {
-    font-family: 'Ostrich';
-    src: url('https://angeldollface.art/assets/fonts/woff2/Ostrich.woff2') format('woff2');
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/woff2/VT323.woff2') format('woff2');
 }
 
-/*GARAMOND FOR ALL BROWSERS!*/
+/*Garamond Italic FOR ALL BROWSERS!*/
 @font-face {
-    font-family: 'Garamond';
-    src: url('https://angeldollface.art/assets/fonts/ttf/Garamond.ttf') format('truetype');
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/ttf/GaramondItalic.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Garamond';
-    src: url('https://angeldollface.art/assets/fonts/otf/Garamond.otf') format('opentype');
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/otf/GaramondItalic.otf') format('opentype');
 }
 @font-face {
-    font-family: 'Garamond';
-    src: url('https://angeldollface.art/assets/fonts/woff/Garamond.woff') format('woff');
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/woff/GaramondItalic.woff') format('woff');
 }
 @font-face {
-    font-family: 'Garamond';
-    src: url('https://angeldollface.art/assets/fonts/woff2/Garamond.woff2') format('woff2');
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/woff2/GaramondItalic.woff2') format('woff2');
 }
 
-/* MAJOR MONO DISPLAY FOR ALL BROWSERS! */
+/* Major Mono Display FOR ALL BROWSERS! */
 @font-face {
     font-family: 'MMD';
     src: url('https://angeldollface.art/assets/fonts/ttf/MMD.ttf') format('truetype');
@@ -57,6 +62,9 @@
     --accentColor: #000000;
     --stdPadding: 20px;
     --hoverColor: #FF7BAC;
+    --headingFont: 'VT323';
+    --contentFont: 'GaramondItalic';
+    --mainHeadingFont: 'MMD';
 }
 
 html, body {
@@ -84,7 +92,7 @@ div.header {
 
 h1 {
     font-size: 40px;
-    font-family: 'MMD';
+    font-family: var(--mainHeadingFont);
     color: var(--mainColor);
     padding: var(--stdPadding);
     text-align: center;
@@ -106,7 +114,7 @@ div.skillList {
 h2.skillList {
     text-align: center;
     font-size: 50px;
-    font-family: 'Ostrich';
+    font-family: var(--headingFont);
     color: var(--mainColor);
     margin: 0px;
     padding-top: 10px;
@@ -118,7 +126,7 @@ h2.skillList {
 a.skillList {
     text-align: center;
     font-size: 50px;
-    font-family: 'Ostrich';
+    font-family: var(--headingFont);
     color: var(--mainColor);
     transition-duration: 0.6s;
     margin: 0px;
@@ -139,6 +147,7 @@ div.nav {
     bottom: 0;
     left: 0;
     width: 0vw;
+    z-index: 1000;
     overflow: hidden;
     position: fixed;
     transition-duration: 0.6s;
@@ -153,7 +162,6 @@ ul.nav {
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    
     list-style: none;
 }
 
@@ -169,7 +177,7 @@ li.nav {
 
 a.nav {
     font-size: 30px;
-    font-family: 'Ostrich';
+    font-family: var(--headingFont);
     color: var(--accentColor);
     margin: 0px;
     padding: 0px;
@@ -201,7 +209,7 @@ h2.itemList {
     padding-right: 50px;
     margin: 0px;
     font-size: 50px;
-    font-family: 'Garamond';
+    font-family: var(--headingFont);
     font-style: italic;
     color: var(--mainColor);
 }
@@ -210,7 +218,7 @@ a.itemList {
     padding: 0px;
     margin: 0px;
     font-size: 50px;
-    font-family: 'Garamond';
+    font-family: var(--headingFont);
     font-style: italic;
     color: var(--mainColor);
     transition-duration: 0.6s;
@@ -238,7 +246,7 @@ div.content {
 h2 {
     font-size: 37px;
     color: var(--mainColor);
-    font-family: 'Ostrich';
+    font-family: var(--headingFont);
     padding-top: var(--stdPadding);
     padding-bottom: 0px;
     padding-right: var(--stdPadding);
@@ -249,7 +257,7 @@ h2 {
 h3 {
     font-size: 35px;
     color: var(--mainColor);
-    font-family: 'Ostrich';
+    font-family: var(--headingFont);
     padding-top: var(--stdPadding);
     padding-bottom: 0px;
     padding-right: var(--stdPadding);
@@ -260,7 +268,7 @@ h3 {
 h4 {
     font-size: 33px;
     color: var(--mainColor);
-    font-family: 'Ostrich';
+    font-family: var(--headingFont);
     padding-top: var(--stdPadding);
     padding-bottom: 0px;
     padding-right: var(--stdPadding);
@@ -271,7 +279,7 @@ h4 {
 p {
     font-size: 31px;
     color: var(--mainColor);
-    font-family: 'Garamond';
+    font-family: var(--contentFont);
     padding-top: var(--stdPadding);
     padding-bottom: 0px;
     padding-right: var(--stdPadding);
@@ -282,7 +290,7 @@ p {
 a {
     font-size: 31px;
     color: var(--mainColor);
-    font-family: 'Ostrich';
+    font-family: var(--contentFont);
     padding: 0px;
     margin: 0px;
     transition-duration: 0.6s;
@@ -323,7 +331,7 @@ li {
     padding-left: 0px;
     font-size: 31px;
     color: var(--mainColor);
-    font-family: 'Ostrich';
+    font-family: var(--contentFont);
     margin: 0px;
 }
 
