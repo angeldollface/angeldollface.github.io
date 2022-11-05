@@ -20,7 +20,6 @@ Licensed under the MIT license.
     font-family: 'VT323';
     src: url('https://angeldollface.art/assets/fonts/woff2/VT323.woff2') format('woff2');
 }
-
 /*Garamond Italic FOR ALL BROWSERS!*/
 @font-face {
     font-family: 'GaramondItalic';
@@ -38,7 +37,6 @@ Licensed under the MIT license.
     font-family: 'GaramondItalic';
     src: url('https://angeldollface.art/assets/fonts/woff2/GaramondItalic.woff2') format('woff2');
 }
-
 /* Major Mono Display FOR ALL BROWSERS! */
 @font-face {
     font-family: 'MMD';
@@ -56,7 +54,6 @@ Licensed under the MIT license.
     font-family: 'MMD';
     src: url('https://angeldollface.art/assets/fonts/woff2/MMD.woff2') format('woff2');
 }
-
 :root {
     --mainColor: #FFFFFF;
     --accentColor: #000000;
@@ -66,7 +63,6 @@ Licensed under the MIT license.
     --contentFont: 'GaramondItalic';
     --mainHeadingFont: 'MMD';
 }
-
 html, body {
     margin: 0px;
     padding: 0px;
@@ -79,7 +75,6 @@ html, body {
     background-color: transparent;
     box-sizing: border-box;
 }
-
 div.header {
     margin: 0px;
     padding: 0px;
@@ -89,7 +84,6 @@ div.header {
     right: 0;
     border: none;
 }
-
 h1 {
     font-size: 40px;
     font-family: var(--mainHeadingFont);
@@ -98,7 +92,6 @@ h1 {
     text-align: center;
     margin: 0px;
 }
-
 div.skillList {
     margin: 0 auto;
     padding: var(--stdPadding);
@@ -110,7 +103,6 @@ div.skillList {
     border: none;
     min-height: 100vh;
 }
-
 h2.skillList {
     text-shadow: 1px 2px 15px var(--hoverColor);
     text-align: center;
@@ -123,7 +115,6 @@ h2.skillList {
     padding-left: 0px;
     padding-right: 0px;
 }
-
 a.skillList {
     text-shadow: 1px 2px 15px var(--hoverColor);
     text-align: center;
@@ -136,11 +127,9 @@ a.skillList {
     font-style: italic;
     text-decoration: none;
 }
-
 a.skillList:hover {
     color: var(--hoverColor);
 }
-
 div.nav {
     margin: 0px;
     padding: 0px;
@@ -157,7 +146,6 @@ div.nav {
     box-sizing: border-box;
     background-color: var(--mainColor);
 }
-
 ul.nav {
     padding: 0px;
     margin-top: 15vh !important;
@@ -166,7 +154,6 @@ ul.nav {
     margin-left: 0px;
     list-style: none;
 }
-
 li.nav {
     text-align: left;
     display: block;
@@ -176,7 +163,6 @@ li.nav {
     padding-right: 0px;
     padding-left: 50px;
 }
-
 a.nav {
     font-size: 30px;
     font-family: var(--headingFont);
@@ -186,11 +172,9 @@ a.nav {
     text-decoration: none;
     transition-duration: 0.6s;
 }
-
 a.nav:hover {
     color: var(--hoverColor);
 }
-
 div.itemList {
     width: 100vw;
     min-height: 100vh;
@@ -203,7 +187,6 @@ div.itemList {
     right: 0;
     margin: 0px;
 }
-
 h2.itemList {
     padding-left: 50px;
     padding-bottom: 0px;
@@ -215,7 +198,6 @@ h2.itemList {
     font-style: italic;
     color: var(--mainColor);
 }
-
 a.itemList {
     text-shadow: 1px 2px 15px var(--hoverColor);
     padding: 0px;
@@ -227,11 +209,9 @@ a.itemList {
     transition-duration: 0.6s;
     text-decoration: none;
 }
-
 a.itemList:hover {
     color: var(--hoverColor);
 }
-
 div.content {
     margin: 0 auto;
     display: block;
@@ -245,7 +225,6 @@ div.content {
     box-shadow: 0px 10px 15px 10px rgba(0 ,0 ,0 ,0.15);
     background-color: rgba(228 ,228 ,228 ,0.10);
 }
-
 h2 {
     font-size: 37px;
     color: var(--mainColor);
@@ -256,7 +235,6 @@ h2 {
     padding-left: 0px;
     margin: 0px;
 }
-
 h3 {
     font-size: 35px;
     color: var(--mainColor);
@@ -267,7 +245,6 @@ h3 {
     padding-left: 0px;
     margin: 0px;
 }
-
 h4 {
     font-size: 33px;
     color: var(--mainColor);
@@ -278,7 +255,6 @@ h4 {
     padding-left: 0px;
     margin: 0px;
 }
-
 p {
     font-size: 31px;
     color: var(--mainColor);
@@ -289,7 +265,6 @@ p {
     padding-left: 0px;
     margin: 0px;
 }
-
 a {
     font-size: 31px;
     color: var(--mainColor);
@@ -299,11 +274,9 @@ a {
     transition-duration: 0.6s;
     text-decoration: none;
 }
-
 a:hover {
     color: var(--hoverColor);
 }
-
 img {
     margin: 0 auto;
     display: block;
@@ -316,7 +289,6 @@ img {
     margin-top: var(--stdPadding) !important;
     margin-bottom: var(--stdPadding) !important;
 }
-
 ul {
     width: 100%;
     padding: 0px;
@@ -326,7 +298,6 @@ ul {
     margin-bottom: var(--stdPadding);
     list-style: circle;
 }
-
 li {
     text-align: left;
     display: block;
@@ -339,7 +310,6 @@ li {
     font-family: var(--contentFont);
     margin: 0px;
 }
-
 canvas {
     z-index: -1000;
     position: fixed;
@@ -354,7 +324,6 @@ canvas {
     background-color: transparent;
     box-sizing: border-box;
 }
-
 div.footer {
     margin: 0;
     left: 0;
@@ -364,11 +333,65 @@ div.footer {
     background-color: var(--accentColor);
     padding: 0px;
 }
-
 p.footer {
     font-size: 31px;
     color: var(--mainColor);
     font-family: var(--headingFont);
     margin: 0px;
     padding: 20px;
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    div.skillList {
+        margin-top: 5vh !important;
+    }
+    
+    h2.skillList {
+        font-size: 40px;
+    }
+    a.skillList {
+        font-size: 40px;
+    }    
+    ul.nav {
+        margin-top: 12vh !important;
+    }    
+    a.nav {
+        font-size: 25px;
+    }        
+    h2.itemList {
+        padding-left: 40px;
+    }
+    a.itemList {
+        font-size: 40px;
+    }  
+    div.content {
+        width: 75%;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 23px;
+    }
+    p {
+        font-size: 21px;
+    }
+    a {
+        font-size: 21px;
+    }    
+    img {
+        height: 400px;
+    }    
+    li {
+        font-size: 21px;
+    }    
+    p.footer {
+        font-size: 21px;
+    }
 }

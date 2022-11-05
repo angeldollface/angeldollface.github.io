@@ -6,6 +6,8 @@ Licensed under the MIT license.
 // Standard three.js import.
 import * as THREE from 'three';
 
+import { WaterEffect } from '../js/WaterEffect';
+
 // Importing the GLTF 2.0 loader.
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
@@ -76,6 +78,8 @@ export function renderModel(
 
     // We set the width of and height of the renderer.
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+    //const effect = new WaterEffect(renderer);
 
     // We add the renderer to the document.
     document.body.appendChild(renderer.domElement);
@@ -265,6 +269,8 @@ export function renderModel(
     // And animate the whole scene
     // recursively.
     const animate = () => {
+
+        //effect.render(scene, camera)
 
         // We blink the border lights 
         // and one arch light
