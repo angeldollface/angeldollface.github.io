@@ -58,10 +58,10 @@ Licensed under the MIT license.
 }
 
 :root {
-    --mainColor: #EA1573;
+    --mainColor: #FFFFFF;
     --accentColor: #000000;
     --stdPadding: 20px;
-    --hoverColor: #FF7BAC;
+    --hoverColor: #EA1573;
     --headingFont: 'VT323';
     --contentFont: 'GaramondItalic';
     --mainHeadingFont: 'MMD';
@@ -124,6 +124,7 @@ h2.skillList {
 }
 
 a.skillList {
+    text-shadow: 1px 2px 15px var(--hoverColor);
     text-align: center;
     font-size: 50px;
     font-family: var(--headingFont);
@@ -215,6 +216,7 @@ h2.itemList {
 }
 
 a.itemList {
+    text-shadow: 1px 2px 15px var(--hoverColor);
     padding: 0px;
     margin: 0px;
     font-size: 50px;
