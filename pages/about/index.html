@@ -32,14 +32,35 @@
     <meta name="twitter:image:alt" content="Everyone's favorite doll!">
     <meta name="twitter:description" content="Everyone's favorite doll!">
     <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
-   <script type="module" src="/hoisted.43a10f2b.js"></script></head>
+   <script type="module" src="/hoisted.6f3f6cce.js"></script></head>
  <body>
-  <div class="header">
- <h1 onclick="window.location.href='/'">ANGEL DOLLFACE</h1>
+  
+
+<div class="header">
+ <h1 onclick="openNav();">ANGEL DOLLFACE</h1>
 </div>
 
-<div class="nav">
- <a class="nav" href="/">HOME</a><a class="nav" href="/pages/about">ABOUT</a><a class="nav" href="/pages/art">ART</a><a class="nav" href="/pages/blog">BLOG</a><a class="nav" href="/pages/projects">PROJECTS</a><a class="nav" href="/pages/links">LINKS</a><a class="nav" href="/pages/site">SOURCE</a>
+<div class="nav" id="nav">
+ <ul class="nav">
+ <li class="nav">
+   <a class="nav" href="/">HOME</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/about">ABOUT</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/art">ART</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/blog">BLOG</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/projects">PROJECTS</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/links">LINKS</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/site">SOURCE</a>
+  </li>
+  <li class="nav">
+   <a class="nav" onclick="closeNav();">CLOSE</a>
+  </li>
+ </ul>
 </div>
   
     
@@ -61,7 +82,6 @@ window.onload= (e) => {
     )
 }
 })();</script>
-  <div class="itemContent">
    <div class="content">
    	<h2 id="about-me">ABOUT ME</h2>
 <p>Hi! :) My name is Alexander Abraham, or “Alex” for short. I am currently studying <em>English and American Studies</em> at the University of Vienna and working on many other projects besides this. The fields these projects fall into are listed below.</p>
@@ -72,6 +92,4 @@ window.onload= (e) => {
 <h3 id="software-development">SOFTWARE DEVELOPMENT</h3>
 <p>I made my first forays into this field in 2012, roughly 11 years ago. I started coding in Python using a book I had been gifted, called <em>Hello World!</em>. After finishing this book, I taught myself HTML, CSS, and Javascript. After getting a bit bored of this, I dove into Dart and Flutter and made some apps for Mac OSX, Android, and the web. I also wrote some libraries in Dart for re-use in my Flutter apps. After Dart, I moved on to Rust, which I have stayed with until now. Roughly a year ago, I also schooled myself in Javascript with Node.js, learned React, Vue, Astro, aand Three.js.</p>
    </div>
-   <br>
-  </div>
  </body></html>

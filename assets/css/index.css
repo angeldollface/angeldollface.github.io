@@ -1,97 +1,224 @@
+/* OSTRICH FOR ALL BROWSERS! */
 @font-face {
-    font-family: 'Aileron';
-    src: url('https://angeldollface.art/assets/fonts/ttf/Aileron.ttf') format('truetype');
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Ostrich.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/otf/Ostrich.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/woff/Ostrich.woff') format('woff');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Ostrich.woff2') format('woff2');
 }
 
+/*GARAMOND FOR ALL BROWSERS!*/
 @font-face {
-    font-family: 'Aileron';
-    src: url('https://angeldollface.art/assets/fonts/otf/Aileron.otf') format('opentype');
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Garamond.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/otf/Garamond.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/woff/Garamond.woff') format('woff');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Garamond.woff2') format('woff2');
 }
 
+/* MAJOR MONO DISPLAY FOR ALL BROWSERS! */
 @font-face {
-    font-family: 'Aileron';
-    src: url('https://angeldollface.art/assets/fonts/woff/Aileron.woff') format('woff');
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/ttf/MMD.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/otf/MMD.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/woff/MMD.woff') format('woff');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/woff2/MMD.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: 'Aileron';
-    src: url('https://angeldollface.art/assets/fonts/woff2/Aileron.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'MC';
-    src: url('https://angeldollface.art/assets/fonts/ttf/MC.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'MC';
-    src: url('https://angeldollface.art/assets/fonts/otf/MC.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'MC';
-    src: url('https://angeldollface.art/assets/fonts/woff/MC.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'MC';
-    src: url('https://angeldollface.art/assets/fonts/woff2/MC.woff2') format('woff2');
-}
 :root {
-    --headingFont: 'Aileron';
-    --contentFont: 'MC';
-    --mainColor: #000000;
-    --accentColor: #FF7BAC;
-    --hoverColor: #EA1573;
-    --sexyDark: #171717;
-    --stdPadding: 10px;
+    --mainColor: #FFFFFF;
+    --accentColor: #000000;
+    --stdPadding: 20px;
+    --hoverColor: #FF7BAC;
 }
 
-
-html,body {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
+html, body {
     margin: 0px;
     padding: 0px;
-    overflow-x:hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: transparent;
+    box-sizing: border-box;
 }
 
 div.header {
-    width: 100vw;
-    background-color: transparent;
     margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    left:0;
     top: 0;
     right: 0;
-    left: 0;
+    border: none;
 }
 
 h1 {
-    font-size: 45px;
-    text-align: right;
-    font-family: var(--contentFont);
-    text-shadow: 1px 2px 15px var(--accentColor);
-    margin: 0px;
+    font-size: 40px;
+    font-family: 'MMD';
+    color: var(--mainColor);
     padding: var(--stdPadding);
-    color: var(--accentColor);
+    text-align: center;
+    margin: 0px;
+}
+
+div.skillList {
+    margin: 0 auto;
+    padding: var(--stdPadding);
+    display: block;
+    width: 70%;
+    margin-top: 5vh !important;
+    margin-bottom: var(--stdPadding) !important;
+    background-color: transparent;
+    border: none;
+    min-height: 100vh;
+}
+
+h2.skillList {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Ostrich';
+    color: var(--mainColor);
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+a.skillList {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Ostrich';
+    color: var(--mainColor);
+    transition-duration: 0.6s;
+    margin: 0px;
+    padding: 0px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a.skillList:hover {
+    color: var(--hoverColor);
 }
 
 div.nav {
-    float: right;
-    padding: 0px;
     margin: 0px;
-    height:100vh;
-    width: 10%;
+    padding: 0px;
     top: 0;
-    background-color: transparent;
     right: 0;
-    min-height: 100%;
     bottom: 0;
     left: 0;
+    width: 0vw;
+    overflow: hidden;
+    position: fixed;
+    transition-duration: 0.6s;
+    height: 0vh;
+    box-sizing: border-box;
+    background-color: var(--mainColor);
+}
+
+ul.nav {
+    padding: 0px;
+    margin-top: 15vh !important;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    
+    list-style: none;
+}
+
+li.nav {
+    text-align: left;
+    display: block;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 50px;
+}
+
+a.nav {
+    font-size: 30px;
+    font-family: 'Ostrich';
+    color: var(--accentColor);
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+
+a.nav:hover {
+    color: var(--hoverColor);
+}
+
+div.itemList {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: transparent;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0px;
+}
+
+h2.itemList {
+    padding-left: 50px;
+    padding-bottom: 0px;
+    padding-top: var(--stdPadding);
+    padding-right: 50px;
+    margin: 0px;
+    font-size: 50px;
+    font-family: 'Garamond';
+    font-style: italic;
+    color: var(--mainColor);
+}
+
+a.itemList {
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+    font-family: 'Garamond';
+    font-style: italic;
+    color: var(--mainColor);
+    transition-duration: 0.6s;
+    text-decoration: none;
+}
+
+a.itemList:hover {
+    color: var(--hoverColor);
 }
 
 div.content {
@@ -99,7 +226,7 @@ div.content {
     display: block;
     width: 80%;
     margin-top: var(--stdPadding) !important;
-    margin-top: var(--stdPadding) !important;
+    margin-bottom: var(--stdPadding) !important;
     padding: var(--stdPadding);
     border-radius: var(--stdPadding);
     -webkit-backdrop-filter: blur(4px);  
@@ -108,268 +235,109 @@ div.content {
     background-color: rgba(228 ,228 ,228 ,0.10);
 }
 
-a.nav {
-    display: block;
-    font-family: var(--contentFont);
-    font-size: 25px;
-    padding-top: var(--stdPadding);
-    padding-bottom: var(--stdPadding);
-    padding-right: var(--stdPadding);
-    padding-left: var(--stdPadding);
-    margin: 0px;
-    color: var(--accentColor);
-    text-shadow: 1px 2px 15px var(--accentColor);
-    writing-mode: vertical-lr;
-    text-decoration: none;
-    transition-duration: 0.6s;
-}
-
-a.nav:hover {
-    color: var(--mainColor);
-    text-shadow: 
-        -1px -1px 0 var(--accentColor), 
-        1px -1px 0 var(--accentColor), 
-        -1px 1px 0 var(--accentColor), 
-        1px 1px 0 var(--accentColor);
-}
-
-div.itemList, div.itemContent {
-    left: 0;
-    float: left;
-    width: 90%;
-    background-color: transparent;
-    padding: 0px;
-    margin: 0px;
-    top: 0;
-}
-
-h2.item, a.item {
-    margin: 0px;
-    color: var(--mainColor); 
-    text-shadow: 
-        -1px -1px 0 var(--accentColor), 
-        1px -1px 0 var(--accentColor), 
-        -1px 1px 0 var(--accentColor), 
-        1px 1px 0 var(--accentColor);
-    text-align: right;
-    padding-right: 0px;
-    padding-top: var(--stdPadding);
-    padding-bottom: 0px;
-    padding-left: 10px;
-    font-size: 50px;
-    font-family: var(--headingFont);
-    transition-duration: 0.6s;
-    text-decoration: none;
-}
-
-h2.item:hover, a.item:hover {
-    color: var(--accentColor)
-}
-
 h2 {
-    text-align: left;
-    font-family: var(--headingFont);
-    font-style: italic;
-    font-size: 40px;
-    margin: 0px;
+    font-size: 37px;
     color: var(--mainColor);
-    text-shadow: 
-        -1px -1px 0 var(--accentColor), 
-        1px -1px 0 var(--accentColor), 
-        -1px 1px 0 var(--accentColor), 
-        1px 1px 0 var(--accentColor);
-    padding-left: var(--stdPadding);
-    padding-top: 10px;
+    font-family: 'Ostrich';
+    padding-top: var(--stdPadding);
     padding-bottom: 0px;
-    padding-right: 0px;
-
+    padding-right: var(--stdPadding);
+    padding-left: 0px;
+    margin: 0px;
 }
 
 h3 {
-    text-align: left;
     font-size: 35px;
-    margin: 0px;
-    font-family: var(--headingFont);
-    font-style: italic;
     color: var(--mainColor);
-    text-shadow: 
-        -1px -1px 0 var(--accentColor), 
-        1px -1px 0 var(--accentColor), 
-        -1px 1px 0 var(--accentColor), 
-        1px 1px 0 var(--accentColor);
-    padding-left: var(--stdPadding);
-    padding-top: 10px;
+    font-family: 'Ostrich';
+    padding-top: var(--stdPadding);
     padding-bottom: 0px;
-    padding-right: 0px;
-
+    padding-right: var(--stdPadding);
+    padding-left: 0px;
+    margin: 0px;
 }
 
 h4 {
-    text-align: left;
-    font-size: 28px;
-    margin: 0px;
-    font-family: var(--headingFont);
-    font-style: italic;
+    font-size: 33px;
     color: var(--mainColor);
-    text-shadow: 
-        -1px -1px 0 var(--accentColor), 
-        1px -1px 0 var(--accentColor), 
-        -1px 1px 0 var(--accentColor), 
-        1px 1px 0 var(--accentColor);
-    padding-left: var(--stdPadding);
-    padding-top: 10px;
+    font-family: 'Ostrich';
+    padding-top: var(--stdPadding);
     padding-bottom: 0px;
-    padding-right: 0px;
-
+    padding-right: var(--stdPadding);
+    padding-left: 0px;
+    margin: 0px;
 }
 
 p {
-    text-align: left;
-    font-size: 25px;
-    font-family: var(--contentFont);
-    color: var(--accentColor);
-    text-shadow: none;
-    padding-left: var(--stdPadding);
-    padding-top: 10px;
+    font-size: 31px;
+    color: var(--mainColor);
+    font-family: 'Garamond';
+    padding-top: var(--stdPadding);
     padding-bottom: 0px;
     padding-right: var(--stdPadding);
+    padding-left: 0px;
     margin: 0px;
 }
 
 a {
-    text-align: left;
-    font-size: 25px;
-    width: 70%;
-    text-decoration: dotted;
-    text-shadow: 
-        -1px -1px 0 var(--accentColor), 
-        1px -1px 0 var(--accentColor), 
-        -1px 1px 0 var(--accentColor), 
-        1px 1px 0 var(--accentColor);
-    font-family: var(--contentFont);
+    font-size: 31px;
     color: var(--mainColor);
-    transition-duration: 0.6s;
+    font-family: 'Ostrich';
     padding: 0px;
     margin: 0px;
+    transition-duration: 0.6s;
+    text-decoration: none;
 }
 
 a:hover {
-    color: var(--accentColor);
-}
-
-ul {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: var(--stdPadding);
-    margin-bottom: 0px;
-    margin-top: 10px;
-    padding-top: var(--stdPadding);
-    padding-bottom: 10px;
-}
-
-li {
-    text-align: left;
-    font-size: 25px;
-    width: 70%;
-    text-shadow: none;
-    font-family: var(--contentFont);
-    color: var(--accentColor);
-    padding: 0px;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: var(--stdPadding);
-    padding-bottom: 0px;
-    padding-top: 10px;
-}
-
-li::before{
-    padding-left: var(--stdPadding);
-    padding-right: var(--stdPadding);
-    padding-bottom: 0px;
-    padding-top: var(--stdPadding);
-}
-
-code {
-    font-size: 25px;
-    font-family: var(--contentFont);
-    color: var(--mainColor);
-    background-color: var(--accentColor);
-    padding: 5px;
-    margin: 0px;
-    border-radius: 25px;
+    color: var(--hoverColor);
 }
 
 img {
     margin: 0 auto;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    width: 100%;
-    height: 300px;
     display: block;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
     padding: 0px;
-    border: none;
-    object-fit: contain;
+    margin-top: var(--stdPadding) !important;
+    margin-bottom: var(--stdPadding) !important;
+}
+
+ul {
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: var(--stdPadding);
+    margin-bottom: var(--stdPadding);
+    list-style: circle;
+}
+
+li {
+    text-align: left;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 31px;
+    color: var(--mainColor);
+    font-family: 'Ostrich';
+    margin: 0px;
 }
 
 canvas {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    background-color: transparent;
-    box-sizing: border-box;
     z-index: -1000;
     position: fixed;
-}
-
-@media screen and (max-width: 800px) {
-    h1 {
-        font-size: 35px;
-    }
-    div.content {
-        width: 75%;
-    }
-    a.nav {
-        padding-top: var(--stdPadding);
-        padding-bottom: var(--stdPadding);
-        padding-right: var(--stdPadding);
-        padding-left: 0px;
-        font-size: 25px;
-    }
-    div.nav {
-        width: 13%;
-    }
-    div.itemList, div.itemContent {
-        width: 87%;
-    }
-    h2.item, a.item {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    
-    h3 {
-        font-size: 25px;   
-    }
-    
-    h4 {
-        font-size: 24px;    
-    }
-    
-    p {
-        font-size: 22px;
-    }
-    
-    a {
-        font-size: 22px;
-    }
-    li {
-        font-size: 22px;
-        width: 90%;
-    }
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    box-sizing: border-box;
 }

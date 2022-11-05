@@ -32,14 +32,35 @@
     <meta name="twitter:image:alt" content="Everyone's favorite doll!">
     <meta name="twitter:description" content="Everyone's favorite doll!">
     <link rel="stylesheet" type="text/css" href="/assets/css/index.css">
-   <script type="module" src="/hoisted.43a10f2b.js"></script></head>
+   <script type="module" src="/hoisted.6f3f6cce.js"></script></head>
  <body>
-  <div class="header">
- <h1 onclick="window.location.href='/'">ANGEL DOLLFACE</h1>
+  
+
+<div class="header">
+ <h1 onclick="openNav();">ANGEL DOLLFACE</h1>
 </div>
 
-<div class="nav">
- <a class="nav" href="/">HOME</a><a class="nav" href="/pages/about">ABOUT</a><a class="nav" href="/pages/art">ART</a><a class="nav" href="/pages/blog">BLOG</a><a class="nav" href="/pages/projects">PROJECTS</a><a class="nav" href="/pages/links">LINKS</a><a class="nav" href="/pages/site">SOURCE</a>
+<div class="nav" id="nav">
+ <ul class="nav">
+ <li class="nav">
+   <a class="nav" href="/">HOME</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/about">ABOUT</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/art">ART</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/blog">BLOG</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/projects">PROJECTS</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/links">LINKS</a>
+  </li><li class="nav">
+   <a class="nav" href="/pages/site">SOURCE</a>
+  </li>
+  <li class="nav">
+   <a class="nav" onclick="closeNav();">CLOSE</a>
+  </li>
+ </ul>
 </div>
   
     
@@ -61,7 +82,6 @@ window.onload= (e) => {
     )
 }
 })();</script>
-  <div class="itemContent">
    <div class="content">
     <h2>My Vue.js projects.</h2>
    <p>Projects and libraires that I&#39;ve developed in Vue.js 3.</p>
@@ -75,6 +95,4 @@ window.onload= (e) => {
 <p><em><strong>A small color matching app written in Vue.js 3.</strong></em></p>
 <p>As an artist, I often find myself wondering about good color schemes. To address this problem, I wrote a small web app that gives you a complementary color in hex from a source color in hex. Link: <a href="https://github.com/angeldollface/cmatch">GitHub</a></p>
    </div>
-   <br>
-  </div>
  </body></html>
