@@ -1,3 +1,8 @@
+/*
+DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
 export function openNav(){
     let navElement: any = document.getElementById('nav');
     navElement.style.width = '100vw';

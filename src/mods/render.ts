@@ -1,5 +1,5 @@
 /*
-TRON by Alexander Abraham, a.k.a. "Angel Dollface".
+DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
 

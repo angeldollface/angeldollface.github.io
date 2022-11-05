@@ -1,3 +1,8 @@
+/*
+DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
 export const fiveSevenIcon: string ="/assets/images/site/favicons/apple-icon-57x57.png"
 export const sixZeroIcon: string ="/assets/images/site/favicons/apple-icon-60x60.png"
 export const sevenTwoIcon: string ="/assets/images/site/favicons/apple-icon-72x72.png"
