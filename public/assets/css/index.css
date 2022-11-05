@@ -112,6 +112,7 @@ div.skillList {
 }
 
 h2.skillList {
+    text-shadow: 1px 2px 15px var(--hoverColor);
     text-align: center;
     font-size: 50px;
     font-family: var(--headingFont);
