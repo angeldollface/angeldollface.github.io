@@ -6,8 +6,6 @@ Licensed under the MIT license.
 // Standard three.js import.
 import * as THREE from 'three';
 
-import { WaterEffect } from '../js/WaterEffect';
-
 // Importing the GLTF 2.0 loader.
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
@@ -103,32 +101,17 @@ export function renderModel(
     };
 
     // A shader to make individual meshes glow up. (Pillars on the corners.)
-	const bloomPass = new UnrealBloomPass( new THREE.Vector2( window.innerWidth, window.innerHeight ), 1.5, 0.4, 0.85 );
-	bloomPass.threshold = params.bloomThreshold;
+    const bloomPass = new UnrealBloomPass( new THREE.Vector2( window.innerWidth, window.innerHeight ), 1.5, 0.4, 0.85 );
+    bloomPass.threshold = params.bloomThreshold;
     bloomPass.strength = params.bloomStrength;
-	bloomPass.radius = params.bloomRadius;
+    bloomPass.radius = params.bloomRadius;
 
     // We use a composer instead of the standard renderer
     // and add relevant data, because the shader is a "filter"
     // on the scene.
     var composer = new EffectComposer( renderer );
-	composer.addPass( renderScene );
-	composer.addPass( bloomPass );
-
-    // Instantiating the black-and-white
-    // filter.
-    const bwFilter = new FilmPass(
-        grainCount, 
-        0.5, 
-        4096,
-        1
-    );
-
-    // Adding it to the scene.
-    composer.addPass(bwFilter);
-
-    const glitch: GlitchPass = new GlitchPass();
-    composer.addPass(glitch);
+    composer.addPass( renderScene );
+    composer.addPass( bloomPass );
 
     // And generate the scene from an environment.
     scene.environment = pmremGenerator.fromScene( environment ).texture;
