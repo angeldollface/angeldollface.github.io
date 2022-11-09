@@ -1,3 +1,16 @@
+/*
+DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+
+STILL TO DO
+
+- Animate the divs in.
+- Animate the underline on links.
+- Shrink the CSS.
+- ADS!
+- Check and edit content!
+*/
+
 @font-face {
     font-family: 'Merriweather-Regular';
     src: url('https://angeldollface.art/assets/fonts/ttf/Merriweather-Regular.ttf') format('truetype');
@@ -31,10 +44,9 @@
     src: url('https://angeldollface.art/assets/fonts/woff2/PlayfairDisplay-Regular.woff2') format('woff2');
 }
 :root {
-   /*--bgColor: #faede7;*/
-    --bgColor: #000000;
-    --accentColor: #FFFFFF;
-    --mainColor: #000000;
+    --bgColor: #faede7;
+    --accentColor: #000000;
+    --mainColor: #FFFFFF;
     --headingFont: 'PlayfairDisplay-Regular';
     --contentFont: 'Merriweather-Regular';
     --hoverColor: #FF7BAC;
@@ -86,6 +98,22 @@ h1 {
     font-weight: bold;
     font-style: italic;
 }
+img.logo {
+    float: left;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin: 0px;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    border-bottom-left-radius:  none;
+    border-bottom-right-radius: none;
+    border: none;
+}
 ul.nav {
     padding-top: 0px;
     padding-right: 30px;
@@ -101,6 +129,14 @@ li.nav {
     padding-bottom: 0px;
     margin: 0px;
     display: inline-block;
+}
+li.navClose {
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin: 0px;
+    display: none;
 }
 a.nav {
     font-size: 25px;
@@ -171,7 +207,7 @@ img.pfp {
     height: 60vh;
     margin-top: 10vh;
     margin-bottom: 20vh;
-    margin-left: 20px;
+    margin-left: 4vw;
     margin-right: 20px;
     padding: 0px;
     border-top-left-radius: 50%;
@@ -182,12 +218,12 @@ img.pfp {
     border: 6px solid var(--accentColor);
 }
 h2.sectionHeading {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     font-family: var(--headingFont);
     color: var(--accentColor);
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px;
@@ -202,7 +238,7 @@ div.preview {
     background-color: var(--mainColor);
     display: block;
     border: 6px solid var(--accentColor);
-    margin-top: 40px !important;
+    margin-top: 0px !important;
     margin-bottom: 40px !important;
     border-radius: 0px;
     box-shadow: 10px 15px 0px var(--accentColor);
@@ -216,6 +252,15 @@ h2 {
     margin: 0px;
     font-family: var(--headingFont);
     color: var(--accentColor);
+}
+a.headingLink {
+    padding: 0px;
+    font-size: 40px;
+    margin: 0px;
+    font-family: var(--headingFont);
+    color: var(--accentColor);
+    text-decoration: underline;
+    text-decoration-color: var(--hoverColor);
 }
 h3 {
     padding-left: 0px;
@@ -401,10 +446,14 @@ button.menu:hover{
         margin: 0 auto;
         display: block;
         width: 80%;
-        margin-top: 25vh !important;
+        margin-top: 5vh !important;
         margin-bottom: 20px !important;
     }
     li.nav {
+        display: block;
+        text-align: center;
+    }
+    li.navClose {
         display: block;
         text-align: center;
     }
@@ -447,7 +496,7 @@ button.menu:hover{
         padding-right: 20px;
         padding-top: 0px;
         padding-bottom: 0px;
-        padding-left: 20px;
+        padding-left: 0px;
         text-align: center;
     }
     p.landingText {
@@ -471,6 +520,9 @@ button.menu:hover{
         padding-bottom: 10px;
         font-size: 30px;
     }
+    a.headingLink {
+        font-size: 30px;
+    }
     h3 {
         padding-top: 10px;
         font-size: 27px;
@@ -492,8 +544,8 @@ button.menu:hover{
         width: 85%;
     }
     img {
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 10px  !important;
+        margin-top: 10px !important;
         height: 150px;
     }
     ul {
