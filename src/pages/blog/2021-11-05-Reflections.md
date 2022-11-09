@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/Page.astro"
 title: "Reflections"
 description: "Reflections on life, love, and human nature."
 dateTime: "05/11/2021"

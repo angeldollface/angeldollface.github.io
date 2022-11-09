@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/Page.astro"
 title: "A journey through human nature"
 description: "A journey through human nature. The worst and the best."
 dateTime: "24/09/2021"

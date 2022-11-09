@@ -3,32 +3,64 @@
 DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
-
 import * as site from '../config';
 import HeadCog from '../components/HeadCog.astro';
-import ModelCog from '../components/ModelCog.astro';
+import FooterCog from '../components/FooterCog.astro';
 import HeadingCog from '../components/HeadingCog.astro';
-const title = site.name;
-const description = site.description;
+const posts = (await Astro.glob('../pages/blog/*.{md,}')).sort(
+	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
+).slice(0,2);
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+	};
+}
+const {
+	content: { 
+		title, 
+		description
+	}
+} = Astro.props;
+const pfpUrl: string = site.pfpURL;
+const landingGreeting: string = site.landingGreeting;
+const selfDescription: string = site.selfDescription;
+const latestArticlesText: string = site.latestArticlesText;
 ---
+
+<!DOCTYPE html>
 <html lang="en">
- <HeadCog
-  name={title}
-  description={description}
- />
+  <HeadCog
+   name={title}
+   description={description}
+  />
  <body>
   <HeadingCog/>
-  <ModelCog
-  textureURL="https://angeldollface.art/assets/images/matcaps/01.png"
-   modelURL="https://angeldollface.art/assets/models/StageMoon.glb"
-   symbolName="Moon"
-   spinAxis="z"
-  />
-  <div class="skillList">
-    <h2 class="skillList">
-     DESIGNER, ARTIST, DEVELOPER, CREATIVE SOUL LIVING IN VIENNA. VIEW MY WORK BELOW:<br/>
-     <a class="skillList" href="/pages/blog">MY WRITING</a> | <a  class="skillList" href="/pages/art">MY ART</a> | <a  class="skillList" href="/pages/projects">MY CODE</a>
-    </h2>
+  <div class="landing">
+   <div class="pfp">
+    <img class="pfp" src={pfpUrl}>
+   </div>
+   <div class="landingText">
+    <h2 class="landingText">{landingGreeting}</h2>
+    <p class="landingText">
+     {selfDescription}
+    </p>
+   </div>
   </div>
- </body>
+
+  <h2 class="sectionHeading">{latestArticlesText}</h2>
+
+   <br/>
+  {posts.map(
+   (post) => (
+   <div class="preview" onclick="window.location.href='#'">
+    <h2>{post.frontmatter.title}</h2>
+    <p>{post.frontmatter.description}</p>
+   </div>
+    )
+   )
+  }
+  <br/>
+  <FooterCog/>
+</body>
 </html>

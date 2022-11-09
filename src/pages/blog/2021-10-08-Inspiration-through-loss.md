@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/Page.astro"
 title: "Inspiration through loss"
 description: "How a lonely writer found inspiration in her lost girlfriend."
 dateTime: "08/10/2021"

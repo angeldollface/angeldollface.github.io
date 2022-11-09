@@ -1,5 +1,5 @@
 ---
-title: "My BLOG"
-layout: "../../layouts/Blog.astro"
-description: "My deranged writings."
+title: "MY BLOG"
+layout: "../../layouts/BlogOverview.astro"
+description: "My short stories."
 ---

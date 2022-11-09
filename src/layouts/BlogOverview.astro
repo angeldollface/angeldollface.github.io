@@ -3,9 +3,9 @@
 DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 */
-
+import * as site from '../config';
 import HeadCog from '../components/HeadCog.astro';
-import ModelCog from '../components/ModelCog.astro';
+import FooterCog from '../components/FooterCog.astro';
 import HeadingCog from '../components/HeadingCog.astro';
 const posts = (await Astro.glob('../pages/blog/*.{md,}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
@@ -22,6 +22,10 @@ const {
 		description
 	}
 } = Astro.props;
+const pfpUrl: string = site.pfpURL;
+const landingGreeting: string = site.landingGreeting;
+const selfDescription: string = site.selfDescription;
+const latestArticlesText: string = site.latestArticlesText;
 ---
 
 <!DOCTYPE html>
@@ -32,25 +36,17 @@ const {
   />
  <body>
   <HeadingCog/>
-  <ModelCog
-   modelURL="https://angeldollface.art/assets/models/StageInfinity.glb"
-   textureURL="https://angeldollface.art/assets/images/matcaps/03.png"
-   symbolName="Infinity"
-   spinAxis="z"
-  />
-  <div class="itemList">
+  <h2 class="sectionHeading">{latestArticlesText}</h2>
   {posts.map(
    (post) => (
-   <h2 class="itemList">
-    <a class="itemList" href={post.url}>
-     {post.frontmatter.title}
-    </a>
-   </h2>
+   <div class="preview" onclick="window.location.href='#'">
+    <h2>{post.frontmatter.title}</h2>
+    <p>{post.frontmatter.description}</p>
+   </div>
     )
    )
   }
   <br/>
-  <br/>
-  </div>
+  <FooterCog/>
 </body>
 </html>

@@ -30,7 +30,16 @@ export const navLinks: Object = {
     'ABOUT': '/pages/about',
     'ART': '/pages/art',
     'BLOG': '/pages/blog',
-    'PROJECTS': '/pages/projects',
-    'LINKS': '/pages/links',
-    'SOURCE': '/pages/site'
+    'PROJECTS': '/pages/coding'
 };
+export const footerText: string = 'Angel Dollface Copyright 2022';
+export const socialMediaLinks: Object = {
+    'fa fa-github':'https://github.com/angeldollface',
+    'fa fa-twitter':'https://twitter.com/angeldollface66',
+    'fa fa-instagram':'https://instagram.com/angeldollface66',
+    'fa fa-tree':'https://linktr.ee/angeldollface66'
+};
+export const pfpURL: string = 'https://avatars.githubusercontent.com/u/112771657?v=4';
+export const landingGreeting: string = 'Hi! I\'m Angel Dollface!';
+export const selfDescription: string = 'I\'m a developer, artist, and writer from Vienna, Austria.';
+export const latestArticlesText: string = 'Latest Articles';

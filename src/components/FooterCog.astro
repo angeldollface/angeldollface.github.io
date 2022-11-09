@@ -5,12 +5,18 @@ Licensed under the MIT license.
 */
 
 import * as site from '../config';
-
-const name: string = site.name;
-const owner: string = site.owner;
-let time: string = new Date().getFullYear().toString();
+const socialMediaIcons: Object = site.socialMediaLinks;
+const footerText: string = site.footerText;
 ---
-<br/>
 <div class="footer">
- <p class="footer">{name} c/o {owner} Copyright {time}</p>
-</div>
+    <p class="footer">{footerText}</p>
+    <ul class="footer">
+      {Object.entries(socialMediaIcons).map(([key, val]) => (
+        <li class="footer">
+          <a class="footer" href={val}>
+            <i class={key}></i>
+          </a>
+        </li>
+       ))}
+    </ul>
+   </div>

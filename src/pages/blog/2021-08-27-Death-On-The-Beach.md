@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/Page.astro"
 dateTime: "27/08/2021"
 title: "Death on the Beach"
 description: "How an angel broke its wings."

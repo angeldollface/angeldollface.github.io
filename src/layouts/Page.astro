@@ -5,7 +5,6 @@ Licensed under the MIT license.
 */
 
 import HeadCog from "../components/HeadCog.astro";
-import ModelCog from '../components/ModelCog.astro';
 import FooterCog from '../components/FooterCog.astro';
 import HeadingCog from "../components/HeadingCog.astro";
 export interface Props {
@@ -29,16 +28,11 @@ const {
  />
  <body>
   <HeadingCog/>
-  <ModelCog
-   modelURL="https://angeldollface.art/assets/models/StageMoon.glb"
-   textureURL="https://angeldollface.art/assets/images/matcaps/01.png"
-   symbolName="Moon"
-   spinAxis="z"
-  />
-   <div class="content">
-   	<slot/>
-   </div>
-   <br/>
+  <div class="content">
+   <h2 class="sectionHeading">{title}</h2>
+   <slot/>
+  </div>
+  <br/>
   <FooterCog/>
  </body>
 </html>

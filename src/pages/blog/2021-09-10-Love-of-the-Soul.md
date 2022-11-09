@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/Page.astro"
 title: "Love of the Soul"
 description: "Two loving souls can flourish on each other but also cause each other to wither away."
 dateTime: "10/09/2021"
