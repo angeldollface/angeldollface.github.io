@@ -54,7 +54,7 @@ const latestArticlesText: string = site.latestArticlesText;
   {posts.map(
    (post) => (
    <div class="preview" onclick="window.location.href='#'">
-    <h2>{post.frontmatter.title}</h2>
+    <h2><a href={post.url} class="headingLink">{post.frontmatter.title}</a></h2>
     <p>{post.frontmatter.description}</p>
    </div>
     )

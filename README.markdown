@@ -63,6 +63,18 @@ $ npm run build
 - Upload to GitHub.
 - Deployment on GitHub Pages.
 
+### Version 2.0.0
+
+- New design!
+- Improved performance.
+- New layouts.
+
+### Version 3.0.0
+
+- Removed many things.
+- Reduced 9 layouts to 3 layouts.
+- Radical new, clean and minimalist design.
+
 ## NOTE :scroll:
 
 - *Angel Dollface :dolls: :ribbon:* by Alexander Abraham :black_heart: a.k.a. *"Angel Dollface" :dolls: :ribbon:*

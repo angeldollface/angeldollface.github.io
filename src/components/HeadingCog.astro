@@ -7,6 +7,8 @@ Licensed under the MIT license.
 import * as site from '../config';
 const name: string = site.name;
 const navLinks: Object = site.navLinks;
+const logoPath: string = site.logoPath;
+const closingText: string = site.closingText;
 ---
 <script>
 import { 
@@ -17,7 +19,7 @@ globalThis.openNav = openNav
 globalThis.closeNav = closeNav
 </script>
 <div class="header">
- <h1>{name}</h1>
+ <img class="logo" src={logoPath}>
  <button class="menu" onclick="openNav();">
   <i class="fa fa-bars"></i>
  </button>
@@ -32,6 +34,9 @@ globalThis.closeNav = closeNav
       )
      )
     }
+    <li class="navClose">
+     <a class="nav" onclick="closeNav();">{closingText}</a>
+    </li>
    </ul>
   </div>
 </div>
