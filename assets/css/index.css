@@ -9,6 +9,7 @@ STILL TO DO
 - Shrink the CSS.
 - ADS!
 - Check and edit content!
+- Add pink border to whole page.
 */
 
 @font-face {
@@ -142,10 +143,15 @@ a.nav {
     font-size: 25px;
     padding: 0px;
     margin: 0px;
+    transition-duration: 0.6s;
     text-decoration: underline;
     text-decoration-color: var(--hoverColor);
     font-family: var(--contentFont);
     color: var(--accentColor);
+}
+a.nav {
+    background-color: var(--hoverColor);
+    color: var(--mainColor);
 }
 div.nav {
     display: inline-block;
@@ -257,10 +263,15 @@ a.headingLink {
     padding: 0px;
     font-size: 40px;
     margin: 0px;
+    transition-duration: 0.6s;
     font-family: var(--headingFont);
     color: var(--accentColor);
     text-decoration: underline;
     text-decoration-color: var(--hoverColor);
+}
+a.headingLink {
+    background-color: var(--hoverColor);
+    color: var(--mainColor);
 }
 h3 {
     padding-left: 0px;
@@ -282,7 +293,6 @@ h4 {
     font-family: var(--headingFont);
     color: var(--accentColor);
 }
-
 p {
     padding-left: 0px;
     padding-right: 0px;
@@ -293,15 +303,20 @@ p {
     font-family: var(--contentFont);
     color: var(--accentColor);
 }
-
 a {
     padding: 0px;
-    font-size: 40px;
+    font-size: 31px;
     margin: 0px;
+    text-decoration: underline;
+    text-decoration-color: var(--hoverColor);
     font-family: var(--contentFont);
     color: var(--accentColor);
+    transition-duration: 0.6s;
 }
-
+a:hover {
+    background-color: var(--hoverColor);
+    color: var(--mainColor);
+}
 div.content {
     width: 80%;
     margin: 0 auto;
@@ -309,7 +324,6 @@ div.content {
     padding: 0px;
     background-color: transparent;
 }
-
 img {
     float: none;
     width: 100%;
@@ -329,7 +343,6 @@ img {
     border: none;
     border-radius: 20px;
 }
-
 ul {
     padding-right: 0px;
     padding-left: 0px;
@@ -339,7 +352,6 @@ ul {
     list-style-type: disc;
     width: 100%
 }
-
 li {
     padding-left: 0px;
     padding-right: 0px;
@@ -350,7 +362,6 @@ li {
     font-family: var(--contentFont);
     color: var(--accentColor);
 }
-
 div.footer {
     margin: 0px;
     width: 100vw;
@@ -363,7 +374,6 @@ div.footer {
     margin-top: 30px;
     background-color: var(--accentColor);
 }
-
 p.footer {
     font-size: 35px;
     color: var(--mainColor);
@@ -375,7 +385,6 @@ p.footer {
     margin: 0px;
     text-align: center;
 }
-
 ul.footer {
     margin: 0 auto;
     display: block;
@@ -385,7 +394,6 @@ ul.footer {
     list-style: none;
     text-align: center;
 }
-
 li.footer {
     display: inline-block;
     padding-top: 0px;
@@ -393,7 +401,6 @@ li.footer {
     padding-right: 10px;
     padding-left: 0px;
 }
-
 a.footer {
     font-size: 35px;
     color: var(--mainColor);
@@ -406,6 +413,7 @@ a.footer {
 }
 a.footer:hover {
     color: var(--hoverColor);
+    background-color: none;
 }
 button.menu {
     padding: 0px;
