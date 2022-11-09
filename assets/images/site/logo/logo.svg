@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 934 928.23">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #ff7bac;
+      }
+
+      .cls-2 {
+        font-size: 478.47px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: PlayfairDisplay-Regular, 'Playfair Display';
+      }
+
+      .cls-3 {
+        font-size: 412.43px;
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="103.78" y="98.01" width="830.22" height="830.22"/>
+  <text class="cls-2" transform="translate(159.71 490.06)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-3" transform="translate(553.48 771.2)"><tspan x="0" y="0">F</tspan></text>
+  <path class="cls-1" d="M827.22,3V827.22H3V3H827.22m3-3H0V830.22H830.22V0h0Z"/>
+</svg>
