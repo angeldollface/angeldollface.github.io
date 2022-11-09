@@ -38,7 +38,7 @@ export const socialMediaLinks: Object = {
     'fa fa-twitter':'https://twitter.com/angeldollface66',
     'fa fa-instagram':'https://instagram.com/angeldollface66',
     'fa fa-tree':'https://linktr.ee/angeldollface',
-    'fa fa-code':'https://https://github.com/angeldollface/angeldollface.github.io/'
+    'fa fa-code':'https://github.com/angeldollface/angeldollface.github.io/'
 };
 export const pfpURL: string = 'https://avatars.githubusercontent.com/u/112771657?v=4';
 export const landingGreeting: string = 'Hi! I\'m Angel Dollface!';
