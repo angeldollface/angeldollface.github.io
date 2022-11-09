@@ -101,8 +101,8 @@ h1 {
 }
 img.logo {
     float: left;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     padding-top: 30px;
     padding-right: 10px;
@@ -149,7 +149,7 @@ a.nav {
     font-family: var(--contentFont);
     color: var(--accentColor);
 }
-a.nav {
+a.nav:hover {
     background-color: var(--hoverColor);
     color: var(--mainColor);
 }
@@ -269,7 +269,7 @@ a.headingLink {
     text-decoration: underline;
     text-decoration-color: var(--hoverColor);
 }
-a.headingLink {
+a.headingLink:hover {
     background-color: var(--hoverColor);
     color: var(--mainColor);
 }
@@ -435,6 +435,16 @@ button.menu:hover{
     color: var(--hoverColor);
 }
 @media screen and (max-width: 800px) {
+    img.logo {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
     div.nav {
         display: flex;
         top: 0;
