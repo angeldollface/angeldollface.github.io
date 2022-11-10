@@ -55,4 +55,11 @@ var { name, description } = Astro.props;
     <meta name="twitter:description" content={description}/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/index.css"/>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-KBXPMTL66E"></script>
+    <script is:inline>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'G-KBXPMTL66E');
+    </script>
    </head>
