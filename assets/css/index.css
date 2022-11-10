@@ -3,13 +3,8 @@ DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 
 STILL TO DO
-
-- Animate the divs in.
-- Animate the underline on links.
-- Shrink the CSS.
 - ADS!
 - Check and edit content!
-- Add pink border to whole page.
 */
 
 @font-face {
@@ -57,12 +52,13 @@ html {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     height: 100vh;
     overflow-x: hidden;
     margin: 0px;
     padding: 0px;
+    border: none;
 }
 body {
     top: 0;
@@ -86,28 +82,15 @@ div.header {
     background-color: transparent;
     border: none;
 }
-h1 {
-    float: left;
-    font-size: 35px;
-    padding-top: 30px;
-    padding-right: 10px;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    margin: 0px;
-    font-family: var(--headingFont);
-    color: var(--accentColor);
-    font-weight: bold;
-    font-style: italic;
-}
 img.logo {
     float: left;
     width: 45px;
     height: 45px;
     object-fit: cover;
     padding-top: 30px;
-    padding-right: 10px;
+    padding-right: 0px;
     padding-left: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     margin: 0px;
     border-top-left-radius: none;
     border-top-right-radius: none;
@@ -147,6 +130,7 @@ a.nav {
     text-decoration: underline;
     text-decoration-color: var(--hoverColor);
     font-family: var(--contentFont);
+    font-style: italic;
     color: var(--accentColor);
 }
 a.nav:hover {
@@ -419,7 +403,7 @@ button.menu {
     padding: 0px;
     float: right;
     border-radius: none;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 20px;
@@ -442,7 +426,7 @@ button.menu:hover{
         margin: 0px;
         padding-top: 10px;
         padding-bottom: 0px;
-        padding-left: 10px;
+        padding-left: 20px;
         padding-right: 0px;
     }
     div.nav {
@@ -464,16 +448,24 @@ button.menu:hover{
         margin: 0 auto;
         display: block;
         width: 80%;
-        margin-top: 5vh !important;
-        margin-bottom: 20px !important;
+        margin-top: 10vh !important;
+        margin-bottom: 0px !important;
     }
     li.nav {
         display: block;
-        text-align: center;
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
     }
     li.navClose {
         display: block;
-        text-align: center;
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
     }
     button.menu {
         display: inline-block;
