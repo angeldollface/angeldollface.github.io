@@ -87,10 +87,7 @@ img.logo {
     width: 45px;
     height: 45px;
     object-fit: cover;
-    padding-top: 30px;
-    padding-right: 0px;
-    padding-left: 30px;
-    padding-bottom: 0px;
+    padding: 30px 0px 0px 30px;
     margin: 0px;
     border-top-left-radius: none;
     border-top-right-radius: none;
@@ -99,26 +96,17 @@ img.logo {
     border: none;
 }
 ul.nav {
-    padding-top: 0px;
-    padding-right: 30px;
-    padding-left: 0px;
-    padding-bottom: 0px;
+    padding: 0px 30px 0px 0px;
     margin: 0px;
     list-style: none;
 }
 li.nav {
-    padding-left: 0px;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding: 30px 10px 0px 0px;
     margin: 0px;
     display: inline-block;
 }
 li.navClose {
-    padding-left: 0px;
-    padding-right: 10px;
-    padding-top: 30px;
-    padding-bottom: 0px;
+    padding: 30px 10px 0px 0px;
     margin: 0px;
     display: none;
 }
@@ -172,10 +160,7 @@ h2.landingText {
     font-size: 45px;
     font-family: var(--headingFont);
     color: var(--accentColor);
-    padding-right: 20px;
-    padding-top: 30vh;
-    padding-bottom: 0px;
-    padding-left: 20px;
+    padding: 30vh 20px 0px 20px;
     font-style: italic;
     font-weight: bold;
     margin: 0px;
@@ -185,20 +170,14 @@ p.landingText {
     font-size: 30px;
     font-family: var(--contentFont);
     color: var(--accentColor);
-    padding-right: 20px;
-    padding-top: 0px;
-    padding-bottom:0px;
-    padding-left: 20px;
+    padding: 0px 20px 0px 20px;
     margin: 0px;
     text-align: right;
 }
 img.pfp {
     width:60vh;
     height: 60vh;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-    margin-left: 4vw;
-    margin-right: 20px;
+    margin: 10vh 20px 20vh 4vw;
     padding: 0px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -212,10 +191,7 @@ h2.sectionHeading {
     font-size: 40px;
     font-family: var(--headingFont);
     color: var(--accentColor);
-    padding-top: 40px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 40px 0px 10px 0px;
     margin: 0px;
     font-style: italic;
     font-weight: bold;
@@ -234,10 +210,7 @@ div.preview {
     box-shadow: 10px 15px 0px var(--accentColor);
 }
 h2 {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 0px 10px 0px;
     font-size: 40px;
     margin: 0px;
     font-family: var(--headingFont);
@@ -258,30 +231,21 @@ a.headingLink:hover {
     color: var(--mainColor);
 }
 h3 {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding: 20px 0px 0px 0px;
     font-size: 37px;
     margin: 0px;
     font-family: var(--headingFont);
     color: var(--accentColor);
 }
 h4 {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 0px 10px 0px;
     font-size: 34px;
     margin: 0px;
     font-family: var(--headingFont);
     color: var(--accentColor);
 }
 p {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 20px;
+    padding: 0px 0px 10px 0px;
     font-size: 31px;
     margin: 0px;
     font-family: var(--contentFont);
@@ -313,10 +277,7 @@ img {
     width: 100%;
     height: 350px;
     object-fit:cover;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 20px 0px 20px 0px;
     padding: 0px;
     border-top-left-radius: none;
     border-top-right-radius: none;
@@ -328,19 +289,13 @@ img {
     border-radius: 20px;
 }
 ul {
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0px 20px 0px;
     margin: 0px;
     list-style-type: disc;
     width: 100%
 }
 li {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 10px;
-    padding-bottom: 0px;
+    padding: 10px 0px 0px 0px;
     font-size: 31px;
     margin: 0px;
     font-family: var(--contentFont);
@@ -352,20 +307,14 @@ div.footer {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-top: 30px;
+    margin: 30px 0px 0px 0px;
     background-color: var(--accentColor);
 }
 p.footer {
     font-size: 35px;
     color: var(--mainColor);
     font-family: var(--headingFont);
-    padding-top: 20px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
+    padding: 20px 0px 0px 0px;
     margin: 0px;
     text-align: center;
 }
@@ -380,10 +329,7 @@ ul.footer {
 }
 li.footer {
     display: inline-block;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 0px;
+    padding: 0px 10px 20px 0px;
 }
 a.footer {
     font-size: 35px;
@@ -403,10 +349,7 @@ button.menu {
     padding: 0px;
     float: right;
     border-radius: none;
-    margin-top: 25px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 20px;
+    margin: 25px 20px 0px 0px;
     display: none;
     border: none;
     color: var(--accentColor);
@@ -424,10 +367,7 @@ button.menu:hover{
         height: 40px;
         object-fit: cover;
         margin: 0px;
-        padding-top: 10px;
-        padding-bottom: 0px;
-        padding-left: 20px;
-        padding-right: 0px;
+        padding: 10px 0px 0px 20px;
     }
     div.nav {
         display: flex;
@@ -454,18 +394,12 @@ button.menu:hover{
     li.nav {
         display: block;
         text-align: left;
-        padding-top: 20px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
+        padding: 20px 0px 0px 0px;
     }
     li.navClose {
         display: block;
         text-align: left;
-        padding-top: 20px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
+        padding: 20px 0px 0px 0px;
     }
     button.menu {
         display: inline-block;
@@ -503,18 +437,12 @@ button.menu:hover{
     }
     h2.landingText {
         font-size: 30px;
-        padding-right: 20px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
+        padding: 0px 20px 0px 0px;
         text-align: center;
     }
     p.landingText {
         font-size: 22px;
-        padding-right: 20px;
-        padding-top: 0px;
-        padding-bottom:20px;
-        padding-left: 20px;
+        padding: 0px 20px 20px 20px;
         text-align:center;
     }
     h2.sectionHeading {
