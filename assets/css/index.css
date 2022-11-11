@@ -3,7 +3,6 @@ DOLL FACE by Alexander Abraham, a.k.a. "Angel Dollface".
 Licensed under the MIT license.
 
 STILL TO DO
-- ADS!
 - Check and edit content!
 */
 
@@ -89,10 +88,7 @@ img.logo {
     object-fit: cover;
     padding: 30px 0px 0px 30px;
     margin: 0px;
-    border-top-left-radius: none;
-    border-top-right-radius: none;
-    border-bottom-left-radius:  none;
-    border-bottom-right-radius: none;
+    border-radius: 0px;
     border: none;
 }
 ul.nav {
