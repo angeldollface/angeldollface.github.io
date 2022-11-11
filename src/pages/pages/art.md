@@ -10,7 +10,7 @@ layout: "../../layouts/Page.astro"
 
 ![Mandy](/assets/images/art/dollface/Mandy.png)
 
-Japanese flag had to be had as an inspiration. Too much "Man in the High Castle", I guess....
+This artwork was very experimental and I also wanted to see how far I could go with patterns in the background.
 
 ### Devil Doll
 
@@ -22,7 +22,7 @@ This first iteration of my mascot, Mandy, was the starting point for the Kawaii 
 
 ![Michelle](/assets/images/art/dollface/Michelle.png)
 
-A black and white experiment. Thoughts?
+A black and white experiment for a demoness in a grey sweater.
 
 ### Succubus
 
@@ -34,13 +34,13 @@ My dear sister who drinks the blood of all who cross her.
 
 ![Pink Demon](/assets/images/art/dollface/PinkDemon.png)
 
-Some things are best left unsaid.
+A metal doll who likes her music rough and loud.
 
 ### Crying Mandy
 
 ![Crying Mandy](/assets/images/art/dollface/CryingMandy.png)
 
-Mandy's always sad. Hence the thick tears. She doesn't understand people.
+Sometimes my artworks represent my mood on a given day. This artwork is an elaboration on such a mood.
 
 ## KAWAII DEVIL DOLLS
 
