@@ -6,45 +6,13 @@ STILL TO DO
 - Check and edit content!
 */
 
-@font-face {
-    font-family: 'Merriweather-Regular';
-    src: url('https://angeldollface.art/assets/fonts/ttf/Merriweather-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'Merriweather-Regular';
-    src: url('https://angeldollface.art/assets/fonts/otf/Merriweather-Regular.otf') format('opentype');
-}
-@font-face {
-    font-family: 'Merriweather-Regular';
-    src: url('https://angeldollface.art/assets/fonts/woff/Merriweather-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Merriweather-Regular';
-    src: url('https://angeldollface.art/assets/fonts/woff2/Merriweather-Regular.woff2') format('woff2');
-}
-@font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('https://angeldollface.art/assets/fonts/ttf/PlayfairDisplay-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('https://angeldollface.art/assets/fonts/otf/PlayfairDisplay-Regular.otf') format('opentype');
-}
-@font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('https://angeldollface.art/assets/fonts/woff/PlayfairDisplay-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('https://angeldollface.art/assets/fonts/woff2/PlayfairDisplay-Regular.woff2') format('woff2');
-}
 :root {
     --bgColor: #faede7;
     --accentColor: #000000;
     --mainColor: #FFFFFF;
     --headingFont: 'PlayfairDisplay-Regular';
     --contentFont: 'Merriweather-Regular';
-    --hoverColor: #EA1573;
+    --hoverColor: #FF7BAC;
 }
 html {
     top: 0;
@@ -271,6 +239,7 @@ div.content {
 img {
     float: none;
     width: 100%;
+    border: 3px solid var(--accentColor);
     height: 350px;
     object-fit:cover;
     margin: 20px 0px 20px 0px;
@@ -281,7 +250,6 @@ img {
     border-bottom-right-radius: none;
     display: block;
     margin: 0 auto;
-    border: none;
     border-radius: 20px;
 }
 ul {
