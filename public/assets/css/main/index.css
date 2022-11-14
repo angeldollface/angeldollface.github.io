@@ -7,9 +7,10 @@ STILL TO DO
 */
 
 :root {
-    --bgColor: #faede7;
-    --accentColor: #000000;
-    --mainColor: #FFFFFF;
+    /*--bgColor: #faede7;*/
+    --bgColor: #000000;
+    --accentColor: #FFFFFF;
+    --mainColor: #000000;
     --headingFont: 'PlayfairDisplay-Regular';
     --contentFont: 'Merriweather-Regular';
     --hoverColor: #FF7BAC;
