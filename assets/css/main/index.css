@@ -11,7 +11,7 @@ STILL TO DO
     --bgColor: #000000;
     --accentColor: #FFFFFF;
     --mainColor: #000000;
-    --headingFont: 'PlayfairDisplay-Regular';
+    --headingFont: 'Couture';
     --contentFont: 'Merriweather-Regular';
     --hoverColor: #FF7BAC;
 }
@@ -82,7 +82,7 @@ a.nav {
     transition-duration: 0.6s;
     text-decoration: underline;
     text-decoration-color: var(--hoverColor);
-    font-family: var(--contentFont);
+    font-family: var(--headingFont);
     font-style: italic;
     color: var(--accentColor);
 }
