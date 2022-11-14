@@ -7,6 +7,7 @@ import * as site from '../config';
 import HeadCog from '../components/HeadCog.astro';
 import FooterCog from '../components/FooterCog.astro';
 import HeadingCog from '../components/HeadingCog.astro';
+import DonationCog from '../components/DonationCog.astro';
 const posts = (await Astro.glob('../pages/blog/*.{md,markdown,}')).sort(
 	(a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf()
 ).slice(-3);
@@ -61,14 +62,7 @@ const latestArticlesText: string = site.latestArticlesText;
    )
   }
   <br/>
-  <hr/>
-  <br/>
-  <div class="donationBox">
-    <h2 class="donationBox">Support me!</h2>
-    <p class="donationBox">
-      <a class="donationBox" href="https://www.buymeacoffee.com/angeldollface66"><img class="donationBox" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=❤️&slug=angeldollface66&button_colour=BD5FFF&font_colour=ffffff&font_family=Cookie&outline_colour=FFFFFF&coffee_colour=FF7BAC"/></a>
-    </p>
-  </div>
+  <DonationCog/>
   <br/>
   <FooterCog/>
 </body>

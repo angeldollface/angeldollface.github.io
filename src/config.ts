@@ -43,3 +43,4 @@ export const pfpURL: string = 'https://avatars.githubusercontent.com/u/112771657
 export const landingGreeting: string = 'Hi! I\'m Angel Dollface!';
 export const selfDescription: string = 'I\'m a developer, artist, and writer from Vienna, Austria.';
 export const latestArticlesText: string = 'Latest Articles';
+export const donationText: string = 'Support me!';
