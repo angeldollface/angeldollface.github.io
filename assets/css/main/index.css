@@ -325,6 +325,52 @@ button.menu {
 button.menu:hover{
     color: var(--hoverColor);
 }
+p.donationBox {
+    text-align:center;
+    padding: 0px;
+    font-size: 25px;
+    margin: 0px;
+}
+a.donationBox {
+    text-align:center;
+    padding: 0px;
+    font-size: 25px;
+    margin: 0px;
+}
+img.donationBox {
+    width: 40%;
+    height: 30%;
+    object-fit: cover;
+}
+h2.donationBox {
+    text-align:center;
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+    font-size: 35px;
+    font-family: var(--headingFont);
+    font-style: italic;
+}
+hr {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--accentColor);
+    border: none;
+    height: 3px;
+    right: 0;
+    left: 0;
+}
+div.donationBox {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--mainColor);
+    display: block;
+    border: 6px solid var(--accentColor);
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    border-radius: 0px;
+    box-shadow: 10px 15px 0px var(--accentColor);
+}
 @media screen and (max-width: 800px) {
     img.logo {
         width: 40px;
@@ -421,6 +467,16 @@ button.menu:hover{
         padding-top: 10px;
         padding-bottom: 10px;
         font-size: 30px;
+    }
+    h2.donationBox {
+        font-size: 30px;
+    }
+    p.donationBox {
+        font-size: 22px;
+    }
+    img.donationBox {
+        width: 60%;
+        height: 50%;
     }
     a.headingLink {
         font-size: 30px;
