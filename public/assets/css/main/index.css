@@ -7,11 +7,10 @@ STILL TO DO
 */
 
 :root {
-    /*--bgColor: #faede7;*/
-    --bgColor: #000000;
-    --accentColor: #FFFFFF;
-    --mainColor: #000000;
-    --headingFont: 'Couture';
+    --bgColor: #faede7;
+    --accentColor: #000000;
+    --mainColor: #FFFFFF;
+    --headingFont: 'PlayfairDisplay-Regular';
     --contentFont: 'Merriweather-Regular';
     --hoverColor: #FF7BAC;
 }
@@ -364,13 +363,13 @@ div.donationBox {
     width: 80%;
     padding: 20px;
     margin: 0 auto;
-    background-color: var(--mainColor);
+    background-color: transparent;
     display: block;
     border: 6px solid var(--accentColor);
     margin-top: 40px !important;
     margin-bottom: 40px !important;
     border-radius: 0px;
-    box-shadow: 10px 15px 0px var(--accentColor);
+    box-shadow: none;
 }
 @media screen and (max-width: 800px) {
     img.logo {
