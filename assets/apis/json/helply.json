@@ -1,6 +1,6 @@
 {
   "Hakkasan": {
-    "imageUrl":"https://blckunicorn.art/assets/images/refugees/HK.png",
+    "imageUrl":"https://angeldollface.art/assets/apis/static/helply/HK.png",
     "address":"Rodeo Drive, Beverly Hills, CA.",
     "telNumber":"+436774567012",
     "tags": [
@@ -9,7 +9,7 @@
     ]
   },
   "Food Inc.": {
-    "imageUrl":"https://blckunicorn.art/assets/images/refugees/food.jpg",
+    "imageUrl":"https://angeldollface.art/assets/apis/static/helply/food.jpg",
     "address":"Food Rd., Beverly Hills, CA.",
     "telNumber":"+436774567012",
     "tags": [
@@ -19,7 +19,7 @@
     ]
   },
   "Beach Inc.": {
-    "imageUrl":"https://blckunicorn.art/assets/images/refugees/beach.jpg",
+    "imageUrl":"https://angeldollface.art/assets/apis/static/helply/beach.jpg",
     "address":"Maui, Somewhere, Pacific Ocean",
     "telNumber":"+436774567012",
     "tags": [
@@ -29,7 +29,7 @@
     ]
   },
   "Temple": {
-    "imageUrl":"https://blckunicorn.art/assets/images/refugees/Temple.jpg",
+    "imageUrl":"https://angeldollface.art/assets/apis/static/helply/Temple.jpg",
     "address":"Somewhere, SF, USA.",
     "telNumber":"+436774567012",
     "tags": [
@@ -38,7 +38,7 @@
     ]
   },
   "Nobu Miami": {
-    "imageUrl":"https://blckunicorn.art/assets/images/refugees/Nobu.jpg",
+    "imageUrl":"https://angeldollface.art/assets/apis/static/helply/Nobu.jpg",
     "address":"Somewhere, Miami USA.",
     "telNumber":"+436774567012",
     "tags": [
@@ -47,7 +47,7 @@
     ]
   },
   "Moma": {
-    "imageUrl":"https://blckunicorn.art/assets/images/refugees/Moma.jpg",
+    "imageUrl":"https://angeldollface.art/assets/apis/static/helply/Moma.jpg",
     "address":"Somewhere, NYC, USA.",
     "telNumber":"+436774567012",
     "tags": [
@@ -56,7 +56,7 @@
     ]
   },
   "Nice House": {
-    "imageUrl":"https://blckunicorn.art/assets/images/refugees/YSL.jpg",
+    "imageUrl":"https://angeldollface.art/assets/apis/static/helply/YSL.jpg",
     "address":"Nice House Rd. 12, Paris, FR",
     "telNumber":"+436774567012",
     "tags": [
