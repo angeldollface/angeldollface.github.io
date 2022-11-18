@@ -1,0 +1,69 @@
+{
+  "Hakkasan": {
+    "imageUrl":"https://blckunicorn.art/assets/images/refugees/HK.png",
+    "address":"Rodeo Drive, Beverly Hills, CA.",
+    "telNumber":"+436774567012",
+    "tags": [
+      "medicine",
+      "sleep"
+    ]
+  },
+  "Food Inc.": {
+    "imageUrl":"https://blckunicorn.art/assets/images/refugees/food.jpg",
+    "address":"Food Rd., Beverly Hills, CA.",
+    "telNumber":"+436774567012",
+    "tags": [
+      "medicine",
+      "sleep",
+      "food"
+    ]
+  },
+  "Beach Inc.": {
+    "imageUrl":"https://blckunicorn.art/assets/images/refugees/beach.jpg",
+    "address":"Maui, Somewhere, Pacific Ocean",
+    "telNumber":"+436774567012",
+    "tags": [
+      "medicine",
+      "sleep",
+      "food"
+    ]
+  },
+  "Temple": {
+    "imageUrl":"https://blckunicorn.art/assets/images/refugees/Temple.jpg",
+    "address":"Somewhere, SF, USA.",
+    "telNumber":"+436774567012",
+    "tags": [
+      "fun",
+      "food"
+    ]
+  },
+  "Nobu Miami": {
+    "imageUrl":"https://blckunicorn.art/assets/images/refugees/Nobu.jpg",
+    "address":"Somewhere, Miami USA.",
+    "telNumber":"+436774567012",
+    "tags": [
+      "medicine",
+      "sleep"
+    ]
+  },
+  "Moma": {
+    "imageUrl":"https://blckunicorn.art/assets/images/refugees/Moma.jpg",
+    "address":"Somewhere, NYC, USA.",
+    "telNumber":"+436774567012",
+    "tags": [
+      "fun",
+      "food"
+    ]
+  },
+  "Nice House": {
+    "imageUrl":"https://blckunicorn.art/assets/images/refugees/YSL.jpg",
+    "address":"Nice House Rd. 12, Paris, FR",
+    "telNumber":"+436774567012",
+    "tags": [
+      "fun",
+      "food",
+      "medicine",
+      "sleep"
+    ]
+  }
+}
