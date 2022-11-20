@@ -6,16 +6,12 @@ description: "How an angel broke its wings."
 tags: "murder mystery los angeles police thriller"
 ---
 
-## A quick note
-
-I know I haven't been posting regularly, this will be changing as of now. I will be posting a short story every two weeks now. It took me a while to come up with this story, hope you enjoy it! ;)
-
 ## Death On The Beach
 
 He hadn't slept all night.
 Detective Inspector Nick Bailey had had a long night.
-It had been 30 years since he joined the homicide squad and his mind was stagnating.
-There hadn't been a homicide in over eight months, which meant he and his partner, Jack Ferguson, had taken to sitting in the 32nd L.A.P.D. precinct and doing nothing. They would get black-out drunk after work at the 'Hooter', a popular bar for cops.
+It had been 30 years since he joined the homicide squad and his spirit was stagnating.
+There hadn't been a homicide in over eight months, which meant he and his partner, Jack Ferguson, had taken to sitting in the 32nd L.A.P.D. precinct and doing nothing. They would get black-out drunk after work at the 'Hooter' bar, a popular bar for cops.
 Last night had been no different.
 Nick was sitting on his bed in his underwear, rubbing his face, wondering whether this was what he wanted from life.
 When he had joined the L.A.P.D., his superior, Superintendent John Adley, had promised him that if he stuck at this job, he would rise through the ranks.
@@ -28,14 +24,14 @@ It was Jack.
 'How many dead?', Nick inquired.
 'Just one. Come and see for yourself.', Jack answered.
 
-Half an hour later, Nick was at the address Jack had given him.
-At the address, there was a big white mansion. The building's style was that of the early twenties, when silent-movie stars would build grand palaces to dwell in.
+Half an hour later Nick was at the address Jack had given him.
+At the address there was a big white mansion. The building's style was that of the early twenties when silent-movie stars would build grand palaces to dwell in.
 The house was almost 50 years old.
 It was situated on a hill and and consisted mostly of white marble and glass.
 Nick could see into some of the rooms in the house.
 There was long, winding drive leading up to the driveway.
-In the drive, there was a white Lotus Elise.
-From the house, there was a narrow set of stairs leading down to a small stone beach.
+In the driveway there was a white Lotus Elise.
+From the house  a narrow set of stairs led down to a small stone beach.
 On the beach, there was dead girl in a black bathing suit and some forensic photographers in Hazmat suits taking pictures.
 Nick walked from the drive and down the narrow stairs to meet Jack on the stone beach.
 The dead girl was quite pretty and must have been an interesting person while she was alive.
@@ -51,7 +47,7 @@ Nick asked Jack: 'So, how did she die?'
 Together, they walked up the stairs into the house.
 
 The house was furnished in a minimal fashion.
-Near the entrance there was a couch and a fireplace, nothing aside from that.
+Near the entrance there was a couch and a fireplace, nothing besides.
 The floor was covered in rugs of various patterns, all Persian in origin.
 There was an open kitchen behind the couch and a stairway leading up to the second floor of the house.
 They ascended this stairway with cocked guns.
@@ -71,9 +67,9 @@ It was a diary. The last entry was dated today, August 5th 1977. Next to the bla
 Jack and Nick were on their way back to the 32nd precinct. 'So do you think, Ms. Addison and this Chloe were lovers?', Nick asked. 'Looks like it', Jack answered. 'But we don't have a second name, do we?.', Jack asked Nick. 'Yes we do!', holding up the little black book with names and addresses. 'Why don't we give Ms. Chloe Holly a social call?', Nick said loudly, with a grin in his face. Nick's interest had been piqued.
 
 Fifteen minutes later, they were at the address of Ms. Chloe Holly. They were standing in front of a set of flats next to each other, arranged in a row. The numbers of the flats ranged from one to thirteen. Chloe lived in number thirteen. Where else? Nick and Jack went up to her door and knocked. After about five minutes, they heard movement in the flat and a cracking voice asking who it was. Nick answered that it was the
-L.A.P.D. and that they had some questions for Chloe and that they didn't mean her any harm. Chloe opened the door. She had long, brown, hair, a kind, elegant face and a shapely body. She was wearing a white silken dressing gown and slippers with fur on the strap. There were tears in her eyes. Chloe asked 'What do you want?', after having calmed down and stopped crying, still standing in the door. Nick answered: 'We're here about Mandy. What can you tell us about her?'.
+L.A.P.D. and that they had some questions for Chloe and that they didn't mean her any harm. Chloe opened the door. She had long, brown, hair, a kind, elegant face and a shapely body. She was wearing a white silken dressing gown and slippers with fur on the strap. There were tears in her eyes. Chloe asked 'What do you want?', after having calmed down and stopped crying, still standing in the door. Nick answered: 'We're here about Ms. Addison. What can you tell us about her?'.
 
-Chloe immediately looked worried. 'Why, has something happened to her?', she asked, hand half-raised in shock to her mouth. Nick hesitated and replied somewhat apologetically: 'We're sorry to inform you that Mandy has been found dead on the beach near her home this morning. We're investigating whether there was some foul play.' 'No! It can't be! I never thought she'd do it!', Chloe almost wailed and started crying again. Jack looked at her apologetically and pitifully. This was one of those moments in which he wanted to hug her and try and comfort her, although he didn't even know her. Nick felt the same. Both of them looked at the floor awkwardly.
+Chloe immediately looked worried. 'Why, has something happened to her?', she asked, hand half-raised in shock to her mouth. Nick hesitated and replied somewhat apologetically: 'We're sorry to inform you that Ms. Addison has been found dead on the beach near her home this morning. We're investigating whether there was some foul play.' 'No! It can't be! I never thought she'd do it!', Chloe almost wailed and started crying again. Jack looked at her apologetically and pitifully. This was one of those moments in which he wanted to hug her and try and comfort her, although he didn't even know her. Nick felt the same. Both of them looked at the floor awkwardly.
 
 Chloe, quite calmly said, her voice almost cracking: 'Well, then you had better come in and tell me what you know and what you want to know from me.' The officers obliged her. Five minutes later they were seated around Chloe's dinghy coffee table in her one-room appartment. They were all sipping fresh coffee that Chloe had just made. Nick glanced over the appartment. The kitchen was a walk-in kitchen, the bed stood in one corner of the room and the living room consisted of a coffee table, a TV table, and a small couch. The covers of the bed were very ruffled. She must have had a sleepless night.
 
@@ -88,11 +84,11 @@ Back at the precinct, Nick thoughtfully lit a cigarette. What could have driven 
 
 The first entry was dated December 31st 1976.
 
-'I'm not sure why or how I am writing this diary. It's New Year's Eve and I am drunk yet again. I don't know why I am so bent on self-destruction. I drink too much, smoke too much and the girls and boys that come every now and again don't mean a thing. They are a temporary pleasure. Not that it's terribly important, now that I can't work anyway anymore. When I used to be an actress, the whole world wanted my attention, now that I am nobody, suddenly that has changed. Just because I publicly said that the Vietnam war was totally wrong and should be stopped, Warner Bros. had me fired. I mean, seriously?! Why do we have to kill and conquer in other countries? Why can't we just all love and cherish each other?'
+'I'm not sure why or how I am writing this diary. It's New Year's Eve and I am drunk yet again. I don't know why I am so bent on self-destruction. I drink too much, smoke too much and the girls and boys that come every now and again don't mean a thing. They are a temporary pleasure. Not that it's terribly important, now that I can't work anyway anymore. When I used to be an actress, the whole world wanted my attention. Now that I am nobody, suddenly that has changed. Just because I publicly said that the Vietnam war was totally wrong and should be stopped, Warner Bros. had me fired. I mean, seriously?! Why do we have to kill and conquer in other countries? Why can't we just all love and cherish each other?'
 
 The second entry was a couple of pages long, dated a week later, January 7th 1977.
 
-'I went shopping today. Bought myself some clothes and some other stuff I don't need. Should probably also get the Lotus's front wheel fixed. After trying to kill myself and driving off of a cliff I am surprised that is the last thing needs to be fixed. Aside from that fact of course I could have died but that was the idea. At this point I am 26, and I welcome death. I don't feel anything anymore. I feel bad for Chloe, though. I wonder if she suspects that my mental health is quite the opposite of what I project. I mean first there was me getting fired. Then there was the fact that I got in with the wrong crowd and got addicted to I don't even remember what. After that I heard about my friend Mia's getting into a relationship with another girl. I always liked men but somehow being together with a girl is so much more interesting. For one, Chloe really loves me, I can always tell and for the other, the sexual possibilities are endless.+
+'I went shopping today. Bought myself some clothes and some other stuff I don't need. Should probably also get the Lotus's front wheel fixed. After trying to kill myself and driving off of a cliff I am surprised that is the only thing that needs to be fixed. Aside from that fact of course that I could have died but that was the idea. At this point I am 26, and I welcome death. I don't feel anything anymore. I feel bad for Chloe, though. I wonder if she suspects that my mental health is quite the opposite of what I project. I mean first there was me getting fired. Then there was the fact that I got in with the wrong crowd and got addicted to I don't even remember what. After that I heard about my friend Mia's getting into a relationship with another girl. I always liked men but somehow being together with a girl is so much more interesting. For one, Chloe really loves me, I can always tell. And for the other, the sexual possibilities are endless.
 And I guess if you've been emotionally mutilated and abused many many times, after a while you play fast and loose with the sex of your partner because what you really want is just someone whom you can be yourself with. I know, dear diary, that I sound insane and neurotic, (although I probably am) but I need at least you to be a place where I can say what I want when I want. But then Chloe had to break up with me, not returning my calls and not going out with me and dancing. I like dancing. And then she just materializes out of thin air and thinks that I'll fall at her feet. I may love you but I have my dignity. Thanks for that. I just want to sleep. I'll go to sleep permanently on Saturday. Other people party, I'll show them how Mandy sleeps. Goodbye, little diary.'
 
 Nick had been reading for half an hour. He picked up the phone and asked to speak to Jack. 'Yeah, Jack!, It's an open-and-shut case. It was suicide. Tell the super, we can put this one in the books. Funny how, it's always the people of whom we think live perfect lives go through the most painful things. We should let those restless in life, sleep in peace when dead.'
