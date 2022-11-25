@@ -39,7 +39,7 @@ export const socialMediaLinks: Object = {
     'fa fa-tree':'https://linktr.ee/angeldollface',
     'fa fa-code':'https://github.com/angeldollface/angeldollface.github.io/'
 };
-export const pfpURL: string = 'https://avatars.githubusercontent.com/u/112771657?v=4';
+export const pfpURL: string = '/assets/images/site/avatar/avatar.png';
 export const landingGreeting: string = 'Hi! I\'m Angel Dollface!';
 export const selfDescription: string = 'I\'m a developer, artist, and writer from Vienna, Austria.';
 export const latestArticlesText: string = 'Latest Articles';
