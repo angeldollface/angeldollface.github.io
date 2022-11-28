@@ -371,6 +371,18 @@ div.donationBox {
     border-radius: 0px;
     box-shadow: none;
 }
+div.adUnit {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: transparent;
+    display: block;
+    border: 6px solid var(--accentColor);
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    border-radius: 0px;
+    box-shadow: none;
+}
 @media screen and (max-width: 800px) {
     img.logo {
         width: 40px;
