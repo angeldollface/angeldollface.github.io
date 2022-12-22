@@ -37,6 +37,7 @@ export const socialMediaLinks: Object = {
     'fa fa-twitter':'https://twitter.com/angeldollface66',
     'fa fa-instagram':'https://instagram.com/angeldollface66',
     'fa fa-tree':'https://linktr.ee/angeldollface',
+    'fa fa-tumblr':'https://tumblr.com/angeldollface66',
     'fa fa-code':'https://github.com/angeldollface/angeldollface.github.io/'
 };
 export const pfpURL: string = '/assets/images/site/avatar/avatar.png';
