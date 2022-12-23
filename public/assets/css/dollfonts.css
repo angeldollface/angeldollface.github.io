@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Aileron';
+    src: url('https://angeldollface.art/assets/fonts/otf/Aileron.otf') format('opentype');
+}
+@font-face {
+    font-family: 'CircularMedium';
+    src: url('https://angeldollface.art/assets/fonts/otf/CircularMedium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Couture';
+    src: url('https://angeldollface.art/assets/fonts/otf/Couture.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('https://angeldollface.art/assets/fonts/otf/Cybperunk.otf') format('opentype');
+}
+@font-face {
+    font-family: 'FiraCode-Regular';
+    src: url('https://angeldollface.art/assets/fonts/otf/FiraCode-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/otf/Garamond.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/otf/GaramondItalic.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MC';
+    src: url('https://angeldollface.art/assets/fonts/otf/MC.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('https://angeldollface.art/assets/fonts/otf/Merriweather-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/otf/MMD.otf') format('opentype');
+}
+@font-face {
+    font-family: 'OrangeSlice';
+    src: url('https://angeldollface.art/assets/fonts/otf/OrangeSlice.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/otf/Ostrich.otf') format('opentype');
+}
+@font-face {
+    font-family: 'OstrichThin';
+    src: url('https://angeldollface.art/assets/fonts/otf/OstrichThin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('https://angeldollface.art/assets/fonts/otf/PlayfairDisplay-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/otf/VT323.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Aileron';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Aileron.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CircularMedium';
+    src: url('https://angeldollface.art/assets/fonts/ttf/CircularMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Couture';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Couture.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Cybperunk.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraCode-Regular';
+    src: url('https://angeldollface.art/assets/fonts/ttf/FiraCode-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Garamond.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/ttf/GaramondItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MC';
+    src: url('https://angeldollface.art/assets/fonts/ttf/MC.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Merriweather-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/ttf/MMD.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OrangeSlice';
+    src: url('https://angeldollface.art/assets/fonts/ttf/OrangeSlice.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/ttf/Ostrich.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OstrichThin';
+    src: url('https://angeldollface.art/assets/fonts/ttf/OstrichThin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('https://angeldollface.art/assets/fonts/ttf/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/ttf/VT323.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Aileron';
+    src: url('https://angeldollface.art/assets/fonts/woff/Aileron.woff') format('woff');
+}
+@font-face {
+    font-family: 'CircularMedium';
+    src: url('https://angeldollface.art/assets/fonts/woff/CircularMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Couture';
+    src: url('https://angeldollface.art/assets/fonts/woff/Couture.woff') format('woff');
+}
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('https://angeldollface.art/assets/fonts/woff/Cybperunk.woff') format('woff');
+}
+@font-face {
+    font-family: 'FiraCode-Regular';
+    src: url('https://angeldollface.art/assets/fonts/woff/FiraCode-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/woff/Garamond.woff') format('woff');
+}
+@font-face {
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/woff/GaramondItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'MC';
+    src: url('https://angeldollface.art/assets/fonts/woff/MC.woff') format('woff');
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('https://angeldollface.art/assets/fonts/woff/Merriweather-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/woff/MMD.woff') format('woff');
+}
+@font-face {
+    font-family: 'OrangeSlice';
+    src: url('https://angeldollface.art/assets/fonts/woff/OrangeSlice.woff') format('woff');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/woff/Ostrich.woff') format('woff');
+}
+@font-face {
+    font-family: 'OstrichThin';
+    src: url('https://angeldollface.art/assets/fonts/woff/OstrichThin.woff') format('woff');
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('https://angeldollface.art/assets/fonts/woff/PlayfairDisplay-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/woff/VT323.woff') format('woff');
+}
+@font-face {
+    font-family: 'Aileron';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Aileron.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'CircularMedium';
+    src: url('https://angeldollface.art/assets/fonts/woff2/CircularMedium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Couture';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Couture.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Cybperunk.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FiraCode-Regular';
+    src: url('https://angeldollface.art/assets/fonts/woff2/FiraCode-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Garamond.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'GaramondItalic';
+    src: url('https://angeldollface.art/assets/fonts/woff2/GaramondItalic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'MC';
+    src: url('https://angeldollface.art/assets/fonts/woff2/MC.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Merriweather-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'MMD';
+    src: url('https://angeldollface.art/assets/fonts/woff2/MMD.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'OrangeSlice';
+    src: url('https://angeldollface.art/assets/fonts/woff2/OrangeSlice.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('https://angeldollface.art/assets/fonts/woff2/Ostrich.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'OstrichThin';
+    src: url('https://angeldollface.art/assets/fonts/woff2/OstrichThin.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('https://angeldollface.art/assets/fonts/woff2/PlayfairDisplay-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'VT323';
+    src: url('https://angeldollface.art/assets/fonts/woff2/VT323.woff2') format('woff2');
+}
