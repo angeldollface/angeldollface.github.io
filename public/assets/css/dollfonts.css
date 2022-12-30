@@ -19,6 +19,10 @@
     src: url('https://angeldollface.art/assets/fonts/otf/FiraCode-Regular.otf') format('opentype');
 }
 @font-face {
+    font-family: 'FreshLychee';
+    src: url('https://angeldollface.art/assets/fonts/otf/FreshLychee.otf') format('opentype');
+}
+@font-face {
     font-family: 'Garamond';
     src: url('https://angeldollface.art/assets/fonts/otf/Garamond.otf') format('opentype');
 }
@@ -55,6 +59,10 @@
     src: url('https://angeldollface.art/assets/fonts/otf/PlayfairDisplay-Regular.otf') format('opentype');
 }
 @font-face {
+    font-family: 'PSB';
+    src: url('https://angeldollface.art/assets/fonts/otf/PSB.otf') format('opentype');
+}
+@font-face {
     font-family: 'VT323';
     src: url('https://angeldollface.art/assets/fonts/otf/VT323.otf') format('opentype');
 }
@@ -77,6 +85,10 @@
 @font-face {
     font-family: 'FiraCode-Regular';
     src: url('https://angeldollface.art/assets/fonts/ttf/FiraCode-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FreshLychee';
+    src: url('https://angeldollface.art/assets/fonts/ttf/FreshLychee.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Garamond';
@@ -115,6 +127,10 @@
     src: url('https://angeldollface.art/assets/fonts/ttf/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 @font-face {
+    font-family: 'PSB';
+    src: url('https://angeldollface.art/assets/fonts/ttf/PSB.ttf') format('truetype');
+}
+@font-face {
     font-family: 'VT323';
     src: url('https://angeldollface.art/assets/fonts/ttf/VT323.otf') format('truetype');
 }
@@ -137,6 +153,10 @@
 @font-face {
     font-family: 'FiraCode-Regular';
     src: url('https://angeldollface.art/assets/fonts/woff/FiraCode-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'FreshLychee';
+    src: url('https://angeldollface.art/assets/fonts/woff/FreshLychee.woff') format('woff');
 }
 @font-face {
     font-family: 'Garamond';
@@ -175,6 +195,10 @@
     src: url('https://angeldollface.art/assets/fonts/woff/PlayfairDisplay-Regular.woff') format('woff');
 }
 @font-face {
+    font-family: 'PSB';
+    src: url('https://angeldollface.art/assets/fonts/woff/PSB.woff') format('woff');
+}
+@font-face {
     font-family: 'VT323';
     src: url('https://angeldollface.art/assets/fonts/woff/VT323.woff') format('woff');
 }
@@ -197,6 +221,10 @@
 @font-face {
     font-family: 'FiraCode-Regular';
     src: url('https://angeldollface.art/assets/fonts/woff2/FiraCode-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'FreshLychee';
+    src: url('https://angeldollface.art/assets/fonts/woff2/FreshLychee.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Garamond';
@@ -233,6 +261,10 @@
 @font-face {
     font-family: 'PlayfairDisplay-Regular';
     src: url('https://angeldollface.art/assets/fonts/woff2/PlayfairDisplay-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'PSB';
+    src: url('https://angeldollface.art/assets/fonts/woff2/PSB.woff2') format('woff2');
 }
 @font-face {
     font-family: 'VT323';
