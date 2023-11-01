@@ -3,10 +3,9 @@
     "description": "A doll's home on the wide interwebs.",
     "prod_url": "/",
     "dev_url": "",
-    "copyFiles": "false=>none",
+    "copyFiles": "true=>assets",
     "tlDomain": "https://angeldollface.art",
     "updateFreq": "weekly",
     "keywords":"blog lifestyle personal-website website dolls",
-    "hasLoopContent": "false",
-    "resURL": "https://angeldollface.art"
+    "hasLoopContent": "false"
 }
