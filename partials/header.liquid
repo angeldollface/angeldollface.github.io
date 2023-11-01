@@ -1,0 +1,10 @@
+<div class="header">
+ <h1>{{ site.title }}</h1>
+ <div class="nav">
+  <ul class="nav">
+   {% for item in data["nav"] %}
+    <li class="nav"><a class="nav" href="{{ site.baseurl}}{{ item.url }}">{{ item.name }}</a></li>
+   {% endfor %}
+  </ul>
+ </div>
+</div>
