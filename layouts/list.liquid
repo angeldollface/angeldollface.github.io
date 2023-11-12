@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ {% include 'head' %}
+ <body>
+  {% include 'nav' %}
+  <div class="content">
+   {% include 'header' %}
+   {% for post in loop_content["posts"] %}
+   <div class="preview">
+    <h2 class="preview">{{ post.title }}</h2>
+    <p class="authored">Written by {{ post.author }}</p>
+    <p class="preview">{{ post.description }}</p>
+    <p class="previewLink">
+     <a class="previewLink" href="{{ site.baseurl }}{{ post.url }}">
+      {{ site.readmeText }}
+     </a>
+    </p>
+   </div>
+   {% endfor %}
+  </div>
+  {% include 'scripts' %}
+ </body>
+</html>

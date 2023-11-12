@@ -1,12 +1,12 @@
-/* PAGE ROOT START */
-:root {
-    --accentColor: #000000;
-    --mainColor: #FFFFFF;
-    --divColor: #ffe9fb;
-    --headingFont: 'OrangeSlice';
-    --stdFont: 'PlayfairDisplay-Regular';
-}
-/* PAGE ROOT END */
+/* PAGE VARIABLES START */
+$accentColor: #000000;
+$mainColor: #FFFFFF;
+$bgColor: #c5b1e9;
+$hoverColor: #808080;
+$headingFont: 'OrangeSlice';
+$stdFont: 'PlayfairDisplay-Regular';
+/* PAGE VARIABLES END */
+
 /* GENERAL SECTION START */
 html {
     top: 0;
@@ -27,15 +27,15 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: var(--mainColor);
+    background-color: $bgColor;
 }
 div.content {
     width: 80%;
     min-height: 100%;
     border: none;
-    background-color: var(--divColor);
+    background-color: transparent;
     border: none;
-    padding: 20px;
+    padding: 0px;
     margin: 0 auto;
     display: block;
     margin-top: 0px !important;
@@ -43,37 +43,37 @@ div.content {
 }
 /* GENERAL SECTION END */
 
-/* BLOG SECTION START */
+/* HEADING SECTION START */
 h1 {
     padding: 20px;
     font-size: 40px;
-    color: var(--accentColor);
+    color: $accentColor;
     margin: 0px;
-    font-family: var(--headingFont);
+    font-family: $headingFont;
     text-align: center;
 }
 button.nav {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0px;
     width: 100%;
-    border: 3px solid var(--accentColor);
+    border: none;
     padding: 20px;
-    background-color: var(--mainColor);
-    color: var(--accentColor);
-    font-size: 35px;
-    font-family: var(--headingFont);
+    background-color: $accentColor;
+    color: $mainColor;
+    font-size: 30px;
+    font-family: $stdFont;
     box-shadow: none;
 }
+/* HEADING SECTION END */
+
+/* BLOG SECTION START */
 div.preview {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
-    border: 3px solid var(--accentColor);
-    background-color: var(--mainColor);
+    border: 3px solid $accentColor;
+    background-color: $mainColor;
     box-shadow: none;
 }
 h2.preview {
@@ -82,8 +82,8 @@ h2.preview {
     padding-bottom: 10px;
     padding-left: 20px;
     font-size: 30px;
-    color: var(--accentColor);
-    font-family: var(--headingFont);
+    color: $accentColor;
+    font-family: $headingFont;
     margin: 0px;
     text-align: left;
 }
@@ -93,8 +93,8 @@ p.preview {
     padding-bottom: 10px;
     padding-left: 20px;
     font-size: 25px;
-    color: var(--accentColor);
-    font-family: var(--stdFont);
+    color: $accentColor;
+    font-family: $stdFont;
     margin: 0px;
     text-align: left;
 }
@@ -104,8 +104,8 @@ p.previewLink {
     padding-bottom: 20px;
     padding-left: 20px;
     font-size: 25px;
-    color: var(--accentColor);
-    font-family: var(--stdFont);
+    color: $accentColor;
+    font-family: $stdFont;
     margin: 0px;
     text-align: left;
 }
@@ -115,8 +115,8 @@ p.authored {
     padding-bottom: 10px;
     padding-left: 20px;
     font-size: 20px;
-    color: var(--accentColor);
-    font-family: var(--stdFont);
+    color: $accentColor;
+    font-family: $stdFont;
     margin: 0px;
     text-align: left;
 }
@@ -124,13 +124,13 @@ a.previewLink {
     padding: 0px;
     margin: 0px;
     font-size: 25px;
-    color: var(--accentColor);
-    font-family: var(--stdFont);
+    color: $accentColor;
+    font-family: $stdFont;
     text-decoration: underline;
     transition-duration: 0.6s;
 }
 a.previewLink:hover {
-    color: #808080;
+    color: $hoverColor;
 }
 /* BLOG SECTION END */
 
@@ -148,7 +148,7 @@ div.nav {
     overflow: hidden;
     position: fixed;
     transition-duration: 0.6s;
-    background-color: var(--accentColor);
+    background-color: $accentColor;
 }
 ul.nav {
     margin-top: 20vh;
@@ -174,13 +174,13 @@ a.nav {
     padding: 0px;
     margin: 0px;
     font-size: 25px;
-    color: var(--mainColor);
-    font-family: var(--headingFont);
+    color: $mainColor;
+    font-family: $headingFont;
     text-decoration: none;
     transition-duration: 0.6s;
 }
 a.nav:hover {
-    color: #808080;
+    color: $hoverColor;
 }
 /* NAV SECTION END */
 
@@ -190,8 +190,8 @@ h2,h3,h4 {
     padding-right: 0px;
     padding-bottom: 20px;
     padding-left: 0px;
-    color: var(--accentColor);
-    font-family: var(--headingFont);
+    color: $accentColor;
+    font-family: $headingFont;
     margin: 0px;
 }
 h2 {font-size: 32px;}
@@ -203,10 +203,22 @@ p {
     padding-right: 0px;
     padding-bottom: 20px;
     padding-left: 0px;
-    color: var(--accentColor);
-    font-family: var(--stdFont);
+    color: $accentColor;
+    font-family: $stdFont;
     margin: 0px;
     font-size: 25px;
+}
+a {
+    padding: 0px;
+    color: $accentColor;
+    text-decoration: underline;
+    transition-duration: 0.6s;
+    font-family: $stdFont;
+    margin: 0px;
+    font-size: 25px;
+}
+a:hover {
+    color: $hoverColor;
 }
 ul {
     padding-top: 0px;
@@ -222,8 +234,8 @@ li {
     padding-bottom: 10px;
     padding-left: 0px;
     margin: 0px;
-    color: var(--accentColor);
-    font-family: var(--stdFont);
+    color: $accentColor;
+    font-family: $stdFont;
     margin: 0px;
     font-size: 25px;
 }
@@ -265,17 +277,17 @@ div.spacer {
     }
     /* GENERAL MOBILE SECTION END */
 
-    /* BLOG MOBILE SECTION START */
+    /* NAV MOBILE SECTION START */
     h1 {
         padding: 10px;
         font-size: 35px;
     }
     button.nav {
-        margin-top: 0px;
-        margin-bottom: 10px;
         padding: 10px;
-        font-size: 30px;
     }
+    /* NAV MOBILE SECTION END */
+
+    /* BLOG MOBILE SECTION START */
     div.preview {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -314,11 +326,6 @@ div.spacer {
     /* BLOG MOBILE SECTION START */
 
     /* NAV MOBILE SECTION START */
-    li.nav {
-        padding-bottom: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
     a.nav {
         font-size: 23px;
     }
@@ -349,6 +356,5 @@ div.spacer {
         height: 50px;
     }
     /* CONTENT MOBILE SECTION END */    
-
 }
 /* MOBILE SECTION END*/

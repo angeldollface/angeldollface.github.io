@@ -1,12 +1,13 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
  {% include 'head' %}
  <body>
-  {% include 'header' %}
-  {% include 'spacer' %}
+  {% include 'nav' %}
   <div class="content">
+   {% include 'header' %}
    {{ page.content }}
+   {% include 'spacer' %}
   </div>
-  {% include 'spacer' %}
+  {% include 'scripts' %}
  </body>
 </html>

@@ -7,5 +7,8 @@
     "tlDomain": "https://angeldollface.art",
     "updateFreq": "weekly",
     "keywords":"blog lifestyle personal-website website dolls",
-    "hasLoopContent": "false"
+    "hasLoopContent": "false",
+    "closingText": "Close",
+    "menuText": "Menu",
+    "readmeText": "Read Me"
 }
