@@ -56,6 +56,10 @@ button.nav {
     margin: 0px;
     width: 100%;
     border: none;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
     padding: 20px;
     background-color: $accentColor;
     color: $mainColor;
@@ -186,7 +190,7 @@ a.nav:hover {
 
 /* CONTENT SECTION START */
 h2,h3,h4 {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 20px;
     padding-left: 0px;
@@ -223,7 +227,7 @@ a:hover {
 ul {
     padding-top: 0px;
     padding-right: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     padding-left: 0px;
     margin: 0px;
     list-style: none;
@@ -231,7 +235,7 @@ ul {
 li {
     padding-top: 0px;
     padding-right: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-left: 0px;
     margin: 0px;
     color: $accentColor;
@@ -283,6 +287,7 @@ div.spacer {
         font-size: 35px;
     }
     button.nav {
+        margin-bottom: 10px;
         padding: 10px;
     }
     /* NAV MOBILE SECTION END */
@@ -348,6 +353,7 @@ div.spacer {
     }
     li {
         font-size: 23px;
+        padding-bottom: 10px;
     }
     img {
         margin-bottom: 10px;
