@@ -11,6 +11,6 @@
     "closingText": "Close",
     "menuText": "Menu",
     "hasLoopContent": "true",
-    "loopContentDirs": "posts"
+    "loopContentDirs": "posts",
     "readmeText": "Read Me"
 }
