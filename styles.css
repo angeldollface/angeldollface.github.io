@@ -1,0 +1,417 @@
+:root {
+    --stdFont: 'SCP-Regular';
+    --headingFont: 'FiraCode-Regular';
+    --mainColor: #FFFFFF;
+    --accentColor: #000000;
+    --hoverColor: #808080;
+}
+html {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--mainColor);
+}
+div.header {
+    width: 100%;
+    background-color: var(--mainColor);
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid var(--accentColor);
+}
+img.pfp {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin: 20px;
+    float: left;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 3px solid var(--accentColor);
+}
+div.nav {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 0vw;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.6s;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+    position: fixed;
+    background-color: var(--mainColor);
+}
+ul.nav {
+    margin-top: 20vh;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+}
+li.nav {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+li.nav::before {
+    content: '';
+    padding: 0px;
+    margin: 0px;
+}
+a.nav {
+    font-family: var(--headingFont);
+    transition-duration: 0.6s;
+    padding: 0px;
+    margin: 0px;
+    font-size: 35px;
+    color: var(--accentColor);
+    text-decoration: none;
+    font-style: none;
+}
+a.nav:hover {
+    color: var(--hoverColor);
+}
+button.nav {
+    float: right;
+    padding: 10px;
+    margin: 33px;
+    font-size: 35px;
+    text-align: center;
+    background-color: var(--accentColor);
+    color: var(--mainColor);
+    font-family: var(--stdFont);
+    font-weight: lighter;
+    border: none;
+    transition-duration: 0.6s;
+    border-radius: 5px;
+}
+button.nav:hover {
+    color: var(--accentColor);
+    border: 3px solid var(--accentColor);
+    background-color: var(--mainColor);
+}
+div.me {
+    border: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid var(--accentColor);
+}
+h1.landing {
+    float: none;
+    padding: 0px;
+    color: var(--accentColor);
+    margin-top: 15vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    font-size: 180px;
+    font-family: var(--headingFont);
+    font-weight: bold;
+}
+p.landing {
+    padding: 0px;
+    font-size: 52px;
+    font-family: var(--stdFont);
+    font-weight: bold;
+    color: var(--accentColor);
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15vh;
+}
+div.project {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding: 0px;
+    border: none;
+}
+hr {
+    width: 100%;
+    margin: 0px;
+    background-color: var(--accentColor);
+    border: none;
+    height: 3px;
+}
+p.projectId {
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 40px;
+    margin: 0px;
+    text-align: left;
+    color: var(--accentColor);
+    font-family: var(--stdFont);
+}
+img.project {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    height: 50%;
+    object-fit: cover;
+    float: none;
+}
+h2.project {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    font-size: 40px;
+    font-family: var(--headingFont);
+    color: var(--accentColor);
+}
+p.projectLink {
+    padding-top: 0px;
+    padding-bottom: 15vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: var(--stdFont);
+    color: var(--accentColor);
+}
+a.projectLink {
+    padding: 0px;
+    transition-duration: 0.6s;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: var(--stdFont);
+    color: var(--accentColor);
+}
+p.project {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: var(--stdFont);
+    color: var(--accentColor);
+}
+div.footer {
+    width: 100%;
+    padding: 0px;
+    background-color: var(--accentColor);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+h2.footer {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: var(--headingFont);
+    margin: 0px;
+    font-size: 25px;
+    color: var(--mainColor);
+}
+p.footer {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: var(--stdFont);
+    margin: 0px;
+    font-size: 20px;
+    color: var(--mainColor);
+}
+div.content {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh !important;
+    margin-bottom: 5vh !important;
+    padding: 0px;
+    border: none;
+}
+h2,h3,h4 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    font-family: var(--headingFont);
+    color: var(--accentColor);
+}
+h2 {font-size: 40px;}
+h3 {font-size: 35px;}
+h4 {font-size: 30px;}
+p {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: var(--stdFont);
+    color: var(--accentColor);
+}
+ul {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    list-style: none;
+}
+img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    float: none;
+}
+li {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    font-size: 25px;
+    font-family: var(--stdFont);
+    color: var(--accentColor);
+}
+li::before {
+    content: '-';
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 5px;
+    margin: 0px;
+}
+p.postLink {
+    padding: 20px;
+    margin: 0px;
+    color: var(--accentColor);
+    font-family: var(--stdFont);
+    font-size: 35px;
+}
+a.postLink {
+    padding: 0px;
+    margin: 0px;
+    color: var(--accentColor);
+    font-family: var(--stdFont);
+    transition-duration: 0.6s;
+    text-decoration: none;
+    font-size: 35px;
+}
+a.postLink:hover {
+    color: var(--hoverColor);
+}
+@media screen and (max-width: 800px) {
+    img.pfp {
+        margin: 20px;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border: 3px solid var(--accentColor);
+    }
+    a.nav {
+        font-size: 25px;
+    }
+    button.nav {
+        padding: 10px;
+        margin: 33px;
+        font-size: 20px;
+    }
+    h1.landing {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 70px;
+    }
+    p.landing {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    p.projectId {
+        padding-top: 5vh;
+        font-size: 30px;
+    }
+    h2.project {
+        font-size: 30px;
+    }
+    p.projectLink {
+        padding-bottom: 5vh;
+        font-size: 25px;
+    }
+    a.projectLink {
+        font-size: 25px;
+    }
+    p.project {
+        font-size: 25px;
+    }
+    h2.footer {
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    p.footer {
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    h2 {font-size: 35px;}
+    h3 {font-size: 30px;}
+    h4 {font-size: 25px;}
+    p.postLink {
+        font-size: 25px;
+    }
+    a.postLink {
+        font-size: 25px;
+    }
+}
