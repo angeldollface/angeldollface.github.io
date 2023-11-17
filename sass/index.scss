@@ -1,13 +1,12 @@
-:root {
-    --accentColor: #000000;
-    --mainColor: #FFFFFF;
-    --hoverColor: #808080;
-    --stdFont: 'Merriweather-Regular';
-    --headingFont: 'CherieBomb';
-    --codeFont: 'FiraCode-Regular';
-    --codeBG: #222222;
-    --codeColor: #FFFFFF;
-}
+$accentColor: #000000;
+$mainColor: #FFFFFF;
+$bgColor: #C3B1E1;
+$hoverColor: #808080;
+$stdFont: 'CourierNew';
+$headingFont: 'Blackiron';
+$codeFont: 'FiraCode-Regular';
+$codeBG: #222222;
+$codeColor: #FFFFFF;
 html {
     top: 0;
     right: 0;
@@ -27,13 +26,14 @@ body {
     height: 100%;
     padding: 0px;
     margin: 0px;
+    background-color: $bgColor;
 }
 button.nav {
     width: 100%;
     font-size: 24px;
-    background-color: var(--accentColor);
-    font-family: var(--stdFont);
-    color: var(--mainColor);
+    background-color: $accentColor;
+    font-family: $stdFont;
+    color: $mainColor;
     padding: 10px;
     margin-top: 0;
     margin-right: 0px;
@@ -46,7 +46,7 @@ img.pfp {
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    border: 3px solid var(--accentColor);
+    border: 3px solid $accentColor;
     margin: 0 auto;
     display: block;
     width: 200px;
@@ -56,8 +56,8 @@ img.pfp {
     margin-bottom: 20px !important;
 }
 h1 {
-    font-family: var(--headingFont);
-    color: var(--accentColor);
+    font-family: $headingFont;
+    color: $accentColor;
     text-align: center;
     padding-top: 0px;
     padding-right: 0px;
@@ -67,13 +67,13 @@ h1 {
     font-size: 40px;
 }
 p.motto {
-    font-family: var(--stdFont);
-    color: var(--accentColor);
+    font-family: $stdFont;
+    color: $accentColor;
     text-align: center;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     margin: 0px;
     font-size: 20px;
     font-weight: bold;
@@ -83,7 +83,7 @@ div.content {
     margin: 0 auto;
     display: block;
     width: 70%;
-    margin-bottom: 10vh !important;
+    margin-bottom: 0px !important;
     margin-top: 0px !important;
 }
 h2,h3,h4 {
@@ -92,8 +92,8 @@ h2,h3,h4 {
     padding-right: 0px;
     padding-left: 0px;
     margin: 0px;
-    color: var(--accentColor);
-    font-family: var(--headingFont);
+    color: $accentColor;
+    font-family: $headingFont;
 }
 h2 {font-size:36px;}
 h3 {font-size:32px;}
@@ -104,9 +104,9 @@ p {
     padding-right: 0px;
     padding-left: 0px;
     margin: 0px;
-    color: var(--accentColor);
+    color: $accentColor;
     font-size: 24px;
-    font-family: var(--stdFont);
+    font-family: $stdFont;
 }
 ul {
     padding-top: 0px;
@@ -123,9 +123,9 @@ li {
     padding-right: 0px;
     padding-left: 0px;
     margin: 0px;
-    color: var(--accentColor);
+    color: $accentColor;
     font-size: 24px;
-    font-family: var(--stdFont);
+    font-family: $stdFont;
 }
 
 img {
@@ -149,7 +149,7 @@ div.nav {
     padding: 0px;
     transition-duration: 0.6s;
     margin: 0px;
-    background-color: var(--accentColor);
+    background-color: $accentColor;
     position: fixed;
     overflow: hidden;
     z-index: 2;
@@ -188,8 +188,8 @@ li::before {
 a {
     font-size: 24px;
     transition-duration: 0.6s;
-    font-family: var(--headingFont);
-    color: var(--accentColor);
+    font-family: $stdFont;
+    color: $accentColor;
     padding: 0px;
     margin: 0px;
 }
@@ -197,16 +197,16 @@ a.nav {
     font-size: 30px;
     text-decoration: none;
     transition-duration: 0.6s;
-    font-family: var(--headingFont);
-    color: var(--mainColor);
+    font-family: $headingFont;
+    color: $mainColor;
     padding: 0px;
     margin: 0px;
 }
 a:hover {
-    color: var(--hoverColor);
+    color: $hoverColor;
 }
 a.nav:hover {
-    color: var(--hoverColor);
+    color: $hoverColor;
 }pre {
     margin-top: 0px;
     margin-bottom: 20px;
@@ -215,14 +215,14 @@ a.nav:hover {
     padding: 0px;
     width: 100%;
     border-radius: 5px;
-    background-color: var(--codeBG);
+    background-color: $codeBG;
 }
 code {
-    color: var(--codeColor);
+    color: $codeColor;
     padding: 10px;
     font-size: 24px;
     margin: 0px;
-    font-family: var(--codeFont);
+    font-family: $codeFont;
 }
 h2.preview {
     padding-top: 0px;
@@ -231,8 +231,8 @@ h2.preview {
     padding-left: 0px;
     font-size:36px;
     margin: 0px;
-    color: var(--accentColor);
-    font-family: var(--headingFont);
+    color: $accentColor;
+    font-family: $headingFont;
 }
 p.previewDesc {
     padding-top: 0px;
@@ -240,9 +240,9 @@ p.previewDesc {
     padding-right: 0px;
     padding-left: 0px;
     margin: 0px;
-    color: var(--accentColor);
+    color: $accentColor;
     font-size: 24px;
-    font-family: var(--stdFont);
+    font-family: $stdFont;
 }
 p.previewDate {
     padding-top: 0px;
@@ -250,9 +250,9 @@ p.previewDate {
     padding-right: 0px;
     padding-left: 0px;
     margin: 0px;
-    color: var(--accentColor);
+    color: $accentColor;
     font-size: 20px;
-    font-family: var(--stdFont);
+    font-family: $stdFont;
 }
 p.previewLink {
     padding-top: 0px;
@@ -260,9 +260,9 @@ p.previewLink {
     padding-right: 0px;
     padding-left: 0px;
     margin: 0px;
-    color: var(--accentColor);
+    color: $accentColor;
     font-size: 24px;
-    font-family: var(--stdFont);
+    font-family: $stdFont;
 }
 hr.breaker {
     width: 100%;
@@ -271,7 +271,41 @@ hr.breaker {
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: var(--accentColor);
+    border: none;
+    background-color: $accentColor;
+}
+div.closeButton {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+p.closeButton {
+    text-align: right;
+    padding: 20px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: $stdFont;
+    color: $mainColor;
+}
+a.closeButton {
+    text-align: right;
+    padding: 20px;
+    margin: 0px;
+    font-size: 30px;
+    color: $mainColor;
+    transition-duration: 0.6s;
+    text-decoration: none;
+}
+a.closeButton:hover{
+    color: $hoverColor;
+}
+div.spacer {
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    background-color: transparent;
+    margin: 0px;
 }
 @media screen and (max-width: 800px) {
     button.nav {
@@ -319,5 +353,11 @@ hr.breaker {
     }
     div.content {
         width: 90%;
+    }
+    p.closeButton {
+        font-size: 24px;
+    }
+    a.closeButton {
+        font-size: 24px;
     }
 }

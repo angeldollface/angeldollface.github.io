@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ {% include 'head' %}
+ <body>
+ {% include 'nav' %}
+ {% include 'heading' %}
+ {% include 'spacer' %}
+ <div class="content">
+  {% for item in loop_content["posts"] %}
+   <h2 class="preview">{{ item.title }}</h2>
+   <p class="previewDate">{{ item.date  }}</p>
+   <p class="previewDesc">{{ item.description }}</p>
+   <p class="previewLink">
+    <a href="{{ site.baseurl }}{{ item.url }}">{{ site.readMeText }}</a>
+   </p>
+   <hr class="breaker"/>
+  {% endfor  %}
+ </div>
+ {% include 'spacer' %}
+ {% include 'scripts' %}
+ </body>
+</html>

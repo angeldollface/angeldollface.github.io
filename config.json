@@ -1,0 +1,18 @@
+{
+    "pfpURL": "https://avatars.githubusercontent.com/u/112771657?v=4",
+    "title": "Angel Dollface",
+    "description": "",
+    "prod_url": "/",
+    "dev_url": "",
+    "keywords": "blog lifestyle-blog doll blogger-doll",
+    "closingText": "X",
+    "menuText": "Menu",
+    "updateFreq": "weekly",
+    "tlDomain": "https://angeldollface.art",
+    "copyFiles": "true=>assets",
+    "motto": "Everyone's favorite doll!",
+    "footerText": "Copyright 2023 (C) Angel Dollface<br/>Designed and developed by me.",
+    "hasLoopContent": "true",
+    "loopContentDirs": "posts",
+    "readMeText": "Read Me"
+}

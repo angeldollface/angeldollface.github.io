@@ -1,0 +1,10 @@
+---
+layout: "layouts/page.liquid"
+date: "2023/11/20"
+title: "The weird and wonderful world of Linux"
+description: "Why I switched to Linux and why you should too!"
+---
+
+## Welcome!
+
+You have reached my official website. This website contains many interesting things. Among these things are: my blog, an noverview of some of my work (coming soon), and information on my social media. This website was developed and designed by me using HTML, CSS, and Javascript. The site is built using a static-site generator, that I wrote in Rust. If you're interested in that, you can check that project out [here](https://github.com/angeldollface/mandy).
