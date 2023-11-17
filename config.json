@@ -9,7 +9,7 @@
     "menuText": "Menu",
     "updateFreq": "weekly",
     "tlDomain": "https://angeldollface.art",
-    "copyFiles": "true=>assets",
+    "copyFiles": "true=>CNAME|assets",
     "motto": "Everyone's favorite doll!",
     "footerText": "Copyright 2023 (C) Angel Dollface<br/>Designed and developed by me.",
     "hasLoopContent": "true",
