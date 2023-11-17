@@ -1,5 +1,7 @@
 # A DOLL'S WEBSITE :ribbon: :dolls:
 
+[![Mandy CI](https://github.com/angeldollface/angeldollface.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/angeldollface/angeldollface.github.io/actions/workflows/main.yml)
+
 ***A doll's website. :ribbon: :dolls:***
 
 ## About :books:
