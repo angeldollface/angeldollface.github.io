@@ -1,53 +1,78 @@
+<!DOCTYPE html>
 <html>
  <head>
   <link rel="stylesheet" type="text/css" href="styles.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" type="text/css" href="https://angeldollface.art/doll-cdn/css/dollfonts.css"/>
+  <title>Angel Dollface</title>
  </head>
  <body>
-
   <div class="nav" id="nav">
-    <ul class="nav">
-     <li class="nav"><a class="nav" href="page.html">Page</a></li>
-     <li class="nav"><a class="nav" href="blog.html">Blog</a></li>
-     <li class="nav"><a class="nav" href="/">Home</a></li>
-     <li class="nav"><a class="nav" href="#" onclick="javascript:closeNav('nav');">Close</a></li>
-    </ul>
-   </div>
-
-  <div class="header">
+   <ul class="nav">
+    <li class="nav"><a class="nav" href="#">Item 1</a></li>
+    <li class="nav"><a class="nav" href="#">Item 1</a></li>
+    <li class="nav"><a class="nav" href="#">Item 1</a></li>
+    <li class="nav"><a class="nav" onclick="javascript:closeNav('nav');">Close</a></li>
+   </ul>
+  </div>
+  <button class="nav" onclick="javascript:openNav('nav');">MENU</button>
    <img class="pfp" src="https://avatars.githubusercontent.com/u/112771657?v=4"/>
-   <button class="nav" onclick="openNav('nav');">Menu</button>
+   <h1>Angel Dollface</h1>
+   <p class="motto">Everyone's favorite doll!</p>
+  <div class="content">
+
+   <h2 class="preview">Lorem ipsum</h2>
+   <p class="previewDate">
+    2023/11/15
+   </p>
+   <p class="previewDesc">
+    Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet.
+   </p>
+   <p class="previewLink">
+    <a href="page.html">Read Me</a>
+   </p>
+
+   <hr class="breaker"/>
+
+   <h2 class="preview">Lorem ipsum</h2>
+   <p class="previewDate">
+    2023/11/15
+   </p>
+   <p class="previewDesc">
+    Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet.
+   </p>
+   <p class="previewLink">
+    <a href="page.html">Read Me</a>
+   </p>
+
+   <hr class="breaker"/>
+
+   <h2 class="preview">Lorem ipsum</h2>
+   <p class="previewDate">
+    2023/11/15
+   </p>
+   <p class="previewDesc">
+    Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet.
+   </p>
+   <p class="previewLink">
+    <a href="page.html">Read Me</a>
+   </p>
+
+   <hr class="breaker"/>
+
+   <h2 class="preview">Lorem ipsum</h2>
+   <p class="previewDate">
+    2023/11/15
+   </p>
+   <p class="previewDesc">
+    Lorem ipsum sit dolor amet. Lorem ipsum sit dolor amet.
+   </p>
+   <p class="previewLink">
+    <a href="page.html">Read Me</a>
+   </p>
+
+   
   </div>
-
-  <div class="me">
-   <h1 class="landing">ANGEL<br/>DOLLFACE</h1>
-   <p class="landing">Developer/Artist/DJ/Musician</p>
-  </div>
-
-  <div class="project">
-   <p class="projectId">01</p>
-   <img class="project" src="https://guap.co/wp-content/uploads/2021/11/Bratz-twitter-page.jpeg"/>
-   <h2 class="project">Project 01</h2>
-   <p class="project">Some weird description goes here that takes up a lot of space.</p>
-   <p class="projectLink"><a class="projectLink" href="#">CHECK IT OUT!</a></p>
-  </div>
-
-  <hr/>
-
-  <div class="project">
-    <p class="projectId">02</p>
-    <img class="project" src="https://imgix.bustle.com/uploads/image/2021/6/1/51db7355-c377-40f1-a5b6-4858d5b8df11-bratz-website.jpg?w=900&h=744&fit=crop&crop=focalpoint&auto=format%2Ccompress&q=50&dpr=2&fp-x=0.4706666666666667&fp-y=0.3935483870967742"/>
-    <h2 class="project">Project 02</h2>
-    <p class="project">Some weird description goes here that takes up a lot of space.</p>
-    <p class="projectLink"><a class="projectLink" href="#">CHECK IT OUT!</a></p>
-   </div>
-
-   <div class="footer">
-    <h2 class="footer">Copyright (C) Angel Dollface</h2>
-    <p class="footer">Designed and developed by me</p>
-   </div>
-
-  <script async src="nav.js" type="text/javascript"></script>
+  <script async src="nav.js"></script>
  </body>
 </html>
