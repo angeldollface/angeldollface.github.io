@@ -4,7 +4,11 @@
         "url": "/"
     },
     {
-        "name": "Blog",
-        "url": "/content/blog"
+        "name": "About",
+        "url": "/content/about"
+    },
+    {
+        "name": "Socials",
+        "url": "/content/socials"
     }
 ]
