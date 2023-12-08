@@ -1,8 +1,5 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url><loc>https://angeldollface.art/posts/2023-22-20-The-weird-and-wonderful-world-of-Linux</loc>
-<changefreq>weekly</changefreq>
-</url>
-<url><loc>https://angeldollface.art/posts/2023-11-20-The-weird-and-wonderful-world-of-Linux</loc>
+<url><loc>https://angeldollface.art/content/socials</loc>
 <changefreq>weekly</changefreq>
 </url>
 <url><loc>https://angeldollface.art/content/about</loc>
@@ -11,7 +8,10 @@
 <url><loc>https://angeldollface.art/content/blog</loc>
 <changefreq>weekly</changefreq>
 </url>
-<url><loc>https://angeldollface.art/content/socials</loc>
+<url><loc>https://angeldollface.art/posts/2023-22-20-The-weird-and-wonderful-world-of-Linux</loc>
+<changefreq>weekly</changefreq>
+</url>
+<url><loc>https://angeldollface.art/posts/2023-11-20-The-weird-and-wonderful-world-of-Linux</loc>
 <changefreq>weekly</changefreq>
 </url>
 <url><loc>https://angeldollface.art</loc>
