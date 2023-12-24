@@ -1,3 +1,385 @@
-@import 'modules/desktop';
-@import 'modules/general';
-@import 'modules/responsive';
+// Was: $bgColor: #C3B1E1;
+$accentColor: #000000;
+$mainColor: #FFFFFF;
+$bgColor: #F2F2F2;
+$hoverColor: #808080;
+$stdFont: 'Merriweather-Regular';
+$headingFont: 'Blackiron';
+$codeFont: 'FiraCode-Regular';
+$codeBG: #222222;
+$codeColor: #FFFFFF;
+$shadowColor: #F2F2F2;
+
+html {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: $bgColor;
+}
+button.nav {
+    width: 100%;
+    font-size: 24px;
+    background-color: $accentColor;
+    font-family: $stdFont;
+    color: $mainColor;
+    padding: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-weight: bolder;
+    margin-left: 0px;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 20px !important;
+}
+img.pfp {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 5px solid $accentColor;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 1px 2px 25px $shadowColor;
+}
+h1 {
+    font-family: $headingFont;
+    color: $accentColor;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+    font-size: 40px;
+    text-shadow: 1px 2px 25px $shadowColor;
+}
+p.motto {
+    font-family: $stdFont;
+    color: $accentColor;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 1px 2px 25px $shadowColor;
+}
+div.content {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+h2,h3,h4 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    color: $accentColor;
+    font-family: $headingFont;
+    text-shadow: 1px 2px 25px $shadowColor;
+}
+h2 {font-size:36px;}
+h3 {font-size:32px;}
+h4 {font-size:28px;}
+p {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    font-weight: bolder;
+    color: $accentColor;
+    font-size: 24px;
+    font-family: $stdFont;
+}
+ul {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+   list-style: none;
+   width: 100%;
+}
+li {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    color: $accentColor;
+    font-size: 24px;
+    font-family: $stdFont;
+}
+
+img {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+div.nav {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 0vw;
+    height: 100vh;
+    padding: 0px;
+    transition-duration: 0.6s;
+    margin: 0px;
+    background-color: $accentColor;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+}
+ul.nav {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-top: 20vh !important;
+    margin: 0px;
+    list-style: none;
+    background-color: transparent;
+}
+li.nav {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin: 0px;
+    display: block;
+}
+li.nav::before {
+    content: '';
+    margin: 0px;
+    padding: 0px;
+}
+li::before {
+    content: '-';
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-top: 0px;;
+}
+a {
+    font-size: 24px;
+    transition-duration: 0.6s;
+    font-family: $stdFont;
+    color: $accentColor;
+    padding: 0px;
+    margin: 0px;
+}
+a.nav {
+    font-size: 30px;
+    text-decoration: none;
+    transition-duration: 0.6s;
+    font-family: $headingFont;
+    color: $mainColor;
+    padding: 0px;
+    margin: 0px;
+}
+a:hover {
+    color: $hoverColor;
+}
+a.nav:hover {
+    color: $hoverColor;
+}
+pre {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: $codeBG;
+}
+code {
+    color: $codeColor;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0px;
+    font-family: $codeFont;
+}
+h2.preview {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size:36px;
+    margin: 0px;
+    color: $accentColor;
+    font-family: $headingFont;
+}
+p.previewDesc {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0px;
+    color: $accentColor;
+    font-size: 24px;
+    font-family: $stdFont;
+}
+p.previewDate {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0px;
+    color: $accentColor;
+    font-size: 20px;
+    font-family: $stdFont;
+}
+p.previewLink {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0px;
+    color: $accentColor;
+    font-size: 24px;
+    font-family: $stdFont;
+}
+hr.breaker {
+    width: 100%;
+    height: 3px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: none;
+    background-color: $accentColor;
+}
+div.closeButton {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+p.closeButton {
+    text-align: right;
+    padding: 20px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: $stdFont;
+    color: $mainColor;
+}
+a.closeButton {
+    text-align: right;
+    padding: 20px;
+    margin: 0px;
+    font-size: 30px;
+    color: $mainColor;
+    transition-duration: 0.6s;
+    text-decoration: none;
+}
+a.closeButton:hover{
+    color: $hoverColor;
+}
+div.spacer {
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    background-color: transparent;
+    margin: 0px;
+}
+div.postPreview {
+    background-color: $bgColor;
+    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 3px solid $mainColor;
+}
+@media screen and (max-width: 800px) {
+    button.nav {
+        font-size: 18px;
+    }
+    img.pfp {
+        width: 150px;
+        height: 150px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    p.motto {
+        font-size: 14px;
+    }
+    h2 {font-size:30px;}
+    h3 {font-size:26px;}
+    h4 {font-size:22px;}
+    p {
+        font-size: 18px;
+    }
+    li {
+        font-size: 18px;
+    } 
+    a {
+        font-size: 18px;
+    }
+    a.nav {
+        font-size: 24px;
+    }
+    code {
+        font-size: 18px;
+    }
+    h2.preview {
+        font-size: 30px;
+    }
+    p.previewDesc {
+        font-size: 18px;
+    }
+    p.previewDate {
+        font-size: 14px;
+    }
+    p.previewLink {
+        font-size: 18px;
+    }
+    div.content {
+        width: 95%;
+    }
+    p.closeButton {
+        font-size: 24px;
+    }
+    a.closeButton {
+        font-size: 24px;
+    }
+}
