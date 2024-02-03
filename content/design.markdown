@@ -10,14 +10,11 @@ description: "How this site was designed."
 The design system used here is a mix of three design systems.
 
 - Version 3.0 of Google's Material Design, *Material You*
-- The Kawaii aesthetic from Japanese popular culture
 - The *Hacker* aesthetic from websites of the early 90s
 
 *Material You* was used to decide and determine the layout of pages on this site. This includes the size and shape of buttons, bars, and element spacing.
 
-The Kawaii aeshtetic was used to decide upon the typography of headings and other important text on the site. The goal here was to create a cute, warm, and slightly goofy look.
-
-Finally, the monospace font used in all text content, that is not headings or user-experience-critical, was decided upon because it is clean, spacious and very easy to read.
+The monospace font used in all text content was decided upon because it is clean, spacious and very easy to read. The font in the headings is a pixelated font to mimic the early days of computing, when dot-matrix displays and graphics were common.
 
 ## Implementation
 
