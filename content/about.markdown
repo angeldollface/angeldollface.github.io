@@ -2,6 +2,7 @@
 layout: "layouts/page.liquid"
 title: "About"
 description: "About me."
+date: "02/02/2024"
 ---
 
 ## Who are you?

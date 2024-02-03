@@ -2,13 +2,21 @@
 <html>
  {% include 'head' %}
  <body>
- {% include 'nav' %}
- {% include 'heading' %}
- {% include 'spacer' %}
- <div class="content">
-  {{ page.content  }}
- </div>
- {% include 'spacer' %}
- {% include 'scripts' %}
+  {% include 'spacer' %}
+  {% include 'spacer' %}
+  {% include 'nav' %}
+  <div class="content">
+   {% include 'header' %}
+   <div class="userContent">
+    <p class="contentDate">{{ page.date }}</p>
+    <h2 class="pageTitle">{{ page.title }}</h2>
+    <p class="description">{{ page.description }}</p>
+    {{ page.content }}
+   </div>
+  </div>
+
+  {% include 'spacer' %}
+  {% include 'footer' %}
+  {% include 'scripts' %}
  </body>
 </html>

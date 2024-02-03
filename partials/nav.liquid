@@ -1,11 +1,4 @@
 <div class="nav" id="nav">
- <div class="closeButton">
-  <p class="closeButton">
-   <a class="closeButton" onclick="javascript:closeNav('nav');">
-    {{ site.closingText }}
-   </a>
-  </p>
- </div>
  <ul class="nav">
   {% for item in data["nav"] %}
    <li class="nav">
@@ -14,5 +7,8 @@
     </a>
    </li>
   {% endfor  %}
+  <li class="nav">
+   <a class="nav" onclick="javascript:closeNav('nav');">{{ site.closingText }}</a>
+  </li>
  </ul>
 </div>

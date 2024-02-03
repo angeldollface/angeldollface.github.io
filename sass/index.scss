@@ -1,15 +1,14 @@
-// Was: $bgColor: #C3B1E1;
-$accentColor: #000000;
-$mainColor: #FFFFFF;
-$bgColor: #F2F2F2;
-$hoverColor: #808080;
-$stdFont: 'Merriweather-Regular';
-$headingFont: 'Blackiron';
-$codeFont: 'FiraCode-Regular';
-$codeBG: #222222;
-$codeColor: #FFFFFF;
-$shadowColor: #F2F2F2;
+/* VARIABLES START */
+$bgColor: #fef1f1;
+$mainColor: #eb7a91;
+$accentColor: #5b4e59;
+$tertiaryColor: #FFFFFF;
+// WAS 'VT323'!
+$headingFont: 'Garota';
+$stdFont: 'FiraCode-Regular';
+/* VARIABLES END */
 
+/* GENERAL START */
 html {
     top: 0;
     right: 0;
@@ -31,125 +30,63 @@ body {
     margin: 0px;
     background-color: $bgColor;
 }
-button.nav {
+div.spacer {
+    height: 5vh;
     width: 100%;
-    font-size: 24px;
-    background-color: $accentColor;
-    font-family: $stdFont;
-    color: $mainColor;
-    padding: 10px;
-    margin-top: 0px;
-    margin-right: 0px;
-    font-weight: bolder;
-    margin-left: 0px;
-    border: none;
-    border-radius: 0px;
-    margin-bottom: 20px !important;
-}
-img.pfp {
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border: 5px solid $accentColor;
-    margin: 0 auto;
-    display: block;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 0px !important;
-    margin-bottom: 20px !important;
-    box-shadow: 1px 2px 25px $shadowColor;
-}
-h1 {
-    font-family: $headingFont;
-    color: $accentColor;
-    text-align: center;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 10px;
+    background-color: transparent;
+    padding: 0px;
     margin: 0px;
-    font-size: 40px;
-    text-shadow: 1px 2px 25px $shadowColor;
-}
-p.motto {
-    font-family: $stdFont;
-    color: $accentColor;
-    text-align: center;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    margin: 0px;
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: italic;
-    text-shadow: 1px 2px 25px $shadowColor;
 }
 div.content {
+    width: 80%;
     margin: 0 auto;
-    display: block;
-    width: 70%;
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
-}
-h2,h3,h4 {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 0px;
-    color: $accentColor;
-    font-family: $headingFont;
-    text-shadow: 1px 2px 25px $shadowColor;
-}
-h2 {font-size:36px;}
-h3 {font-size:32px;}
-h4 {font-size:28px;}
-p {
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 0px;
-    font-weight: bolder;
-    color: $accentColor;
-    font-size: 24px;
-    font-family: $stdFont;
-}
-ul {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 0px;
-   list-style: none;
-   width: 100%;
-}
-li {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 0px;
-    color: $accentColor;
-    font-size: 24px;
-    font-family: $stdFont;
-}
-
-img {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
     padding: 0px;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    object-fit: cover;
+    display: block;
 }
+/* GENERAL END */
+
+/* BAR START */
+div.bar {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5vh;
+    overflow: hidden;
+    background-color: $mainColor;
+    border: 3px dashed $accentColor;
+    padding: 0px;
+    border-radius: 10px;
+}
+h1.main {
+    float: left;
+    font-size: 60px;
+    color: $tertiaryColor;
+    font-family: $headingFont;
+    display: inline;
+    margin: 0px;
+    padding: 20px;
+}
+button.nav {
+    float: right;
+    margin: 20px;
+    border: 3px dashed $accentColor;
+    background-color: $tertiaryColor;
+    font-size: 30px;
+    padding: 15px;
+    font-family: $headingFont;
+    border-radius: 10px;
+    color: $accentColor;
+    transition-duration: 0.6s;
+}
+button.nav:hover {
+    border: 3px solid $accentColor;
+}
+/* BAR END */
+
+/* NAV START */
 div.nav {
+    z-index: 1;
     top: 0;
     right: 0;
     left: 0;
@@ -157,229 +94,289 @@ div.nav {
     width: 0vw;
     height: 100vh;
     padding: 0px;
-    transition-duration: 0.6s;
     margin: 0px;
-    background-color: $accentColor;
-    position: fixed;
     overflow: hidden;
-    z-index: 2;
+    position: fixed;
+    background-color: $mainColor;
+    transition-duration: 0.6s;
 }
 ul.nav {
+    margin-top: 20vh;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 0px;
-    padding-top: 20vh !important;
-    margin: 0px;
+    margin-left: 5vw;
+    margin-bottom: 0px;
+    margin-right: 5vw;
+    padding: 0px;
     list-style: none;
     background-color: transparent;
 }
 li.nav {
+    font-size: 50px;
+    color: $tertiaryColor;
+    font-family: $headingFont;
+    padding-bottom: 20px;
+    padding-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 10px;
-    padding-top: 0px;
     margin: 0px;
-    display: block;
 }
 li.nav::before {
-    content: '';
-    margin: 0px;
-    padding: 0px;
-}
-li::before {
-    content: '-';
-    margin: 0px;
+    padding-right: 0px;
     padding-left: 0px;
-    padding-right: 5px;
+    padding-top: 0px;
     padding-bottom: 0px;
-    padding-top: 0px;;
-}
-a {
-    font-size: 24px;
-    transition-duration: 0.6s;
-    font-family: $stdFont;
-    color: $accentColor;
-    padding: 0px;
+    content: '';
     margin: 0px;
 }
 a.nav {
-    font-size: 30px;
-    text-decoration: none;
-    transition-duration: 0.6s;
+    font-size: 50px;
+    color: $tertiaryColor;
     font-family: $headingFont;
-    color: $mainColor;
-    padding: 0px;
     margin: 0px;
-}
-a:hover {
-    color: $hoverColor;
+    text-decoration: none;
+    padding: 0px;
+    transition-duration: 0.6s;
 }
 a.nav:hover {
-    color: $hoverColor;
+    color: $accentColor;
+    text-decoration: underline;
 }
-pre {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 0px;
+/* NAV END */
+
+/* USER CONTENT START */
+div.userContent {
     width: 100%;
-    border-radius: 5px;
-    background-color: $codeBG;
-}
-code {
-    color: $codeColor;
-    padding: 10px;
-    font-size: 24px;
+    background-color: transparent;
     margin: 0px;
-    font-family: $codeFont;
+    padding: 0px;
 }
-h2.preview {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size:36px;
-    margin: 0px;
-    color: $accentColor;
-    font-family: $headingFont;
-}
-p.previewDesc {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0px;
-    color: $accentColor;
-    font-size: 24px;
-    font-family: $stdFont;
-}
-p.previewDate {
-    padding-top: 0px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0px;
-    color: $accentColor;
-    font-size: 20px;
-    font-family: $stdFont;
-}
-p.previewLink {
+p.contentDate {
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
     margin: 0px;
-    color: $accentColor;
-    font-size: 24px;
     font-family: $stdFont;
+    font-size: 20px;
+    color: $accentColor;
+    font-weight: bolder;
 }
-hr.breaker {
-    width: 100%;
-    height: 3px;
+h2.pageTitle {
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: $headingFont;
+    font-size: 45px;
+    color: $accentColor;
+}
+p.description {
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: $stdFont;
+    font-size: 25px;
+    color: $accentColor;
+    font-weight: bolder;
+}
+h2, h3, h4 {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: $headingFont;
+    color: $accentColor;
+}
+h2 {font-size: 43px;}
+h3 {font-size: 41px;}
+h4 {font-size: 39px;}
+p {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: $stdFont;
+    color: $accentColor;
+    font-size: 25px;
+    font-weight: bolder;
+}
+a {
+    padding: 0px;
+    margin: 0px;
+    font-family: $stdFont;
+    color: $accentColor;
+    font-size: 25px;
+    text-decoration: underline;
+    transition-duration: 0.6s;
+    font-weight: bolder;
+}
+a:hover {
+    color: $mainColor;
+}
+img {
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border: none;
-    background-color: $accentColor;
-}
-div.closeButton {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: transparent;
-}
-p.closeButton {
-    text-align: right;
-    padding: 20px;
-    margin: 0px;
-    font-size: 30px;
-    font-family: $stdFont;
-    color: $mainColor;
-}
-a.closeButton {
-    text-align: right;
-    padding: 20px;
-    margin: 0px;
-    font-size: 30px;
-    color: $mainColor;
-    transition-duration: 0.6s;
-    text-decoration: none;
-}
-a.closeButton:hover{
-    color: $hoverColor;
-}
-div.spacer {
-    width: 100%;
-    height: 30px;
-    padding: 0px;
-    background-color: transparent;
-    margin: 0px;
-}
-div.postPreview {
-    background-color: $bgColor;
-    width: 100%;
-    padding: 0px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border: 3px solid $mainColor;
 }
-@media screen and (max-width: 800px) {
+ul {
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    list-style-type: none;
+}
+li {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: $stdFont;
+    color: $accentColor;
+    font-size: 25px;
+    display: block;
+    font-weight: bolder;
+}
+li::before {
+    padding-right: 5px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: $stdFont;
+    color: $accentColor;
+    font-size: 25px;
+    content: '-';
+    margin: 0px;
+    font-weight: bolder;
+}
+/* USER CONTENT END */
+
+/* FOOTER START */
+div.footer {
+    width: 100%;
+    background-color: $mainColor;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom: none;
+    border-top: 3px dashed $accentColor;
+    border-left: none;
+    border-right: none;
+}
+p.footer {
+    font-family: $headingFont;
+    font-size: 30px;
+    padding: 20px;
+    text-align: left;
+    margin: 0px;
+    color: $accentColor;
+}
+/* FOOTER END */
+
+/* RESPONSIVE SECTION START */
+@media screen and (max-width: 800px){
+
+    /* GENERAL START */
+    div.content {
+        width: 90%;
+    }
+    /* GENERAL END */
+
+    /* BAR START */
+    h1.main {
+        font-size: 30px;
+        padding: 10px;
+    }
     button.nav {
-        font-size: 18px;
+        float: right;
+        margin: 10px;
+        font-size: 20px;
+        padding: 5px;
     }
-    img.pfp {
-        width: 150px;
-        height: 150px;
+    /* BAR END */
+
+    /* NAV START */
+    ul.nav {
+        margin-top: 20vh;
+        width: 100%;
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
-    h1 {
-        font-size: 34px;
-    }
-    p.motto {
-        font-size: 14px;
-    }
-    h2 {font-size:30px;}
-    h3 {font-size:26px;}
-    h4 {font-size:22px;}
-    p {
-        font-size: 18px;
-    }
-    li {
-        font-size: 18px;
-    } 
-    a {
-        font-size: 18px;
+    li.nav {
+        font-size: 35px;
+        padding-bottom: 10px;
     }
     a.nav {
-        font-size: 24px;
+        font-size: 35px;
     }
-    code {
-        font-size: 18px;
+    /* NAV END */
+
+    /* USER CONTENT START */
+    p.contentDate {
+        padding-bottom: 10px;
+        font-size: 10px;
     }
-    h2.preview {
+    h2.pageTitle {
+        padding-bottom: 10px;
         font-size: 30px;
     }
-    p.previewDesc {
-        font-size: 18px;
+    p.description {
+        padding-bottom: 10px;
+        font-size: 15px;
     }
-    p.previewDate {
-        font-size: 14px;
+    h2, h3, h4 {
+        padding-bottom: 10px;
     }
-    p.previewLink {
-        font-size: 18px;
+    h2 {font-size: 28px;}
+    h3 {font-size: 26px;}
+    h4 {font-size: 24px;}
+    p {
+        padding-bottom: 10px;
+        font-size: 15px;
     }
-    div.content {
-        width: 95%;
+    a {
+        font-size: 15px;
     }
-    p.closeButton {
-        font-size: 24px;
+    img {
+        margin-bottom: 10px;
+        height: 200px;
     }
-    a.closeButton {
-        font-size: 24px;
+    ul {
+        margin-bottom: 10px;
     }
+    li {
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    li::before {
+        font-size: 15px;
+    }
+    /* USER CONTENT END */
+
+    /* FOOTER START */
+    p.footer {
+        font-size: 20px;
+        padding: 15px;
+    }
+    /* FOOTER END */
+
 }
+/* RESPONSIVE SECTION END */
