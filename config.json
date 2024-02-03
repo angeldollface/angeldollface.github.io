@@ -11,5 +11,6 @@
     "copyFiles": "true=>CNAME|assets",
     "motto": "Everyone's favorite doll!",
     "footerText": "Mady by Angel Dollface with &lt;3. Copyright Angel Dollface 2024",
-    "hasLoopContent": "false"
+    "hasLoopContent": "false",
+    "analyticsId": "G-W09W79D4L0"
 }

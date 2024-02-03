@@ -3,8 +3,7 @@ $bgColor: #fef1f1;
 $mainColor: #eb7a91;
 $accentColor: #5b4e59;
 $tertiaryColor: #FFFFFF;
-// WAS 'VT323'!
-$headingFont: 'Garota';
+$headingFont: 'VT323';
 $stdFont: 'FiraCode-Regular';
 /* VARIABLES END */
 
@@ -270,7 +269,7 @@ li::before {
 /* FOOTER START */
 div.footer {
     width: 100%;
-    background-color: $mainColor;
+    background-color: $bgColor;
     margin: 0px;
     padding: 0px;
     bottom: 0;
