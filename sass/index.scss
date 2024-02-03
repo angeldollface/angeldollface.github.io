@@ -1,9 +1,13 @@
 /* VARIABLES START */
-$bgColor: #fef1f1;
-$mainColor: #eb7a91;
-$accentColor: #5b4e59;
-$tertiaryColor: #FFFFFF;
-$headingFont: 'VT323';
+//$bgColor: #fef1f1;
+$bgColor: #26181b;
+//$mainColor: #eb7a91;
+$mainColor: #f7e4e7;
+//$accentColor: #5b4e59;
+$accentColor: #fe84a8;
+//$tertiaryColor: #FFFFFF;
+$tertiaryColor: #26181b;
+$headingFont: 'FreshLychee';
 $stdFont: 'FiraCode-Regular';
 /* VARIABLES END */
 
@@ -50,7 +54,7 @@ div.bar {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     overflow: hidden;
     background-color: $mainColor;
     border: 3px dashed $accentColor;
@@ -236,7 +240,7 @@ ul {
     margin-right: 0px;
     margin-left: 0px;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100%;
     list-style-type: none;
 }
@@ -244,7 +248,7 @@ li {
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin: 0px;
     font-family: $stdFont;
     color: $accentColor;

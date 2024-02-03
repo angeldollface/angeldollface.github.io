@@ -10,5 +10,9 @@
     {
         "name": "Socials",
         "url": "/content/socials"
+    },
+    {
+        "name": "Design",
+        "url": "/content/design"
     }
 ]
