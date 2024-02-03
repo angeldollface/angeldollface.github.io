@@ -266,30 +266,6 @@ li::before {
 }
 /* USER CONTENT END */
 
-/* FOOTER START */
-div.footer {
-    width: 100%;
-    background-color: $bgColor;
-    margin: 0px;
-    padding: 0px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-bottom: none;
-    border-top: 3px dashed $accentColor;
-    border-left: none;
-    border-right: none;
-}
-p.footer {
-    font-family: $headingFont;
-    font-size: 30px;
-    padding: 20px;
-    text-align: left;
-    margin: 0px;
-    color: $accentColor;
-}
-/* FOOTER END */
-
 /* RESPONSIVE SECTION START */
 @media screen and (max-width: 800px){
 
@@ -369,13 +345,6 @@ p.footer {
         font-size: 15px;
     }
     /* USER CONTENT END */
-
-    /* FOOTER START */
-    p.footer {
-        font-size: 20px;
-        padding: 15px;
-    }
-    /* FOOTER END */
 
 }
 /* RESPONSIVE SECTION END */
