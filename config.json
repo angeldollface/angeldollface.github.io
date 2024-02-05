@@ -1,6 +1,6 @@
 {
     "title": "Angel Dollface",
-    "description": "",
+    "description": "A doll's blog and personal website.",
     "prod_url": "",
     "dev_url": "",
     "keywords": "blog lifestyle-blog doll blogger-doll",
@@ -11,5 +11,6 @@
     "copyFiles": "true=>CNAME|assets",
     "motto": "Everyone's favorite doll!",
     "hasLoopContent": "false",
-    "analyticsId": "G-W09W79D4L0"
+    "analyticsId": "G-W09W79D4L0",
+    "build_log": "false"
 }
