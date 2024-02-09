@@ -45,19 +45,17 @@ div.content {
 /* GENERAL END */
 
 /* HEADING START */
-
 h1.main {
-			text-align: left;
-      font-size: 70px;
-      color: $accentColor;
-      font-family: $headingFont;
-      margin: 0px;
-      padding-left: 0px;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			padding-right: 20px;
+     text-align: left;
+     font-size: 70px;
+     color: $accentColor;
+     font-family: $headingFont;
+     margin: 0px;
+     padding-left: 0px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     padding-right: 20px;
 }
-
 /* HEADING END */
 
 /* BAR START */
@@ -72,21 +70,21 @@ div.bar {
     border: 3px solid $accentColor;
     padding: 0px;
     border-radius: 10px;
-		box-shadow: 10px 10px 0px $accentColor;
+    box-shadow: 10px 10px 0px $accentColor;
 }
 
 img.pfp {
-		border-top-right-radius: 50%;
-		border-top-left-radius: 50%;
-		border-bottom-right-radius: 50%;
-		border-bottom-left-radius: 50%;
-		height: 62px;
-		width: 62px;
-		object-fit: contain;
-		padding: 0px;
-		display: inline;
-		margin: 20px;
-		border: 2px solid $accentColor;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 62px;
+    width: 62px;
+    object-fit: contain;
+    padding: 0px;
+    display: inline;
+    margin: 20px;
+    border: 2px solid $accentColor;
 }
 button.nav {
     float: right;
@@ -297,32 +295,30 @@ li::before {
     }
     /* GENERAL END */
 
-    /* MAIN HEADING START */
+    /* HEADING START */
     h1.main {
- 	    font-size: 50px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			padding-right: 10px;
-		}
-    /* MAIN HEADING END */
+ 	font-size: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+    }
+    /* HEADING END */
 
-		/* BAR START */
-		div.bar {
-				box-shadow: none;
-		}
-		img.pfp {
-				height: 40px;
-				width: 40px;
-				padding: 0px;
-				margin: 10px;
-				border: 2px solid $accentColor;
- 		}
-		button.nav {
- 				margin: 10px;
- 				font-size: 24px;
- 				padding: 10px;
-		}
-		/* BAR END */
+    /* BAR START */
+    div.bar {box-shadow: none;}
+    img.pfp {
+	height: 40px;
+	width: 40px;
+	padding: 0px;
+	margin: 10px;
+	border: 2px solid $accentColor;
+    }
+    button.nav {
+ 	margin: 10px;
+ 	font-size: 24px;
+ 	padding: 10px;
+    }
+    /* BAR END */
 
     /* NAV START */
     ul.nav {
