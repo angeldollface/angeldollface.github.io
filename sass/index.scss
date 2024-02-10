@@ -3,7 +3,7 @@ $bgColor: #26181B;
 $mainColor: #26181B;
 $accentColor: #FF84AB;
 $tertiaryColor: #26181B;
-$headingFont: 'SymbolFont';
+$headingFont: 'Blackiron';
 $stdFont: 'FiraCode-Regular';
 $shadowColor: #000000;
 /* VARIABLES END */
@@ -333,6 +333,19 @@ img.easterEgg {
     box-shadow: 1px 2px 15px $shadowColor;
     border-radius: 15px;
 }
+p.easterEgg {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    font-family: $stdFont;
+    color: $accentColor;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+}
 /* EASTER EGG END */
 
 /* RESPONSIVE SECTION START */
@@ -426,6 +439,19 @@ img.easterEgg {
         font-size: 15px;
     }
     /* USER CONTENT END */
+
+    /* EASTER EGG START */
+    button.easterEgg {
+        font-size: 22px;
+    }
+    img.easterEgg {
+        width: 70%;
+        height: 70%;
+    }
+    p.easterEgg {
+        font-size: 22px;
+    }
+/* EASTER EGG END */
 
 }
 /* RESPONSIVE SECTION END */

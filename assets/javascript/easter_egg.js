@@ -2,7 +2,7 @@ window.easterEggCounter = 0;
 function crackEgg(){
     window.easterEggCounter = window.easterEggCounter + 1;
     let easterEggDiv = document.getElementById("easterEgg");
-    if (window.easterEggCounter === 5){
+    if (window.easterEggCounter === 6){
         easterEggDiv.style.height = '100vh';
         window.easterEggCounter = 0;
     }
