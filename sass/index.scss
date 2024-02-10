@@ -1,10 +1,9 @@
 /* VARIABLES START */
-$bgColor: #FFFFFF;
-$mainColor: #FFFFFF;
-$accentColor: #000000;
-$tertiaryColor: #FFFFFF;
-$textShadowColor: #EA1573;
-$headingFont: 'Blackiron';
+$bgColor: #26181B;
+$mainColor: #26181B;
+$accentColor: #FF84AB;
+$tertiaryColor: #26181B;
+$headingFont: 'SymbolFont';
 $stdFont: 'FiraCode-Regular';
 /* VARIABLES END */
 
@@ -47,33 +46,34 @@ div.content {
 
 /* HEADING START */
 h1.main {
-     text-align: left;
-     font-size: 70px;
-     color: $accentColor;
-     font-family: $headingFont;
-     margin: 0px;
-     padding-left: 0px;
-     padding-top: 20px;
-     padding-bottom: 20px;
-     padding-right: 20px;
-     text-shadow: 1px 4px 0px $textShadowColor;
+    text-align: center;
+    font-size: 90px;
+    color: $accentColor;
+    font-family: $headingFont;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    border-top: 3px solid $accentColor;
+    border-bottom: 3px solid $accentColor;
+    border-left: none;
+    border-right: none;
+    text-transform: uppercase;
 }
 /* HEADING END */
 
 /* BAR START */
 div.bar {
     width: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     overflow: hidden;
     background-color: $mainColor;
     border: 3px solid $accentColor;
     overflow: hidden;
     padding: 0px;
     border-radius: 10px;
-    box-shadow: 10px 10px 0px $accentColor;
 }
 
 img.pfp {
@@ -92,9 +92,10 @@ img.pfp {
 button.nav {
     float: right;
     margin: 20px;
+    height: 66px;
     border: 2px solid $accentColor;
     background-color: $tertiaryColor;
-    font-size: 30px;
+    font-size: 34px;
     padding: 14px;
     font-family: $headingFont;
     border-radius: 10px;
@@ -310,8 +311,8 @@ li::before {
     /* BAR START */
     div.bar {box-shadow: none;}
     img.pfp {
-	    height: 42.5px;
-	    width: 42.5px;
+	    height: 40px;
+	    width: 40px;
 	    padding: 0px;
 	    margin: 10px;
     }
@@ -319,6 +320,7 @@ li::before {
  	    margin: 10px;
  	    font-size: 20px;
  	    padding: 10px;
+        height: 44px;
     }
     /* BAR END */
 
