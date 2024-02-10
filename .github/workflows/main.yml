@@ -10,7 +10,7 @@ jobs:
       - uses: angeldollface/mandy-github-action@v.0.3.4
       - name: "Build the Mandy site"
         run: mandy -c .
-      - name: "Deploy"
+      - name: "Deploy."
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
