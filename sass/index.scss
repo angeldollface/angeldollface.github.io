@@ -1,11 +1,12 @@
 /* VARIABLES START */
-$bgColor: #26181B;
-$mainColor: #26181B;
-$accentColor: #FF84AB;
-$tertiaryColor: #26181B;
-$headingFont: 'Blackiron';
-$stdFont: 'FiraCode-Regular';
-$shadowColor: #000000;
+$bgColor: #FFFFFF;
+$mainColor: #FFFFFF;
+$accentColor: #000000;
+$tertiaryColor: #FFFFFF;
+$headingFont: 'CherieBomb';
+$codeFont: 'FiraCode-Regular';
+$stdFont: 'SCP-Regular';
+$shadowColor: #DF0045;
 /* VARIABLES END */
 
 /* GENERAL START */
@@ -63,6 +64,7 @@ h1.main {
     border-left: none;
     border-right: none;
     text-transform: uppercase;
+    text-shadow: 5px 5px 0px $shadowColor;
 }
 /* HEADING END */
 
@@ -197,6 +199,7 @@ h2.pageTitle {
     font-family: $headingFont;
     font-size: 45px;
     color: $accentColor;
+    text-shadow: 5px 5px 0px $shadowColor;
 }
 p.description {
     text-align: left;
@@ -218,6 +221,7 @@ h2, h3, h4 {
     margin: 0px;
     font-family: $headingFont;
     color: $accentColor;
+    text-shadow: 5px 5px 0px $shadowColor;
 }
 h2 {font-size: 43px;}
 h3 {font-size: 41px;}
@@ -266,6 +270,24 @@ ul {
     width: 100%;
     list-style-type: none;
 }
+pre {
+    padding: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: $accentColor;
+    overflow-x: scroll;
+}
+code {
+    color: $mainColor;
+    font-family: $codeFont;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+}
 li {
     padding-right: 0px;
     padding-left: 0px;
@@ -291,62 +313,6 @@ li::before {
     font-weight: bolder;
 }
 /* USER CONTENT END */
-
-/* EASTER EGG START */
-button.easterEgg {
-    right: 0;
-    bottom: 0;
-    box-shadow: 1px 2px 15px $shadowColor;
-    background-color: $accentColor;
-    border: none;
-    color: $mainColor;
-    font-family: $headingFont;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 30px;
-    z-index: 1;
-    position: fixed;
-    font-size: 25px;
-}
-div.easterEgg {
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 0vh;
-    padding: 0px;
-    z-index: 2;
-    margin: 0px;
-    overflow: hidden;
-    transition-duration: 0.6s;
-    background-color: $mainColor;
-    position: fixed;
-}
-img.easterEgg {
-    margin: 0 auto;
-    display: block;
-    width: 50%;
-    height: 50%;
-    margin-top: 20vh !important;
-    margin-bottom: 0px !important;
-    box-shadow: 1px 2px 15px $shadowColor;
-    border-radius: 15px;
-}
-p.easterEgg {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 0px;
-    font-family: $stdFont;
-    color: $accentColor;
-    font-size: 25px;
-    font-weight: bolder;
-    font-style: italic;
-}
-/* EASTER EGG END */
 
 /* RESPONSIVE SECTION START */
 @media screen and (max-width: 800px){
@@ -435,24 +401,13 @@ p.easterEgg {
         padding-bottom: 10px;
         font-size: 15px;
     }
+    code {
+        font-size: 15px;
+    }
     li::before {
         font-size: 15px;
     }
     /* USER CONTENT END */
-
-    /* EASTER EGG START */
-    button.easterEgg {
-        font-size: 22px;
-    }
-    img.easterEgg {
-        width: 80%;
-        height: 50%;
-    }
-    p.easterEgg {
-        font-size: 22px;
-        padding-top: 20px;
-    }
-/* EASTER EGG END */
 
 }
 /* RESPONSIVE SECTION END */
