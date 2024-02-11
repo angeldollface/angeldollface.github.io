@@ -6,7 +6,7 @@ $tertiaryColor: #FFFFFF;
 $headingFont: 'CherieBomb';
 $codeFont: 'FiraCode-Regular';
 $stdFont: 'SCP-Regular';
-$shadowColor: #DF0045;
+$shadowColor: #EA1573;
 /* VARIABLES END */
 
 /* GENERAL START */
@@ -100,6 +100,7 @@ button.nav {
     border: 2px solid $accentColor;
     background-color: $tertiaryColor;
     font-size: 34px;
+    text-shadow: 5px 5px 0px $shadowColor;
     padding: 14px;
     font-family: $headingFont;
     border-radius: 10px;
@@ -146,6 +147,7 @@ li.nav {
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px;
+    text-shadow: 5px 5px 0px $shadowColor;
 }
 li.nav::before {
     padding-right: 0px;
@@ -163,10 +165,11 @@ a.nav {
     text-decoration: none;
     padding: 0px;
     transition-duration: 0.6s;
+    text-shadow: 5px 5px 0px $shadowColor;
 }
 a.nav:hover {
-    color: $accentColor;
-    text-decoration: underline;
+    color: $mainColor;
+    //text-decoration: underline;
 }
 /* NAV END */
 
