@@ -1,8 +1,18 @@
+/*
+A DOLL'S WEBSITE by Alexander Abraham 
+a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+*/
+
+/* SITE VARIABLES START */
 $mainColor: #f2f2f2;
 $accentColor: #000000;
 $hoverColor: #808080;
 $headingFont: 'Blackiron';
-$stdFont: 'Merriweather-Regular';
+$stdFont: 'FiraCode-Regular';
+/* SITE VARIABLES END */
+
+/* GENERAL START */
 html {
     top: 0;
     left: 0;
@@ -25,6 +35,16 @@ body {
     z-index: 0;
     background-color: $mainColor;
 }
+div.spacer {
+    width: 100%;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    height: 7vh;
+}
+/* GENERAL END */
+
+/* SIDEMENU START */
 div.sideMenu {
     height: 100%;
     width: 30vw;
@@ -35,14 +55,6 @@ div.sideMenu {
     transition-duration: 0.6s;
     overflow-y: scroll;
     background-color: $accentColor;
-}
-div.textContent {
-    height: 100%;
-    width: 70vw;
-    float: right;
-    padding: 0px;
-    margin: 0px;
-    background-color: $mainColor;
 }
 div.menuCentColumn {
     margin: 0 auto;
@@ -140,12 +152,37 @@ a.nav {
 a.nav:hover {
     color: $hoverColor;
 }
-div.spacer {
-    width: 100%;
-    background-color: transparent;
-    margin: 0px;
+button.menu {
+    display:none;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.4rem;
+    color: $mainColor;
+    z-index: 1;
+    position: fixed;
+    border-radius: 10px;
+    border: 3px solid $mainColor;
+    font-family: $stdFont;
+    transition-duration: 0.6s;
+    background-color: $accentColor;
+}
+button.menu:hover{
+    border: 3px solid $accentColor;
+    background-color: $mainColor;
+    color: $accentColor;
+}
+/* SIDEMENU END */
+
+/* TEXT CONTENT START */
+div.textContent {
+    height: 100%;
+    width: 70vw;
+    float: right;
     padding: 0px;
-    height: 7vh;
+    margin: 0px;
+    background-color: $mainColor;
 }
 div.textCentColumn {
     margin: 0 auto;
@@ -157,28 +194,17 @@ div.textCentColumn {
 }
 h2, h3, h4 {
     color: $accentColor;
-    font-family: $stdFont;
+    font-family: $headingFont;
+    text-decoration: none;
     padding: 0px;
     margin: 0px;
     font-weight: bold;
     text-align: left;
+    font-style: normal;
 }
 h2 {font-size: 1.7rem;}
 h3 {font-size: 1.6rem;}
 h4 {font-size: 1.5rem;}
-h2::before, h3::before, h4::before {
-    content: '#';
-    color: $accentColor;
-    font-family: $stdFont;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 5px;
-    padding-left: 0px;
-    margin: 0px;
-    font-weight: bold;
-    text-align: left;
-    font-size: inherit;
-}
 p {
     color: $accentColor;
     font-family: $stdFont;
@@ -237,7 +263,7 @@ li::before {
 }
 h2.pageHeading {
     font-size: 2rem;
-    font-family: $stdFont;
+    font-family: $headingFont;
     color: $accentColor;
     padding-top: 0px;
     padding-bottom: 10px;
@@ -246,18 +272,7 @@ h2.pageHeading {
     padding-left: 0px;
     margin: 0px;
     text-align: left;
-}
-h2.pageHeading::before {
-    content: '';
-    font-size: 2rem;
-    font-family: $stdFont;
-    color: $accentColor;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    font-weight: bolder;
-    padding-left: 0px;
-    margin: 0px;
+    font-style: normal;
 }
 p.date {
     font-size: 1.4rem;
@@ -285,34 +300,16 @@ img {
     border: none;
     border-radius: 5px;
 }
-button.menu {
-    display:none;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-    padding: 15px;
-    font-size: 1.4rem;
-    color: $mainColor;
-    z-index: 1;
-    position: fixed;
-    border-radius: 10px;
-    border: 3px solid $hoverColor;
-    font-family: $stdFont;
-    transition-duration: 0.6s;
-    background-color: $accentColor;
-}
-button.menu:hover{
-    border: 3px solid $accentColor;
-    background-color: $mainColor;
-    color: $accentColor;
-}
+/* TEXT CONTENT END */
 
+/* RESPONSIVE SECTION START */
 @media screen and (max-width: 800px){
     div.sideMenu {
         height: 100vh;
         width: 0vw;
         display: block;
         z-index: 1;
+        overflow: hidden;
     }
     div.textContent {
         width: 100vw;
@@ -330,25 +327,25 @@ button.menu:hover{
         margin-top: 5vh !important;
     }
     h1 {
-        font-size: 2.5rem;
-        color: $mainColor;
+        font-size: 3rem;
         padding-top: 20px;
     }
     p.slogan {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         padding-bottom: 20px;
     }
     ul.nav {
         margin-top: 20px;
     }
     li.nav {
+        font-size: 1.6rem;
         margin-bottom: 20px;
     }
     li.nav::before {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     a.nav {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     a.nav:hover {
         color: $hoverColor;
@@ -389,3 +386,4 @@ button.menu:hover{
         height: 350px;
     }
 }
+/* RESPONSIVE SECTION END */
