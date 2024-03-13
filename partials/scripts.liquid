@@ -1,1 +1,11 @@
 <script async src="{{ site.baseurl }}/assets/javascript/nav.js"></script>
+<script type="text/javascript">
+ if (window.innerWidth < 800){
+    window.onload = () => {
+        console.log(event);
+        let elem = document.getElementById('{{ site.navElem }}');
+        elem.style.width = '0vw';
+    };
+ }
+ else {}
+</script>

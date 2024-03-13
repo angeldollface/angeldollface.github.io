@@ -1,14 +1,9 @@
-<div class="nav" id="nav">
- <ul class="nav">
-  {% for item in data["nav"] %}
-   <li class="nav">
-    <a class="nav" href="{{ site.baseurl }}{{ item.url }}">
-     {{ item.name  }}
-    </a>
-   </li>
-  {% endfor  %}
+<ul class="nav">
+ {% for item in data["nav"] %}
   <li class="nav">
-   <a class="nav" onclick="javascript:closeNav('nav');">{{ site.closingText }}</a>
+   <a class="nav" href="{{ site.baseurl }}{{ item.url }}">
+    {{ item.name  }}
+   </a>
   </li>
- </ul>
-</div>
+ {% endfor  %}
+</ul>

@@ -2,17 +2,20 @@
 <html>
  {% include 'head' %}
  <body>
-  {% include 'nav' %}
-  <div class="content">
-   {% include 'header' %}
-   <div class="userContent">
-    <p class="contentDate">{{ page.date }}</p>
-    <h2 class="pageTitle">{{ page.title }}</h2>
-    <p class="description">{{ page.description }}</p>
-    {{ page.content }}
-   </div>
+
+   {% include 'sidemenu' %}
+
+   <div class="textContent">
+    {% include 'spacer' %}
+    <div class="textCentColumn">
+     <h2 class="pageHeading">{{ page.title}}</h2>
+      <p class="date">{{ page.date }}</p>
+      {{ page.content }}
+    </div>
+    {% include 'spacer' %}
+    {% include 'button' %}
   </div>
-  {% include 'spacer' %}
+
   {% include 'scripts' %}
  </body>
 </html>
