@@ -44,53 +44,61 @@
 </head>
 
  <body>
-  <div class="nav" id="nav">
- <ul class="nav">
-  
-   <li class="nav">
-    <a class="nav" href="/">
-     Home
-    </a>
-   </li>
-  
-   <li class="nav">
-    <a class="nav" href="/content/about">
-     About
-    </a>
-   </li>
-  
-   <li class="nav">
-    <a class="nav" href="/content/socials">
-     Socials
-    </a>
-   </li>
-  
-  <li class="nav">
-   <a class="nav" onclick="javascript:closeNav('nav');">Close</a>
-  </li>
- </ul>
-</div>
-  <div class="content">
-   <div class="spacer"></div>
-<h1 class="main">Angel Dollface</h1>
-<div class="spacer"></div>
-<div class="bar">
- <img class="pfp" src="https://avatars.githubusercontent.com/u/112771657?v=4"/>
- <button class="nav" onclick="javascript:openNav('nav');">Menu</button>
-</div>
-<div class="spacer"></div>
 
-   <div class="userContent">
-    <p class="contentDate">02/02/2024</p>
-    <h2 class="pageTitle">About</h2>
-    <p class="description">About me.</p>
-    <h2 id='who_are_you?'>Who are you?</h2>
+   <div class="sideMenu" id="nav">
+ <div class="menuCentColumn">
+  <img class="pfp" src="https://avatars.githubusercontent.com/u/112771657?v=4"/>
+  <h1>Angel Dollface</h1>
+  <p class="slogan">A doll's blog and personal website.</p>
+  <hr class="sep"/>
+  <ul class="nav">
+ 
+  <li class="nav">
+   <a class="nav" href="/">
+    Home
+   </a>
+  </li>
+ 
+  <li class="nav">
+   <a class="nav" href="/content/about">
+    About
+   </a>
+  </li>
+ 
+  <li class="nav">
+   <a class="nav" href="/content/socials">
+    Socials
+   </a>
+  </li>
+ 
+</ul>
+ </div>
+</div>
+
+   <div class="textContent">
+    <div class="spacer"></div>
+    <div class="textCentColumn">
+     <h2 class="pageHeading">About</h2>
+      <p class="date">02/02/2024</p>
+      <h2 id='who_are_you?'>Who are you?</h2>
 
 <p>I graduated this year from the University of Vienna in English Literature, I write code, I make and mix music, and I make art. I also hang out on Discord every now and again and try to help people. If you want to listen to my mixes, check out my YouTube channel. You can find those links on the &quot;Socials&quot; page. I&#8217;ve also been coding for the past 12 years and I&#8217;ve learned a few things in that time. If you want to view any of the software I&#8217;ve built, you can do so on my GitHub profile. A link to that can also be found on this website&#8217;s &quot;Socials&quot; page.</p>
 
-   </div>
+    </div>
+    <div class="spacer"></div>
+    <button class="menu" id="menu" onclick="handleNav('nav', 'menu', 'Close', 'Menu');">Menu</button>
   </div>
-  <div class="spacer"></div>
+
   <script async src="/assets/javascript/nav.js"></script>
+<script type="text/javascript">
+ if (window.innerWidth < 800){
+    window.onload = () => {
+        console.log(event);
+        let elem = document.getElementById('nav');
+        elem.style.width = '0vw';
+    };
+ }
+ else {}
+</script>
  </body>
 </html>
