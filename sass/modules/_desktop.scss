@@ -89,13 +89,13 @@ li.nav {
     padding: 0px;
     font-size: 1.5rem;
     color: $mainColor;
-    font-family: $stdFont;
+    font-family: $headingFont;
 }
 li.nav::before {
-    content: '#';
+    content: '\26E7';
     font-size: 1.5rem;
     color: $mainColor;
-    font-family: $stdFont;
+    font-family: $headingFont;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-right: 5px;
@@ -105,7 +105,7 @@ li.nav::before {
 a.nav {
     font-size: 1.5rem;
     color: $mainColor;
-    font-family: $stdFont;
+    font-family: $headingFont;
     padding: 0px;
     margin: 0px;
     text-decoration: none;
@@ -239,7 +239,7 @@ h2.pageHeading {
 p.date {
     font-size: 1.4rem;
     font-family: $stdFont;
-    font-style: italic;
+    font-style: normal;
     font-weight: lighter;
     color: $accentColor;
     padding-top: 0px;
@@ -253,6 +253,17 @@ img {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: initial;
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+}
+iframe {
+    width: 100%;
     margin-top: 0px;
     margin-bottom: 30px;
     margin-right: 0px;
