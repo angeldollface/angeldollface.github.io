@@ -262,15 +262,23 @@ img {
     border: none;
     border-radius: 5px;
 }
-iframe {
+pre {
     width: 100%;
     margin-top: 0px;
     margin-bottom: 30px;
     margin-right: 0px;
     margin-left: 0px;
-    display: initial;
     padding: 0px;
     border: none;
+    background-color: $accentColor;
     border-radius: 5px;
+    overflow-x: scroll;
+}
+code {
+    padding: 0px;
+    font-family: $codeFont;
+    font-size: 1.4rem;
+    color: $mainColor;
+    margin: 0px;
 }
 /* TEXT CONTENT END */
