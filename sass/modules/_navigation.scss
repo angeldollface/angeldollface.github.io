@@ -1,0 +1,90 @@
+/*
+A DOLL'S WEBSITE by Alexander Abraham 
+a.k.a. "Angel Dollface".
+Licensed under the DSL v1.
+*/
+
+@import 'vars';
+
+/* NAV START */
+div.menu {
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+p.menu {
+    text-align: center;
+    font-family: $headingFont;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    color: $accentColor;
+    padding: 10px;
+    margin: 0px;
+}
+a.menu {
+    font-family: $headingFont;
+    font-size: 20px;
+    transition-duration: 0.6s;
+    color: $accentColor;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+a.menu:hover {
+    color: $hoverColor;
+}
+div.nav {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    width: 100vw;
+    height: 0vh;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+    position: fixed;
+    overflow: hidden;
+    transition-duration: 0.6s;
+    background-color: $accentColor;
+}
+ul.nav {
+    list-style: none;
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    text-align: center;
+}
+li.nav {
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+li.nav::before{
+	padding: 0px;
+	margin: 0px;
+	content: '';
+}
+a.nav {
+    font-size: 35px;
+    font-family: $headingFont;
+    color: $bgColor;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    transition-duration: 0.6s;
+}
+a.nav:hover {
+    color: $hoverColor;
+}
+/* NAV END */

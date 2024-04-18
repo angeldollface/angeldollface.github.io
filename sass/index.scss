@@ -1,9 +1,111 @@
 /*
 A DOLL'S WEBSITE by Alexander Abraham 
 a.k.a. "Angel Dollface".
-Licensed under the MIT license.
+Licensed under the DSL v1.
 */
 
-@import 'modules/general';
-@import 'modules/desktop';
-@import 'modules/responsive';
+@import 'modules/page';
+@import 'modules/shared';
+@import 'modules/landing';
+@import 'modules/letters';
+@import 'modules/listview';
+@import 'modules/navigation';
+
+/* RESPONSIVE SECTION START */
+@media screen and (max-width: 800px){
+
+    /* SHARED START */
+    div.content {
+        width: 90%;
+    }
+    /* SHARED END */
+
+    /* LETTERS START */
+    p.a,p.n,p.g,p.l{
+        font-size: 20px;
+    }
+    /* LETTERS END */
+
+    /* NAV START */
+    p.menu {
+        font-size: 15px;
+    }
+    a.menu {
+        font-size: 15px;
+    }
+    li.nav {
+        padding-bottom: 10px;
+    }
+	a.nav {
+    	font-size: 25px;
+	}
+    /* NAV END */
+
+    /* LISTVIEW START */
+    div.preview {
+        margin-bottom: 20px;
+    }
+    h2.pageHeading {
+        font-size: 40px;
+    }
+    h2.preview {
+        font-size: 30px;
+    }
+    p.preview {
+        font-size: 20px;
+    }
+    p.previewLink {
+        font-size: 20px;
+    }
+    a.previewLink {
+        font-size: 20px;
+    }
+	/* LISTVIEW END */
+
+	/* LANDING START */
+	div.landing {
+	    margin-top: 15vh;
+    	justify-items: center;
+    	grid-template-columns: 1fr;
+	}
+	div.landingText{
+		margin-top: 0px;
+		margin-bottom: 20px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	h2.landingText {
+        font-size: 40px;
+	}
+	p.landingText{
+    	font-size: 30px;
+	}
+	img.landingPfp {
+    	width: 250px;
+    	height: 250px;
+	}
+	/* LANDING END */
+
+	/* PAGE CONTENT START */
+	p.pageMeta {
+		font-size: 25px;
+	}
+	h2{font-size: 25px;}
+	h3{font-size: 24px;}
+	h4{font-size: 23px;}
+	h5{font-size: 22px;}
+	p {
+		font-size: 20px;
+	}
+	a {
+		font-size: 20px;
+	}
+	li {
+		font-size: 20px;
+	}
+	li::before{
+		font-size: 20px;
+	}
+	/* PAGE CONTENT END */
+}
+/* RESPONSIVE SECTION END */

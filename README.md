@@ -12,4 +12,4 @@ The site was built using a static-site generator I wrote in Rust. Feel free to c
 ## NOTE :scroll:
 
 - *A Doll's Website :ribbon: :dolls:* by Alexander Abraham :black_heart: a.k.a. *"Angel Dollface" :dolls: :ribbon:*
-- Licensed under the MIT license.
+- Licensed under the [DSL v1](https://github.com/angeldollface/doll-software-license).

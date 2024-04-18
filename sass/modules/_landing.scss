@@ -1,0 +1,51 @@
+/*
+A DOLL'S WEBSITE by Alexander Abraham 
+a.k.a. "Angel Dollface".
+Licensed under the DSL v1.
+*/
+
+@import 'vars';
+
+/* LANDING START */
+div.landing {
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 0px;
+    padding: 0px;
+}
+div.landingText{
+    padding: 0px;
+    margin: 0px;
+}
+h2.landingText {
+    font-family: $headingFont;
+    font-size: 60px;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+}
+p.landingText{
+    font-family: $contentFont;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+}
+img.landingPfp {
+    width: 400px;
+    height: 400px;
+    border: 3px solid $accentColor;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+/* LANDING END */

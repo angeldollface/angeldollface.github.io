@@ -1,17 +1,9 @@
-function handleNav(
-    navElemID, 
-    buttonElemID, 
-    closeText, 
-    openText
-){
-    let navElement = document.getElementById(navElemID);
-    let buttonElem = document.getElementById(buttonElemID);
-    if (navElement.style.width === '0vw'){
-        navElement.style.width = '100vw';
-        buttonElem.innerHTML = closeText;
-    }
-    else {
-        navElement.style.width = '0vw';
-        buttonElem.innerHTML = openText;
-    }
+function openNav(id){
+    let navElem = document.getElementById(id);
+    navElem.style.height = '100vh';
+}
+
+function closeNav(id){
+    let navElem = document.getElementById(id);
+    navElem.style.height = '0vh';
 }
