@@ -1,7 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Socials"
-date: "02/02/2024"
+date: "20/04/2024"
 description: "A doll's social media profiles."
 ---
 
