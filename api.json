@@ -1,0 +1,17 @@
+{
+  "channels": [
+    {
+      "title": "posts",
+      "description": "A doll's blog and personal website.",
+      "link": "",
+      "items": [
+        {
+          "title": "About",
+          "description": "About me.",
+          "pub_date": "20/04/2024",
+          "link": "https://angeldollface.boo/posts/2024-04-20-Hello-World"
+        }
+      ]
+    }
+  ]
+}

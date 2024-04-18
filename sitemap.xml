@@ -5,7 +5,13 @@
 <url><loc>https://angeldollface.boo/content/socials</loc>
 <changefreq>weekly</changefreq>
 </url>
+<url><loc>https://angeldollface.boo/content/blog</loc>
+<changefreq>weekly</changefreq>
+</url>
 <url><loc>https://angeldollface.boo</loc>
+<changefreq>weekly</changefreq>
+</url>
+<url><loc>https://angeldollface.boo/posts/2024-04-20-Hello-World</loc>
 <changefreq>weekly</changefreq>
 </url>
 </urlset>
