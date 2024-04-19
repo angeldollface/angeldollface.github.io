@@ -11,7 +11,7 @@
     <h2 class="preview">{{ post.title }}</h2>
     <p class="preview">{{ post.description }}</p>
     <p class="previewLink">
-     <a class="previewLink">{{ site.readMeText }}</a>
+     <a class="previewLink" href="{{ site.baseurl }}{{ post.url }}">{{ site.readMeText }}</a>
     </p>
    </div>
    {% endfor %}
