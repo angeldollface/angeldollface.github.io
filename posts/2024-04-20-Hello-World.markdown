@@ -18,7 +18,7 @@ This site serves many purposes! This site features this blog, my art and code po
 
 ## Social channels
 
-If you would like to stay up-to-date on new posts, you can follow me on Mastodon [here](https://mastodon.social/@angeldollface666) or Instagram [here](https://instagram.com/angeldollface666). If you want to follow me on both, you can do that too. The link to my YouTube channel, where I post one DJ set every Saturday, you can find [here](https://youtube.com/@angeldollface666).
+If you would like to stay up-to-date on new posts, you can follow me on Mastodon [here](https://corteximplant.com/@angeldollface666) or Instagram [here](https://instagram.com/angeldollface666). If you want to follow me on both, you can do that too. The link to my YouTube channel, where I post one DJ set every Saturday, you can find [here](https://youtube.com/@angeldollface666).
 
 ## About this website
 
