@@ -10,15 +10,15 @@ show: true
 
 ## Hello World!
 
-Hello! This is my first blog post on this shiny, new website. If you do not know who I am, you can find out about that [here](/content/about). The "TL;DR" is that I've been coding for 10 years and know roughly  13 programming languages and I have been making art for roughly half that time.
+Hello! This is my first blog post on this shiny, new website. If you do not know who I am, allow me to introduce myself a little! I'm an artist, developer, DJ, and creative from Vienna, Austria. Sometimes I'm also a quirky doll. ;)
 
 ## The purpose of this website
 
-This site serves many purposes! This site features my blog, my portfolio on art, music, and DJing, and is also my own little corner of the internet. My blog will be featuring posts on any of the following topics: cybersecurity, cyberprivacy, technology, art, and programming One post on any of these subjects will be coming every week on Saturday.
+This site serves many purposes! This site features this blog, my art and code portfolios, links to my weekly DJ sets on my YouTube channel, and soon, some music. Most importantly, however, this website is also my little corner of the internet. My blog will be featuring posts on one of two topics: technology and art. One post on one of these subjects will be coming every week on Saturday.
 
 ## Social channels
 
-If you would like to stay up-to-date on new content and check out my YouTuibe channel where I will be posting music andf have posted my DJ mixes and will be live-streaming, then you can find the links to the relevant social media channels [here](/content/socials). I post one DJ set every week on Saturday.
+If you would like to stay up-to-date on new posts, you can follow me on Mastodon [here](https://mastodon.social/@angeldollface666) or Instagram [here](https://instagram.com/angeldollface666). If you want to follow me on both, you can do that too. The link to my YouTube channel, where I post one DJ set every Saturday, you can find [here](https://youtube.com/@angeldollface666).
 
 ## About this website
 
