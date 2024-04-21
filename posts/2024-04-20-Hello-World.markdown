@@ -3,7 +3,7 @@ layout: "layouts/page.liquid"
 title: "Hello World"
 description: "An introductory blogpost to the new me and my new site."
 date: "20/04/2024"
-show: true
+show: "true"
 ---
 
 ![Valkyrie Dolly](https://angeldollface.boo/doll-cdn/images/site/banner/banner.png)
