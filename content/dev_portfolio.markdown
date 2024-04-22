@@ -27,7 +27,7 @@ Since people share a lot of links around, I wanted to write a small url-shorteni
 
 Most developer portfolios usually have some "three.js" animations on their site and this animation made with Blender and three.js was an early prototype for a "three.js" project to be used for this website. You can find out more about this React-cum-three.js app [here](https://github.com/angeldollface/androfetch). The live and deployed version of this React app can be found [here](https://angeldollface.boo/tron)
 
-![The ubiquitous moon](https://github.com/angeldollface/tron/blob/main/assets/tron.gif)
+![The ubiquitous moon](https://angeldollface.boo/doll-cdn/images/site/portfolio/tron.gif)
 
 ## Java (Android)
 
@@ -35,7 +35,7 @@ Most developer portfolios usually have some "three.js" animations on their site 
 
 The popular Neofetch script by Dylan Araps is very widely used in the customization and Linux community. Since Android could possibly be thought of as a very special Linux distribution and Android didn't really seem to have a Neofetch-like app of its own, I decided to write this app. Androfetch displays similar statistics to those of Neofetch. You can find out more about Androfetch and try it [here](https://github.com/angeldollface/androfetch).
 
-![Androfetch on a Pixel 7a](https://github.com/angeldollface/androfetch/blob/main/screenshot/screenie.png)
+![Androfetch on a Pixel 7a](https://raw.githubusercontent.com/angeldollface/androfetch/main/screenshot/screenie.png)
 
 ## Dart (Android, Web, iOS, Mac OS)
 
@@ -67,4 +67,4 @@ One of the key features of Mandy is that Mandy allows the scaffolding for a new 
 
 I am a huge fan of customization and after switching to Arch Linux permanently, it took me a long time to find a setup I really liked. My "dotfiles" repository contains all the different setups I have done over time and used on a day-to-day basis. All of the shell scripts (written in Bash) included, I wrote myself to do different specific tasks. The screenshot below showcases my setup with the BSPWM window manager, the Polybar panel, the Alacritty terminal, and my simple Neovim config working on a Rust project of my own. You can view all my setups in [this GitHub repository](https://github.com/angeldollface/dotfiles) and you are free to do with the scripts and other configuration files whatever you please!
 
-![The Blue Demon](https://github.com/angeldollface/dotfiles/blob/main/screenshots/blue-demon-terminal.png)
+![The Blue Demon](https://raw.githubusercontent.com/angeldollface/dotfiles/main/screenshots/blue-demon-terminal.png)
