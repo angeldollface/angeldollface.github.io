@@ -2,8 +2,6 @@
   url: "/"
 - name: "About"
   url: "/content/about"
-- name: "Code"
-  url: "/content/dev_portfolio"
 - name: "Blog"
   url: "/content/blog"
 - name: "Socials"
