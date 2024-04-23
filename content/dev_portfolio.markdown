@@ -1,7 +1,7 @@
 ---
 layout: "layouts/page.liquid"
 title: "Developer Portfolio"
-description: "About me."
+description: "An overview of some of my development projects."
 date: "22/04/2024"
 ---
 
@@ -25,7 +25,7 @@ Since people share a lot of links around, I wanted to write a small url-shorteni
 
 ### Tron
 
-Most developer portfolios usually have some "three.js" animations on their site and this animation made with Blender and three.js was an early prototype for a "three.js" project to be used for this website. You can find out more about this React-cum-three.js app [here](https://github.com/angeldollface/tron). The live and deployed version of this React app can be found [here](https://angeldollface.boo/tron)
+Most developer portfolios usually have some "three.js" animations on their site and this animation made with Blender and three.js was an early prototype for a "three.js" project to be used for this website. You can find out more about this React-cum-three.js app [here](https://github.com/angeldollface/tron). The live and deployed version of this React app can be found [here](https://angeldollface.boo/tron).
 
 ![The ubiquitous moon](https://angeldollface.boo/doll-cdn/images/site/portfolio/tron.gif)
 
