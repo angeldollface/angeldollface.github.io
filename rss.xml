@@ -4,6 +4,12 @@
 <description>A doll's blog and personal website.</description>
 <atom:link href="" rel="self" type="application/rss+xml"/>
 <item>
+<title>Reflection and Light</title>
+<description></description>
+<pubDate>27/04/2024</pubDate>
+<link>https://angeldollface.boo/posts/2024-04-27-Reflection-and-Light</link>
+</item>
+<item>
 <title>Hello World</title>
 <description>An introductory blogpost to the new me and my new site.</description>
 <pubDate>20/04/2024</pubDate>
