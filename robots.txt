@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://angeldollface.boo/sitemap.xml
