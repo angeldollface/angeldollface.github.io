@@ -7,4 +7,4 @@ description: "Site under construction."
 
 # UNDER CONSTRUCTION
 
-This site is still under construction, care to check out my [YouTube channel](https://youtube.com/@angeldollface666) while you wait?
+This site is still under construction! Care to check out my [YouTube channel](https://youtube.com/@angeldollface666) while you wait?
