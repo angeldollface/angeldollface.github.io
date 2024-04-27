@@ -1,111 +1,57 @@
-/*
-A DOLL'S WEBSITE by Alexander Abraham 
-a.k.a. "Angel Dollface".
-Licensed under the DSL v1.
-*/
+$bgColor: #E4E4E4;
+$linkColor: #EA1573;
+$hoverColor: #FF7BAC;
+$accentColor: #000000;
 
-@import 'modules/page';
-@import 'modules/shared';
-@import 'modules/landing';
-@import 'modules/letters';
-@import 'modules/listview';
-@import 'modules/navigation';
-
-/* RESPONSIVE SECTION START */
-@media screen and (max-width: 800px){
-
-    /* SHARED START */
-    div.content {
-        width: 90%;
-    }
-    /* SHARED END */
-
-    /* LETTERS START */
-    p.a,p.n,p.g,p.l{
-        font-size: 20px;
-    }
-    /* LETTERS END */
-
-    /* NAV START */
-    p.menu {
-        font-size: 15px;
-    }
-    a.menu {
-        font-size: 15px;
-    }
-    li.nav {
-        padding-bottom: 10px;
-    }
-	a.nav {
-    	font-size: 25px;
-	}
-    /* NAV END */
-
-    /* LISTVIEW START */
-    div.preview {
-        margin-bottom: 20px;
-    }
-    h2.pageHeading {
-        font-size: 40px;
-    }
-    h2.preview {
-        font-size: 30px;
-    }
-    p.preview {
-        font-size: 20px;
-    }
-    p.previewLink {
-        font-size: 20px;
-    }
-    a.previewLink {
-        font-size: 20px;
-    }
-	/* LISTVIEW END */
-
-	/* LANDING START */
-	div.landing {
-	    margin-top: 15vh;
-    	justify-items: center;
-    	grid-template-columns: 1fr;
-	}
-	div.landingText{
-		margin-top: 0px;
-		margin-bottom: 20px;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-	h2.landingText {
-        font-size: 40px;
-	}
-	p.landingText{
-    	font-size: 30px;
-	}
-	img.landingPfp {
-    	width: 250px;
-    	height: 250px;
-	}
-	/* LANDING END */
-
-	/* PAGE CONTENT START */
-	p.pageMeta {
-		font-size: 25px;
-	}
-	h2{font-size: 25px;}
-	h3{font-size: 24px;}
-	h4{font-size: 23px;}
-	h5{font-size: 22px;}
-	p {
-		font-size: 20px;
-	}
-	a {
-		font-size: 20px;
-	}
-	li {
-		font-size: 20px;
-	}
-	li::before{
-		font-size: 20px;
-	}
-	/* PAGE CONTENT END */
+html {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
 }
-/* RESPONSIVE SECTION END */
+body {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: $bgColor;
+}
+h1 {
+    font-family: system-ui;
+    font-size: 40px;
+    color: $accentColor;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+p {
+    font-family: system-ui;
+    font-size: 25px;
+    color: $accentColor;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+a {
+    font-family: system-ui;
+    font-size: 25px;
+    color: $linkColor;
+    margin: 0px;
+    padding: 0px;
+    transition-duration: 0.6s;
+}
+a:hover {
+    color: $hoverColor;
+}

@@ -1,15 +1,6 @@
 <html lang="en-US">
  {% include 'head' %}
  <body>
-  {% include 'nav' %}
-  {% include 'menu' %}
-  {% include 'letters' %}
-  <div class="content">
-		<h2 class="pageHeading">{{ page.title }}</h2>
-		<p class="pageMeta">{{ site.lastUpdatedText }} {{ page.date }}</p>
-		{{ page.content }}
-	{% include 'spacer' %}
-  </div>
-  {% include 'scripts' %}
+  {{ page.content }}
  </body>
 </html>

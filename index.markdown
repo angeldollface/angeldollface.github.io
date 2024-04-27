@@ -1,6 +1,10 @@
 ---
-layout: "layouts/landing.liquid"
+layout: "layouts/page.liquid"
 title: "Home"
 date: "02/02/2024"
-description: "A doll's blog & personal website."
+description: "Site under construction."
 ---
+
+# UNDER CONSTRUCTION
+
+This site is still under construction, care to check out my [YouTube channel](https://youtube.com/@angeldollface666) while you wait?
