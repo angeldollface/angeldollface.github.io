@@ -1,11 +1,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url><loc>https://angeldollface.boo</loc>
-<changefreq>weekly</changefreq>
-</url>
 <url><loc>https://angeldollface.boo/posts/2024-04-27-Reflection-and-Light</loc>
 <changefreq>weekly</changefreq>
 </url>
 <url><loc>https://angeldollface.boo/posts/2024-04-20-Hello-World</loc>
+<changefreq>weekly</changefreq>
+</url>
+<url><loc>https://angeldollface.boo</loc>
 <changefreq>weekly</changefreq>
 </url>
 </urlset>
