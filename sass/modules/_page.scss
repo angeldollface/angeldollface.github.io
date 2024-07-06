@@ -66,6 +66,47 @@ p {
     margin: 0px;
     text-align: left;
 }
+a {
+    font-family: 'NeueMontrealMedium';
+    font-size:30px;
+    color: #000000;
+    font-weight: lighter;
+    padding: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+ul {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    margin: 0px;
+    text-align: left;
+    list-style: none;
+}
+li {
+    font-family: 'NeueMontrealMedium';
+    font-size:30px;
+    color: #000000;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+li::before {
+    content: '-';
+    font-family: 'NeueMontrealMedium';
+    font-size:30px;
+    color: #000000;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
 img.authorPic {
     margin-top: 40px;
     margin-right: 40px;
