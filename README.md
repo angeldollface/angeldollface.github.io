@@ -7,7 +7,7 @@
 ## Screenshot :camera:
 
 <p align="center">
- <img src="screenie/collage.png"/>
+ <img src="screenie/desktop-screenie.png"/>
 </p>
 
 ## About :books:
