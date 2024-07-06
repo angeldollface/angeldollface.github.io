@@ -1,12 +1,12 @@
 ---
 layout: "layouts/page.liquid"
 title: "Hello World"
+authorAvatar: "https://avatars.githubusercontent.com/u/112771657?v=4"
+author: "Angel Dollface"
 description: "An introductory blogpost to the new me and my new site."
 date: "20/04/2024"
 show: "true"
 ---
-
-![Valkyrie Dolly](https://angeldollface.boo/doll-cdn/images/site/banner/banner.png)
 
 ## Hello World!
 
