@@ -1,6 +1,540 @@
-@import 'modules/nav';
-@import 'modules/blog';
-@import 'modules/page';
-@import 'modules/header';
-@import 'modules/general';
-@import 'modules/responsive';
+$bgColor: #E9E2FF;
+$accent: #303030;
+$hover: #FFFFFF;
+$headingFont: 'NeueMontrealBold';
+$contentFont: 'NeueMontrealMedium';
+$tertiary: 'NeueMontrealLight';
+
+/* GENERAL SECTION START */
+
+html {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: $bgColor;
+}
+
+div.spacer {
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/* GENERAL SECTION END */
+
+/* NAV SECTION START */
+
+div.nav {
+    width: 0vw;
+    height: 100vh;
+    position: fixed;
+    background-color: $accent;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    box-sizing: border-box;
+    transition-duration: 0.6s;
+}
+ul.nav {
+    margin-top: 15vh;
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0px;
+}
+li.nav {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+}
+li.nav::before {
+    content: '';
+}
+a.nav {
+    text-decoration: none;
+    font-size: 90px;
+    font-family: $headingFont;
+    color: $hover;
+    padding: 0px;
+    text-transform: uppercase;
+    margin: 0px;
+    transition-duration: 0.6s;
+}
+a.nav:hover {
+    font-style: italic;
+}
+
+/* NAV SECTION END */
+
+/* BLOG SECTION START */
+
+div.columnContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+div.contentColumn  {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    background-color: transparent;
+    flex: 1;
+}
+
+div.textItem {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+div.listItem {
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+p.listItem {
+    font-size: 90px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin: 0px;
+    color: $accent;
+    text-align: left;
+    font-family: $headingFont;
+}
+a.listItem {
+    font-size: 90px;
+    padding: 0px;
+    color: $accent;
+    text-decoration: none;
+    transition-duration: 0.6s;
+    margin: 0px;
+    font-family: $headingFont;
+}
+
+a.listItem:hover {
+    font-style: italic;
+}
+
+p.listItemDescription {
+    font-size: 30px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin: 0px;
+    color: $accent;
+    text-align: left;
+    font-family: $tertiary;
+}
+
+h2.textItem {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    color: $accent;
+    margin: 0px;
+    text-align: right;
+    font-family: $headingFont;
+}
+
+p.textItem {
+    font-size: 20px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: $accent;
+    padding-left: 20px;
+    margin: 0px;
+    text-align: right;
+    font-family: $tertiary;
+}
+
+/* BLOG SECTION END */
+
+/* PAGE SECTION START */
+
+div.pageContent {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-items:normal;
+    justify-content:center;
+    flex-direction: row;
+    display: flex;
+    background-color: transparent;
+}
+div.contentColumn {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    flex: 3 !important;
+}
+div.metaColumn {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    flex: 1;
+}
+h2.pageHeading {
+    font-family: $headingFont;
+    font-size: 50px;
+    color: $accent;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    margin: 0px;
+    text-align: left;
+}
+h2 {
+    font-family: $contentFont;
+    font-size:40px;
+    color: $accent;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin: 0px;
+    text-align: left;
+}
+h3 {
+    font-family: $contentFont;
+    font-size:35px;
+    color: $accent;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin: 0px;
+    text-align: left;
+}
+p {
+    font-family: $contentFont;
+    font-size:30px;
+    color: $accent;
+    font-weight: lighter;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    margin: 0px;
+    text-align: left;
+}
+a {
+    font-family: $contentFont;
+    font-size:30px;
+    color: $accent;
+    font-weight: lighter;
+    padding: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+ul {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    margin: 0px;
+    text-align: left;
+    list-style: none;
+}
+li {
+    font-family: $contentFont;
+    font-size:30px;
+    color: $accent;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+li::before {
+    content: '-';
+    font-family: $contentFont;
+    font-size:30px;
+    color: $accent;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+img.authorPic {
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid $accent;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+p.name {
+    font-family: $contentFont;
+    font-size:25px;
+    color: $accent;
+    font-weight: lighter;
+    padding-right: 40px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+p.postMeta {
+    font-family: $contentFont;
+    font-size:25px;
+    color: $accent;
+    font-weight: lighter;
+    padding-right: 40px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+/* PAGE SECTION END */
+
+/* HEADER SECTION START */
+
+div.header {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+}
+
+
+h1.left {
+    padding: 20px;
+    margin: 0px;
+    color: $accent;
+    font-size: 20px;
+    font-family: $headingFont;
+}
+
+button {
+    margin: 20px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: $accent;
+    font-family: $tertiary;
+}
+
+h1.right {
+    padding: 20px;
+    margin: 0px;
+    overflow: hidden;
+    color: $accent;
+    font-size: 20px;
+    font-family: $headingFont;
+}
+
+/* HEADER SECTION END */
+
+/* LANDING SECTION START */
+
+div.landing {
+    width: 100%;
+    height: 90%;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+h2.name {
+    font-size: 60px;
+    font-family: $headingFont;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: $accent;
+    margin: 0px;
+    text-align: left;
+}
+
+p.subtitle {
+    font-size: 30px;
+    font-family: $contentFont;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    color: $accent;
+    margin: 0px;
+    text-align: left;
+}
+
+/* HEADER SECTION END */
+
+/* RESPONSIVE SECTION START */
+
+@media screen and (max-width: 800px){
+
+    /* HEADER SECTION START */
+    h1.right {
+        display: none;
+    }
+    /* HEADER SECTION END */
+
+    /* LANDING SECTION END */
+    div.landing {
+        flex-direction: column;
+    }
+    h2.name {
+        font-size: 40px;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    p.subtitle {
+        font-size: 20px;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    /* LANDING SECTION END */
+
+    /* BLOG SECTION START */
+    div.columnContainer {
+        flex-direction: column;
+    }
+    p.listItem {
+        font-size: 50px;
+    }
+    a.listItem {
+        font-size: 50px;
+    }    
+    p.listItemDescription {
+        font-size: 20px;
+    }
+    h2.textItem {
+        font-size: 30px;
+    }
+    
+    p.textItem {
+        font-size: 20px;
+    }
+    /* BLOG SECTION END */
+
+    /* NAV SECTION START */
+    ul.nav {
+        margin-top: 10vh;
+    }
+    a.nav {
+        font-size: 50px;
+    }
+    /* NAV SECTION END */
+
+    /* PAGE SECTION START */
+    div.pageContent {
+        align-items: normal;
+        justify-content: normal;
+        flex-direction: column;
+    }
+    div.metaColumn {
+        display: none;
+    }
+    h2.pageHeading {
+        font-size: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    h2 {
+        font-size:25px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    h3 {
+        font-size:23px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    p {
+        font-size:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    a {
+        font-size: 20px;
+    }
+    ul {
+        font-size:20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    li,li::before {
+        font-size: 20px;
+    }
+    /* PAGE SECTION END */
+
+}
+
+/* RESPONSIVE SECTION END */
