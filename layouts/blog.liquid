@@ -2,9 +2,18 @@
 <html>
  {% include 'head' %}
 <body>
-  {% include 'nav' %}
-  {% include 'header' %}
- {% include 'list' %}
+ {% include 'nav' %}
+ {% include 'header' %}
+ <div class="columnContainer">
+  <div class="contentColumn">
+   {% for post in loop_content["posts"] %}
+    <div class="listItem">
+     <p class="listItem"><a class="listItem" href="{{ post.url }}">{{ post.title }}</a></p>
+     <p class="listItemDescription">{{ post.description }}</p>
+    </div>
+   {% endfor %}
+  </div>
+ </div>
  {% include 'scripts' %}
 </body>
 </html>
