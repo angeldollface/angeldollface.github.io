@@ -4,9 +4,15 @@
 
 ***A doll's website. :ribbon: :dolls:***
 
+## Screenshot :camera:
+
+<p align="center">
+ <img src="screenie/collage.png"/>
+</p>
+
 ## About :books:
 
-This repository contains the source code for my official website.
+This repository contains the source code for my official website. All the code in this site was written by me and is free for personal use.
 The site was built using a static-site generator I wrote in Rust. Feel free to check this project out [here](https://github.com/angeldollface/mandy).
 
 ## NOTE :scroll:
