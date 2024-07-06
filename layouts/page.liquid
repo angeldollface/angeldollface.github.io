@@ -1,6 +1,25 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html>
  {% include 'head' %}
- <body>
-  {{ page.content }}
- </body>
+<body>
+
+
+  {% include 'nav' %}
+  {% include 'header' %}
+ 
+
+<div class="pageContent">
+  <div class="contentColumn">
+   <h2 class="pageHeading">{{ page.title }}</h2>
+   {{ page.content }}
+  </div>
+
+  {% include 'meta' %}
+
+
+</div>
+
+
+{% include 'scripts' %}
+</body>
 </html>

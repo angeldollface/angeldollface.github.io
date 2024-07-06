@@ -1,0 +1,84 @@
+div.header {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+}
+
+
+h1.left {
+    padding: 20px;
+    margin: 0px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'NeueMontrealBold';
+}
+
+button {
+    margin: 20px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'NeueMontrealLight';
+}
+
+h1.right {
+    padding: 20px;
+    margin: 0px;
+    overflow: hidden;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'NeueMontrealBold';
+}
+
+/* HEADER SECTION END */
+
+/* LANDING SECTION START */
+
+div.landing {
+    width: 100%;
+    height: 90%;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+h2.name {
+    font-size: 60px;
+    font-family: 'NeueMontrealBold';
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    color: #000000;
+    margin: 0px;
+    text-align: left;
+}
+
+p.subtitle {
+    font-size: 30px;
+    font-family: 'NeueMontrealMedium';
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    color: #000000;
+    margin: 0px;
+    text-align: left;
+}

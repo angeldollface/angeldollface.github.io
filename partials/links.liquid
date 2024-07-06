@@ -1,0 +1,8 @@
+<div class="contentColumn">
+ {% for item in data["links"] %}
+  <div class="listItem">
+   <p class="listItem"><a class="listItem" href="{{ item.url }}">{{ item.name }}</a></p>
+   <p class="listItemDescription">{{ item.description }}</p>
+  </div>
+ {% endfor %}
+</div>

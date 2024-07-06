@@ -11,7 +11,13 @@ copyFiles: "true=>CNAME|assets"
 hasLoopContent: "false"
 analyticsId: "G-902CP5DY95"
 build_log: "true"
-mastodonLink: "https://corteximplant.com/@angeldollface666"
+edgeText: "est. MCMXCIX"
+menuText: "menu"
+closeText: 'Close'
+nameAbbrev: "A.D."
+ownerDescription: >-
+  Developer, artist, and creative.
+sharkeyLink: "https://blahaj.zone/@angeldollface666"
 icon_five_seven: "https://angeldollface.boo/doll-cdn/images/site/favicons/apple-icon-57x57.png"
 icon_six_zero: "https://angeldollface.boo/doll-cdn/images/site/favicons/apple-icon-60x60.png"
 icon_seven_two: "https://angeldollface.boo/doll-cdn/images/site/favicons/apple-icon-72x72.png"
