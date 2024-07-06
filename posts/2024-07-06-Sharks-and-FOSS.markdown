@@ -35,5 +35,6 @@ Wrapping one's head around a new platform can be difficult and have some very re
 ## Links
 
 - Fedi DB: [Visit](https://fedidb.org)
+- My profile on Blahaj: [Visit](https://blahaj.zone/@angeldollface666)
 - Typescript library for Sharkey: [Visit](https://github.com/angeldollface/sharkey.ts)
 - Dart library for Sharkey: [Visit](https://github.com/angeldollface/sharkey.dart)
