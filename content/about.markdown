@@ -1,6 +1,6 @@
 ---
 layout: "layouts/page.liquid"
-title: "About Me"
+title: "About me"
 authorAvatar: "https://avatars.githubusercontent.com/u/112771657?v=4"
 author: "Angel Dollface"
 description: "A short introduction to me and this website."
@@ -9,7 +9,7 @@ date: "20/04/2024"
 
 ## About me
 
-Hi there! My name is Alexander Abraham and I'm a developer, artist, musician, and content-creator from Vienna, Austria. I've been developing open-source software for the past 13 years, mixing music for the past 10 years and recently started a YouTube channel! All relevant links can be found on the "Socials" page.
+Hi there! My name is Alexander Abraham and I'm a developer, artist, musician, and content-creator from Vienna, Austria. I've been developing open-source software for the past 13 years, mixing music for the past 10 years, and recently started a YouTube channel! All relevant links can be found on the "Socials" page.
 
 ## About this site
 
