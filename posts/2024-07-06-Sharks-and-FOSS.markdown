@@ -10,7 +10,7 @@ show: "true"
 
 ## Introduction
 
-In this first blogpost on my new website I will be conducting a brief survey of the state of social media platfroms in 2024, why I switched to an entirely open platform, and how I became personally involved in this open platform. Finally, I also explain the difference between the social media platforms most people are used to and the one I switched to and why you might want to consider doing the same.
+In this first blogpost on my new website I will be conducting a brief survey of the state of social media platfroms in 2024 and why I switched to an entirely open platform. I also explain the difference between the platform I switched to and traditional social media platforms and why you might want to consider doing the same.
 
 ## The state of social media platforms in 2024
 
