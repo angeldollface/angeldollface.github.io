@@ -4,6 +4,7 @@ $hover: #FFFFFF;
 $headingFont: 'NeueMontrealBold';
 $contentFont: 'NeueMontrealMedium';
 $tertiary: 'NeueMontrealLight';
+$codeFont: 'FiraCode-Regular';
 
 /* GENERAL SECTION START */
 
@@ -279,6 +280,30 @@ ul {
     text-align: left;
     list-style: none;
 }
+img {
+   margin: 0px;
+   padding: 0px;
+   height: 450px;
+   object-fit: cover;
+}
+pre {
+    padding: 0px;
+    width: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    border-radius: 5px;
+    background-color: $accent;
+}
+code {
+    font-family: $codeFont;
+    color: $hover;
+    padding: 0px;
+    margin: 15px;
+    font-size: 30px;
+    display: inline-block;
+}
 li {
     font-family: $contentFont;
     font-size:30px;
@@ -513,6 +538,18 @@ p.subtitle {
         font-size:23px;
         padding-right: 20px;
         padding-left: 20px;
+    }
+    pre {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    code {
+        font-size: 20px;
+    }
+    img {
+        height: 250px;
+        width: 100%;
     }
     p {
         font-size:20px;
