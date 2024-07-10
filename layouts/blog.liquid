@@ -7,10 +7,13 @@
  <div class="columnContainer">
   <div class="contentColumn">
    {% for post in loop_content["posts"] %}
-    <div class="listItem">
-     <p class="listItem"><a class="listItem" href="{{ post.url }}">{{ post.title }}</a></p>
-     <p class="listItemDescription">{{ post.description }}</p>
-    </div>
+    {% if post.show == 'true' %}
+     <div class="listItem">
+      <p class="listItem"><a class="listItem" href="{{ post.url }}">{{ post.title }}</a></p>
+      <p class="listItemDescription">{{ post.description }}</p>
+     </div>
+    {% else %}
+    {% endif %}
    {% endfor %}
   </div>
  </div>
