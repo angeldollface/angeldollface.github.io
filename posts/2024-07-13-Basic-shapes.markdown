@@ -3,30 +3,30 @@ layout: "layouts/page.liquid"
 title: "Sketching and basic shapes"
 authorAvatar: "https://avatars.githubusercontent.com/u/112771657?v=4"
 author: "Angel Dollface"
-description: "How basic shapes help in making a sketch"
+description: "How basic shapes help in making a sketch."
 date: "13/07/2024"
 show: "true"
 ---
 
 ## Introduction
 
-Aside from writing instructions for computers, I am also very passionate about making art. In this blogpost I shall give you an insight into the process that goes into me making a sketch from a reference image. This process description entails a full step-by-step breakdown and emphasizes the importance of getting the basic shapes that make up a figure and their position correct. If you want to see the completed artwork, let me know on any of my social media channels.
+Aside from writing instructions for computers, I am also very passionate about making art. In this blogpost I shall give you an insight into the process that goes into me making a sketch using a reference image as inspiration. This process description entails a full step-by-step breakdown of my workflow and emphasizes the importance breaking an artwork down into components and getting the position, shape, and size of these components correct. If you want to see the completed artwork, let me know on any of my social media channels.
 
 ## The reference image
 
-One of the platforms with a lot of inspiring media for artists is Pinterest. While I was casually perusing Pinterest one day, I stumbled across the image below. Since I've always had a penchant for a chaotic and demented aesthetic, I thought I'd give sketching a close-up of the face a try, aiming for the same *Yami Kawaii* look.
+One of the platforms with a lot of inspiring media for artists is Pinterest. While I was casually perusing Pinterest one day, I stumbled across the image below. Since I've always had a penchant for a chaotic and demented aesthetic, I thought I'd give sketching a close-up of the girl's face a try, aiming for the same *Yami Kawaii* look with a little diabolical touch.
 
 ![The Reference Image](https://angeldollface.boo/doll-cdn/images/posts/20240713/ref.jpg)
 
 ## Basic shapes
 
-In the voyage of constant learning and experimentation, that constitutes the craft of creating digital/analog art, I discovered very quickly that attempting to draw a figure from basic shapes is essential in making any sort of sketch that can serve as a basis for a colored-in artwork. This not only gives you a good idea of anatomical details and the proportion and location of different anatomical features of a figure, but also constitutes a solid foundation for any starting sketch. The key to making this exercise successful is trying and trying again until you think basic shapes like circles, ovals, rectangles, etc. are where they should be. I've broken the figure down in the way you see below. Since I use ProCreate, I wanted to make one half and then fill out that half as far as possible and in a final step, copy the finished half and reflect that copy along the vertical axis (the vertical line in the middle).
+In the voyage of constant learning and experimentation, that constitutes the craft of creating digital/analog art, I discovered very quickly that attempting to draw a figure from basic shapes is essential in making any sort of sketch that can serve as a basis for an illustrated artwork. This not only gives you a good idea of anatomical details and the proportion and location of different anatomical features of a figure, but also constitutes a solid foundation for any starting sketch. The key to making this exercise successful is trying and trying again until you think basic shapes like circles, ovals, rectangles, etc. are where they should be. I've broken the figure down in the way you see below. Since I use ProCreate, I wanted to break her face down into two identical halves. I would draw one half with a high level of detail and then mirror that half along the vertical axis.
 
 ![Basic Shapes](https://angeldollface.boo/doll-cdn/images/posts/20240713/0.jpg)
 
 ## Extending the basic shapes to make the different components of a figure
 
-After you have made the basic sketch out of basic shapes, one would usually proceed to connecting different shapes and make them resemble the components of a figure. By components I mean different bigger scene components, such as limbs, the head, the region covered by hair, arms, legs, clothing items, etc. In this stage one is trying to make the basic shapes that one drew in the previous step into the bigger components that constitute the scene one is trying to draw. By scene I mean all the different items in the reference image(s). These items can be different people, animals, buildings, and others. This step is halfway to the finish because one is filling out the scene one is trying to draw but omitting the detail such as eyes, noses, whiskers, leaves, and other more detailed components of a scene. In the image below you can see how I moulded the basic shapes from the previous screenshot into something resembling the head of our Yami Kawaii figure from the reference image.
+After you have made the basic sketch out of basic shapes, one would usually proceed to connecting different shapes and make them resemble the parts of a figure. By parts I mean different bigger scene items, such as limbs, the head, the region covered by hair, arms, legs, clothing items, etc. In this stage one is trying to make the basic shapes that one drew in the previous step into the bigger parts that constitute the scene one is trying to draw. By scene I mean all the different items in the final illustration. These items can be different people, animals, buildings, and others. This step is halfway to the finish because one is filling out the scene but omitting the detail such as eyes, noses, whiskers, leaves, and other more detailed parts of a scene. In the image below you can see how I moulded the basic shapes from the previous screenshot into something resembling the head of our Yami Kawaii figure from the reference image.
 
 ![Outlines & Details](https://angeldollface.boo/doll-cdn/images/posts/20240713/1.jpg)
 
