@@ -295,7 +295,6 @@ pre {
     margin-bottom: 40px;
     margin-top: 0px;
     border-radius: 5px;
-    overflow-x: scroll;
     background-color: $accent;
 }
 code {
@@ -304,6 +303,7 @@ code {
     padding: 0px;
     margin: 15px;
     font-size: 30px;
+    overflow-x:scroll;
     display: inline-block;
 }
 li {
@@ -318,7 +318,7 @@ li {
     margin: 0px;
 }
 li::before {
-    content: '-';
+    content: '*';
     font-family: $contentFont;
     font-size:30px;
     color: $accent;

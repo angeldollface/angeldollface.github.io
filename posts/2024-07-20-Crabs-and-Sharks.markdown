@@ -5,7 +5,7 @@ authorAvatar: "https://avatars.githubusercontent.com/u/112771657?v=4"
 author: "Angel Dollface"
 description: "How to make a bot for Sharkey in Rust!"
 date: "20/07/2024"
-show: "true"
+show: "false"
 ---
 
 ## Introduction
@@ -46,20 +46,20 @@ To make our bot we will need some knowledge on a few programming concepts and Ru
 
 ### Variables
 
-The most basic entity in any programming language is a variable. Variables are like boxes that you put something inside. This something is a piece of data. This data has to be of a certain type. Some common types of data are strings and numbers. In Rust we would declare a variable, a box, that *only* holds data of type "String" like this:
+The most basic entity in any programming language is a variable. Variables are like boxes that you put something inside. This something is a piece of data. This data has to be of a certain type. Some common types of data are strings and numbers. In Rust we would declare a variable, a box, that only holds data of type "String" like this:
 
 ```Rust
 let my_var: String = String::from("Hello World!");
 ```
 
-In the sample above we declare a variable, or box, called "my_variable" that holds the text "Hello World!". Rust was invented, among other things, to make a safer C++. I won't go into what that means but this goal of safety brought along another very important concept in Rust: mutable data. In the variable declaration above we cannot change the contents of the box "my_variable". If, however, we modify the statement above like the sample below, we can modify what text the "my_variable" box holds.
+In the sample above we declare a variable, or box, that holds the text "Hello World!". Rust was invented, among other things, to make a safer C++. I won't go into what that means but this goal of safety brought along another very important concept in Rust: mutable data. In the variable declaration above we cannot change the contents of the box my&#x5F;var. If, however, we modify the statement above like the sample below, we can modify what text the my&#x5F;var box holds.
 
 ```Rust
 let mut my_var: String = String::from("Hello World!");
 my_var = "Something else.";
 ```
 
-Now we have declared "my_variable" to be changeable and can now replace the text "Hello World!" in the variable box with "Something else.". That is all you need to know about variables.
+Now we have declared "my\_variable" to be changeable and can now replace the text "Hello World!" in the variable box with "Something else.". That is all you need to know about variables.
 
 ### Functions
 
@@ -78,7 +78,7 @@ fn greet_user(name: &str) -> String {
 }
 ```
 
-In the code snippet above you can see the definition for a function called "greet\_user". The function's input parameters are between the two brackets. On the left side between the brackets we have the name of the input parameter, "name" and on the right side, after the colon, we have the type of the "name" input parameter. The bit after the brackets "-> String" tells Rust that this function returns a string of text. Functions in Rust are declared via the "fn" keyword. The bit inside the curly braces are called the "function body". In the case of the "greet\_user" function, the data of "name" is mutated through the addition of "Hello," before it and an exclamation mark after it. Any data that needs to be returned is marked with the "return" keyword. In Rust, however, you do not *need* to use this keyword.
+In the code snippet above you can see the definition for a function called "greet\_user". The function's input parameters are between the two brackets. On the left side between the brackets we have the name of the input parameter, "name" and on the right side, after the colon, we have the type of the "name" input parameter. The bit after the brackets "-> String" tells Rust that this function returns a string of text. Functions in Rust are declared via the "fn" keyword. The bit inside the curly braces is called the "function body". In the case of the "greet\_user" function, the data of "name" is mutated through the addition of "Hello," before it and an exclamation mark after it. Any data that needs to be returned is marked with the "return" keyword. In Rust, however, you do not *need* to use this keyword.
 
 ### Structures
 
@@ -120,7 +120,7 @@ match person_age {
 }
 ```
 
-In this code sample we called on a function called "person_age". The function returned the enum "PersonAge". To print out a message for each age group, we "matched" against all the options that the "PersonAge" enum provided us with. That's all there is to it.
+In this code sample we called on a function called "person\_age". The function returned the enum "PersonAge". To print out a message for each age group, we "matched" against all the options that the "PersonAge" enum provided us with. That's all there is to it.
 
 ### Results
 
@@ -148,7 +148,7 @@ greet_user(name);
 greet_user(name);
 ```
 
-In line 1 a variable of type "String" is declared. In line 2 I attempt to use this variable in the "greet_user" function I defined earlier. If I use it only once, this will work and Rust will accept my code. When I use the variable again on line 3, however, Rust will throw an error telling me this is illegal. This is the case because only one entity can use a piece of data only once at a time. The entity owns that piece of data. If, however, I changed the code sample above by referencing "name" in the two calls of "greet\_user" by prefixing "name" with an "&" symbol, Rust would accept my code. You will see this use of the ampersand a few times in the code we will be writing.
+In line 1 a variable of type "String" is declared. In line 2 I attempt to use this variable in the "greet\_user" function I defined earlier. If I use it only once, this will work and Rust will accept my code. When I use the variable again on line 3, however, Rust will throw an error telling me this is illegal. This is the case because only one entity can use a piece of data only once at a time. The entity owns that piece of data. If, however, I changed the code sample above by referencing "name" in the two calls of "greet\_user" by prefixing "name" with an "&" symbol, Rust would accept my code. You will see this use of the ampersand a few times in the code we will be writing.
 
 ### Looping and recursion
 
@@ -164,11 +164,13 @@ Before I explain to you how our bot will be structred, I would like to give you 
 
 ## What is the plan?
 
+Before I explain the plan I had in mind, I would like to just fill you in on the networking knowledge required to make this bot. Many social media website, Sharkey included, allow you to interact with them using computer code. This interaction is done over what is called an application-programming interface, or API for short. These APIs work in a very simple way. These APIs have a set of pre-defined paths on the site's servers that hold certain information. When you go and ask the server "Hey, give me this info.", the server says "Sure!" and gives you the info you wanted as text in a certain format. You asking the server is called "making a request". The server sending back information to you is called "receieving a response". The text the server sends back is usually in the text format of JSON. JSON is a language for storing data in a structured way. How and why JSON exists is irrelevant for our purposes. Sometimes you can ask the server for information and tell it that you would like some very specific information by sending certain parameters along with your request. These parameters would also be sent as JSON. This quick survey of how programmtic interaction happens with social media sites is just for you to have the basic understanding of how our bot will work.
+
 For simplicity's sake, I decided to split our bot into the three following parts:
 
-- 1.) A data structure to hold the response from the Sharkey server.
+- 1.) A data structure to hold the response from the Sharkey server and put the JSON response into.
 - 2.) A function to get the current user count and post this user count to your Sharkey account.
-- 3.) A function to run the function from point 2 every 12 hours.
+- 3.) A function to run the function from point 2 every 5 seconds.
 
 ## Making the project and adding a few crates
 
@@ -204,7 +206,7 @@ Here's a brief explanation of the libraries we just added and why we added them:
 - chrono: We need this library to get the current time as a string of text.
 - reqwest: This library is needed to download and upload things to and from our code to a Sharkey instance's servers.
 
-- serde_json: We need this library to put the responses the instance's server sends back into a format we can modify and read from our Rust code.
+- serde\_json: We need this library to put the responses the instance's server sends back into a format we can modify and read from our Rust code.
 
 - tokio: This library adds features that will help us run asynchronous code.
 
@@ -238,7 +240,7 @@ impl UsersOnline {
 }
 ```
 
-In line 1 we define a block that holds functions specifically for the "UsersOnline" data structure. In Rust we do this via the "impl" keyword followed by the name of the data structure along with a set of curly braces. Inside these curly braces the functions for "UsersOnline" go. In our case this only one function, "to_string". The "self" parameter to the function allows us to access fields of the structure and other functions for "UsersOnline". Inside our "to_string" function on line 3 we simply the count of users online as a string. We declared that the function returns a string on line 2 with the "-> String" part.
+In line 1 we define a block that holds functions specifically for the "UsersOnline" data structure. In Rust we do this via the "impl" keyword followed by the name of the data structure along with a set of curly braces. Inside these curly braces the functions for "UsersOnline" go. In our case this only one function, "to\_string". The "self" parameter to the function allows us to access fields of the structure and other functions for "UsersOnline". Inside our "to\_string" function on line 3 we simply the count of users online as a string. We declared that the function returns a string on line 2 with the "-> String" part.
 
 Your code for your bot should now look something like this:
 
@@ -283,7 +285,7 @@ use sharkey::ReactionAcceptance;
 use sharkey::create_note_for_user;
 ```
 
-In line 1 we import the "reqwest" library to make network requests to the server of our Sharkey instance. In line 2 we import an error structure to handle any errors that may occur inside operations we conduct in our function. In line 3 we import a function to put the data we get from the instance's server into our "UsersOnline" data structure. In line 4 we import a data structure from the "chrono" library to get the current time. In line 5 we import an enum from the Sharkey library to describe the visibility of the posts we make from our bot. This visibility only tells Sharkey who can see the posts our bot makes. In line 6 we import an enum from the Sharkey library to describe what reactions we would like on the posts we make from our bot. In line 7 we import the "create_note_for_user" function from the Sharkey library to post notes to our Sharkey account from our bot code.
+In line 1 we import the "reqwest" library to make network requests to the server of our Sharkey instance. In line 2 we import an error structure to handle any errors that may occur inside operations we conduct in our function. In line 3 we import a function to put the data we get from the instance's server into our "UsersOnline" data structure. In line 4 we import a data structure from the "chrono" library to get the current time. In line 5 we import an enum from the Sharkey library to describe the visibility of the posts we make from our bot. This visibility only tells Sharkey who can see the posts our bot makes. In line 6 we import an enum from the Sharkey library to describe what reactions we would like on the posts we make from our bot. In line 7 we import the "create\_note\_for\_user" function from the Sharkey library to post notes to our Sharkey account from our bot code.
 
 Let's first define our function! Put the code below into your main.rs file.
 
@@ -299,18 +301,18 @@ pub async fn get_count_and_post(
 }
 ```
 
-In the first line we define the asynchronous "get_count_and_post" function. This function needs to be asynchronous because network requests take time to complete and may fail to do so. This also takes time. Our function accepts six paramaters. Here's a brief explanation of them:
+In the first line we define the asynchronous "get\_count\_and\_post" function. This function needs to be asynchronous because network requests take time to complete and may fail to do so. This also takes time. Our function accepts six paramaters. Here's a brief explanation of them:
 
 - 1.) "url": This parameter contains the URL to the information on the Sharkey instance's server that will return the count of users currently online.
-- 2.) "api_base": This parameter will be needed for posting a note and describes the path on the Sharkey instance's server that returns information when requested in a computer-readable format.
-- 3.) "base_url": This is the basic URL to Sharkey instance we are trying to post to.
+- 2.) "api\_base": This parameter will be needed for posting a note and describes the path on the Sharkey instance's server that returns information when requested in a computer-readable format.
+- 3.) "base\_url": This is the basic URL to Sharkey instance we are trying to post to.
 - 4.) "token": Since an action like posting to your account requires you to login to your account first, this parameter is a string of text which is a shortcut to login to your Sharkey from code you write, in this case Rust.
-- 5.) "reaction_acceptance": This parameter is an enum from my Sharkey library to describe what sort of reactions we would like to accept on our posts from our bot.
-- 6.) "reaction_acceptance": This parameter is an enum from my Sharkey library to describe who can see the posts we make from our bot.
+- 5.) "reaction\_acceptance": This parameter is an enum from my Sharkey library to describe what sort of reactions we would like to accept on our posts from our bot.
+- 6.) "visibility": This parameter is an enum from my Sharkey library to describe who can see the posts we make from our bot.
 
 The function does not return any data but operations inside the function can go wrong which is why we return a result.
 
-Let us get to operation one in our function: get the current count of users online. Add the following code inside the "get_count_and_post" function:
+Let us get to operation one in our function: get the current count of users online. Add the following code inside the "get\_count\_and\_post" function:
 
 ```Rust
 let resp = match reqwest::get(url).await {
@@ -339,7 +341,7 @@ let parsed: UsersOnline = match from_str(&body){
 };
 ```
 
-In line 1 we declare a variable of type "UsersOnline" and call it "parsed" since we have parsed (decoded) the raw data from our response into our "UsersOnline" data structure. We do this decoding via the "from_str" function from the "serde_json" library. This operation can also fail if the raw text data from the response was corrupted somehow. In the "Ok" case of the "Result" that the "from_str" function returns we get our parsed data back. If the operation fails, we return an instance of the "Error" data structure we imported with some details on the error.
+In line 1 we declare a variable of type "UsersOnline" and call it "parsed" since we have parsed (decoded) the raw data from our response into our "UsersOnline" data structure. We do this decoding via the "from\_str" function from the "serde\_json" library. This operation can also fail if the raw text data from the response was corrupted somehow. In the "Ok" case of the "Result" that the "from\_str" function returns we get our parsed data back. If the operation fails, we return an instance of the "Error" data structure we imported with some details on the error.
 
 Now we can get the current time and finally post to our Sharkey instance's server. To perform this action, we need to add the following code right under the "parsed" variable declaration from the previous step:
 
@@ -364,7 +366,7 @@ let _posted = match create_note_for_user(
 Ok(())
 ```
 
-This might look like a lot but it is very simple! In the first line we declare a variable called "local", where we get the current time as a string of text. We do this by calling the "now()" function on the "Local" data structure we imported from the "chrono" library. In the second line we define the message we would like to post on our Sharkey account. We store this message in a variable of type "String", since it is just a string of text and call it "msg". We "build" our message via the special "format" function Rust provides. Special functions in Rust are marked with an exclamation mark. The main message is the text inside double quotes. The curly braces inside the text mark that we would like to put pieces of data there. These two pieces of data are the two variables that follow the string of text, the "local" and "parsed.to_string()" variables respectively. We call "to_string" on our "parsed" variable because we want to return the count of users online as a string. The second variable "_posted" is an empty variable for the function we call in it, "create_note_for_user". We supply the paramaters from our "get_count_and_post" function and await the results. Because this operation can fail and "create_note_for_user" returns a "Result", we need to handle the "Ok" case and the "Err" case. In the "Ok" case we return the placeholder variable "_posted" and in the "Err" case we return an instance of the "Error" data structure we imported with some details on the error.
+This might look like a lot but it is very simple! In the first line we declare a variable called "local", where we get the current time as a string of text. We do this by calling the "now()" function on the "Local" data structure we imported from the "chrono" library. In the second line we define the message we would like to post on our Sharkey account. We store this message in a variable of type "String", since it is just a string of text and call it "msg". We "build" our message via the special "format" function Rust provides. Special functions in Rust are marked with an exclamation mark. The main message is the text inside double quotes. The curly braces inside the text mark that we would like to put pieces of data there. These two pieces of data are the two variables that follow the string of text, the "local" and "parsed.to\_string()" variables respectively. We call "to\_string" on our "parsed" variable because we want to return the count of users online as a string. The second variable "\_posted" is an empty variable for the function we call in it, "create\_note\_for\_user". We supply the paramaters from our "get\_count\_and\_post" function and await the results. Because this operation can fail and "create\_note\_for\_user" returns a "Result", we need to handle the "Ok" case and the "Err" case. In the "Ok" case we return the placeholder variable "\_posted" and in the "Err" case we return an instance of the "Error" data structure we imported with some details on the error.
 
 Your Rust code for your bot should now look like this:
 
@@ -433,7 +435,7 @@ pub async fn get_count_and_post(
 
 ```
 
-The only thing left now is to define our second function to run the "get_count_and_post_function" in set time intervals.
+The only thing left now is to define our second function to run the "get\_count\_and\_post\_function" in set time intervals.
 
 ## Running our counting-and-posting function periodically
 
@@ -468,7 +470,7 @@ match var("SHARKEY_API_TOKEN"){
 };
 ```
 
-In line 1, since the "var" function returns a "Result", we use the "match" keyword on the "var" function to retrieve the API token from the environment variable "SHARKEY_API_TOKEN". In line 2 we handle the "Ok" case and in line 5 we print out any errors if the retrieval of the token fails. Inside the "Ok" case we will now call on the "spawn" function to run the "get_count_and_post" function periodically. To implement this, add the following code within the curly braces "Ok" case of retrieving our API token:
+In line 1, since the "var" function returns a "Result", we use the "match" keyword on the "var" function to retrieve the API token from the environment variable "SHARKEY\_API\_TOKEN". In line 2 we handle the "Ok" case and in line 5 we print out any errors if the retrieval of the token fails. Inside the "Ok" case we will now call on the "spawn" function to run the "get\_count\_and\_post" function periodically. To implement this, add the following code within the curly braces "Ok" case of retrieving our API token:
 
 ```Rust
 let scheduler = spawn(
@@ -483,9 +485,9 @@ let scheduler = spawn(
 let _ = scheduler.await;
 ```
 
-In line one we define a variable called "scheduler" that calls on the "spawn" function we imported to run some job periodically. In line 2, because the "spawn" function" takes another function as an argument, we define this function and mark it to be asynchronous since our "get_count_and_post" function is also asynchronous. In line 3 we "copy" our API token so that we can use it inside the asynchronous function we just defined. In line 4 we define a mutable variable called "interval" that sets the time interval in which to run our "get_count_and_post" function. I chose 5 seconds but you would realistically run this maybe every 12 or 24 hours. In line 5 we make a statement to do whatever is inside the curly braces after the "loop" keyword again and again, forever. On line 6 we reset the time interval until the next time the instructions inside the "loop" block are executed. On line 10 we call the function defined inside the "scheduler" variable and await its results.
+In line one we define a variable called "scheduler" that calls on the "spawn" function we imported to run some job periodically. In line 2, because the "spawn" function" takes another function as an argument, we define this function and mark it to be asynchronous since our "get\_count\_and\_post" function is also asynchronous. In line 3 we "copy" our API token so that we can use it inside the asynchronous function we just defined. In line 4 we define a mutable variable called "interval" that sets the time interval in which to run our "get\_count\_and\_post" function. I chose 5 seconds but you would realistically run this maybe every 12 or 24 hours. In line 5 we make a statement to do whatever is inside the curly braces after the "loop" keyword again and again, forever. On line 6 we reset the time interval until the next time the instructions inside the "loop" block are executed. On line 10 we call the function defined inside the "scheduler" variable and await its results.
 
-Now we are ready to call our "get_count_and_post" function. Add the following code after line 6 of the code we just added.
+Now we are ready to call our "get\_count\_and\_post" function. Add the following code after line 6 of the code we just added.
 
 ```Rust
 match get_count_and_post(
@@ -501,7 +503,7 @@ match get_count_and_post(
 };
 ```
 
-This block of code will run again and again every 5 seconds and finally calls our "get_count_and_post" function. Because our function returned a "Result" we need to use the "match" keyword again and handle the "Ok" cases and "Err" cases, respectively. We call the function on line 1. On line 2 we supply the function with the URL to the API for our Sharkey instance's server. In my case this is "blahaj.zone". If you signed up with a different instance of Sharkey, change that to be your instance. On line 3 we supply the basic path to all computer-readable data for the Sharkey instance. On line 4 we supply the URL to our instance and on line 5 we supply the API token. On line 6 we tell Sharkey that the only reactions we want to accept on our bot's posts are likes. And on line 7 we tell Sharkey that our bot's posts should be visbile for everyone. After we have called the function, we await the result and do nothing in the "Ok" case and print out the error to the screen if an error occurs.
+This block of code will run again and again every 5 seconds and finally calls our "get\_count\_and\_post" function. Because our function returned a "Result" we need to use the "match" keyword again and handle the "Ok" cases and "Err" cases, respectively. We call the function on line 1. On line 2 we supply the function with the URL to the API for our Sharkey instance's server. In my case this is "blahaj.zone". If you signed up with a different instance of Sharkey, change that to be your instance. On line 3 we supply the basic path to all computer-readable data for the Sharkey instance. On line 4 we supply the URL to our instance and on line 5 we supply the API token. On line 6 we tell Sharkey that the only reactions we want to accept on our bot's posts are likes. And on line 7 we tell Sharkey that our bot's posts should be visbile for everyone. After we have called the function, we await the result and do nothing in the "Ok" case and print out the error to the screen if an error occurs.
 
 ## Running our bot
 
