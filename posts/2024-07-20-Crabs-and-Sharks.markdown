@@ -28,6 +28,8 @@ To build your own bot, you will need the following:
 
 - [A GitHub account](https://github.com/). This will help you backup and store your bot. You can make an account, but you do not have to.
 
+- A Sharkey API key. Assuming you already have made your Sharkey account on your instance of choice, go to your account settings, go to "API", and click on "Generate Access Token". Click on "Enable All" and name it. Then, click on the checkmark and copy your access token and save it somewhere safe!
+
 Which operating system you use is not important. All these tools and your bot will work on any of the big three platforms (Windows, Mac OS, Linux). Now that you have your tools, let me briefly explain what a bot even is.
 
 ## What is a bot?
@@ -61,27 +63,106 @@ Now we have declared "my_variable" to be changeable and can now replace the text
 
 ### Functions
 
+In all programming languages one writes instructions for a computer. Sometimes these instructions can get very long and hard to maintain. To solve this problem almost all programming languages have what are called "functions". These functions take data, process it, and return the processed data. Each function has the following features:
+
+- A name
+- A set of input parameters
+- A return type
+- A function body
+
+To make this clearer, consider this small code snippet of a function in Rust:
+
+```Rust
+fn greet_user(name: &str) -> String {
+    return format!("Hello, {}!", name);
+}
+```
+
+In the code snippet above you can see the definition for a function called "greet\_user". The function's input parameters are between the two brackets. On the left side between the brackets we have the name of the input parameter, "name" and on the right side, after the colon, we have the type of the "name" input parameter. The bit after the brackets "-> String" tells Rust that this function returns a string of text. Functions in Rust are declared via the "fn" keyword. The bit inside the curly braces are called the "function body". In the case of the "greet\_user" function, the data of "name" is mutated through the addition of "Hello," before it and an exclamation mark after it. Any data that needs to be returned is marked with the "return" keyword. In Rust, however, you do not *need* to use this keyword.
+
 ### Structures
+
+Sometimes there care cases when you want to put a lot of "variable" boxes in a bigger box. This "bigger box" is called a structure in Rust. Every structure has two very important parts: the name and the fields. Let us look at a structure to make this clearer:
+
+```Rust
+struct Person{
+    name: String,
+    age: u32
+}
+```
+
+Here we have defined a big box called "Person". Inside the box we have two fields, or variables, called "name" and "age". "name" has to have the type of "String" since it is just a string of text and "age" has to have the type of "u32" (one of the types of numbers in Rust). "name" and "age" are the fields of the structure with the name of "Person". When you define a structure, this structure becomes its own data type like "String" or "u32". Simple, right?
 
 ### Deriving "traits"
 
-## Enums
+Having a bigger box of variables is good but what do you do if you want to use a function on the bigger box you just wrote and maybe other bigger boxes that are similar? This is where traits come in. Traits are essentially functions that are shared between many structures. Sometimes other people write a trait and then you might want to use that trait on a structure you wrote. Using another person's trait is called "deriving" that trait for your structure. This will become relevant later on, which is why I am covering it here.
+
+### Enums
+
+Another useful construct in Rust are enums. Enums are essentially like a bunch of options from a list. Enums have a name and a bunch of options. These options inside enums are called "variants". Let's have a look at an enum.
+
+```Rust
+enum PersonAge {
+    Young,
+    MiddleAged,
+    Old
+}
+```
+
+As you can see here, enums are defined via the "enum" keyword followed by their name. In our case this "PersonAge". This enum has the options, or variants, of a person being "Young", "MiddleAged" or "Old". To do something for every variant of an enum the "match" keyword is used. Consider this example.
+
+```Rust
+let person_age: PersonAge = person_age();
+match person_age {
+    Young => println!("Wow! You are young!"),
+    MiddleAged => println!("Don't buy a Porsche 911."),
+    Old => println!("How was Bingo last night?")
+}
+```
+
+In this code sample we called on a function called "person_age". The function returned the enum "PersonAge". To print out a message for each age group, we "matched" against all the options that the "PersonAge" enum provided us with. That's all there is to it.
 
 ### Results
 
+Enums are very common in Rust and add one very significant and useful feature to Rust, "Results". Results are enums with two variants: "Ok" and "Err". Results are used for operations that can fail. If the operation succeeds, the data resulting from that operation is returned throught the "Ok" variant. If the operation fails, an error type is returned from the "Err" variant.
+
 ### Asynchronous programming
+
+One of the other concepts you will encounter in this tutorial is that of asynchronous programming. Asynchronous programming is programming or handling operations that take time to complete. Such operations could be downloading or uploading something, waiting for a long task to complete or awaiting a response from a chat partner. In Rust asynchronous functions are written like this:
+
+```Rust
+async fn long_operation(){
+    do_something_that_takes_time().await;
+}
+```
+
+In this code sample we have declared an asynchronous function called "long\_operation". We have declared it to be asynchronous via the "async" keyword before the "fn" keyword. If we need to await the result of an operation that takes time, we call ".await" on that function or operation. In this case, this is the "do\_something\_that\_takes\_time" function. The bot we will be writing is completely asynchronous.
 
 ### Ownership and Borrowing
 
+Another most important Rust concept is that of ownership and borrowing. In most programming languages you can declare a variable and reuse it wherever you need it. This is not the case in Rust. If you declare a variable, you can only use it once. To make Rust a safe language and provide good memory management, Rust forces you to declare a variable once and then use a *reference* of that variable in other places using the "&" sign. Allow me to illustrate this:
+
+```Rust
+let name: String = "Dolly".to_string();
+greet_user(name);
+greet_user(name);
+```
+
+In line 1 a variable of type "String" is declared. In line 2 I attempt to use this variable in the "greet_user" function I defined earlier. If I use it only once, this will work and Rust will accept my code. When I use the variable again on line 3, however, Rust will throw an error telling me this is illegal. This is the case because only one entity can use a piece of data only once at a time. The entity owns that piece of data. If, however, I changed the code sample above by referencing "name" in the two calls of "greet\_user" by prefixing "name" with an "&" symbol, Rust would accept my code. You will see this use of the ampersand a few times in the code we will be writing.
+
 ### Looping and recursion
+
+Another concept I will be using in this bot is looping. Looping operations is the performance of an operation again and again forever or again and again until a certain condition is met. The performance of an operation again and again is called "recursion" or "iteration". The infite recursion without a condition being met is reloevant for the bot we will be building, so no need to worry about the second type.
 
 ### Libraries
 
+The ecosystem around the field of programming is huge. Many people write code and many people want to share their code with others. To avoid sending code around and rewriting the same thing many times, some people package their code in such a way that it can be easily downloaded by others and reused in their own projects. These packages of software available for reuse by others is called a "library". Libraries are very common in many programming languages and to manage the installation and downloading of such libraries, package managers are used. Package managers are applications that download and install code someone else has written in such a way that you can use that library in your own projects. One common way to make things reusable in Rust is the addition of the "pub" keyword to functions, structures, enums, and other entities. Rust's package manager is Cargo. 
+
 ### The command line
 
-## What is the plan?
+Before I explain to you how our bot will be structred, I would like to give you a quick introduction to the command line. When you interact with your computer, you usually point at and click on things. The command line is simpler than that. You usually interact with the command line through some kind of terminal-emulation application. Which application this is depends on your operating system. When you open that app, you can enter commands. These commands also allow you to interact with your operating system but only through a text-based interface. Some commands are usually built-in, while you might have to install other commands. Rust's tools are command line tools. The command line not only lets you interact with your computer through a text-based interface, but also allows you to store pieces of data. These pieces of data are called environment variables. The variables usually hold some text data and you can access these pieces of data by simply calling on the name of the environment variable you saved them in. Depending on which operating system you are doing this tutorial on, you will have to see how to create an environment variable. To complete this tutorial, you will have to copy the API token you generated earlier for your Sharkey account and save it in an environment variable called "SHARKEY\_API\_TOKEN".
 
-!# add more detail about network requests.
+## What is the plan?
 
 For simplicity's sake, I decided to split our bot into the three following parts:
 
@@ -422,10 +503,16 @@ match get_count_and_post(
 
 This block of code will run again and again every 5 seconds and finally calls our "get_count_and_post" function. Because our function returned a "Result" we need to use the "match" keyword again and handle the "Ok" cases and "Err" cases, respectively. We call the function on line 1. On line 2 we supply the function with the URL to the API for our Sharkey instance's server. In my case this is "blahaj.zone". If you signed up with a different instance of Sharkey, change that to be your instance. On line 3 we supply the basic path to all computer-readable data for the Sharkey instance. On line 4 we supply the URL to our instance and on line 5 we supply the API token. On line 6 we tell Sharkey that the only reactions we want to accept on our bot's posts are likes. And on line 7 we tell Sharkey that our bot's posts should be visbile for everyone. After we have called the function, we await the result and do nothing in the "Ok" case and print out the error to the screen if an error occurs.
 
-## Running our bot and modifying the posting interval
+## Running our bot
 
+Now that we have built our bot, running it is very simple. Open up your a command line session inside the "shonkbot" directory and run the following command:
 
+```Rust
+cargo run
+```
+
+This will download all the libraries we imported, combine your code and the library code together, translate all that code into machine code, and run the resulting binary executable. You will see no output. However, if you navigate to your Sharkey account's timeline, you will see your user posting the current number of people online on your instance every 5 seconds. To kill and exit the bot you just built, you can usually press Control+C.
 
 ## Conclusion
 
-## Links
+I hope you enjoyed learning some Rust and building a cool project like this bot. I hope I explained everything easily enough and if you encounter any problems, please do not hesitate to contact me on[Instagram](https://instagram.com/angeldollface666) or on my Sharkey profile [here](https://blahaj.zone/@angeldollface666). If you liked this blogpost, follow me on Instagram and/or Sharkey and play around with the bot and see how you can extend it or modify it!
