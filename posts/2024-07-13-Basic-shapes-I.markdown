@@ -1,6 +1,6 @@
 ---
 layout: "layouts/page.liquid"
-title: "Sketching and basic shapes"
+title: "Sketching and basic shapes I"
 authorAvatar: "https://avatars.githubusercontent.com/u/112771657?v=4"
 author: "Angel Dollface"
 description: "How basic shapes help in making a sketch."

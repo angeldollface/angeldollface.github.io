@@ -4,7 +4,7 @@ title: "Crabs and Sharks"
 authorAvatar: "https://avatars.githubusercontent.com/u/112771657?v=4"
 author: "Angel Dollface"
 description: "How to make a bot for Sharkey in Rust!"
-date: "20/07/2024"
+date: "27/07/2024"
 show: "false"
 ---
 
@@ -21,13 +21,9 @@ Two weeks ago I went into great detail on what Sharkey is and why it exists. You
 To build your own bot, you will need the following:
 
 - A good text editor. I use [Neovim](https://neovim.io/) most of the time and [Visual Studio Code](https://code.visualstudio.com/) sometimes.
-
 - The Rust toolchain. You can get that [here](https://www.rust-lang.org/learn/get-started).
-
 - A Sharkey account. My instance of chocie is [blahaj.zone](https://blahaj.zone). You can also choose another instance but it should run [Sharkey](https://activitypub.software/TransFem-org/Sharkey). If it does not, your bot will not work.
-
 - [A GitHub account](https://github.com/). This will help you backup and store your bot. You can make an account, but you do not have to.
-
 - A Sharkey API key. Assuming you already have made your Sharkey account on your instance of choice, go to your account settings, go to "API", and click on "Generate Access Token". Click on "Enable All" and name it. Then, click on the checkmark and copy your access token and save it somewhere safe!
 
 Which operating system you use is not important. All these tools and your bot will work on any of the big three platforms (Windows, Mac OS, Linux). Now that you have your tools, let me briefly explain what a bot even is.
@@ -186,34 +182,22 @@ This command will create a new directory called "shonkbot" with a file to tell C
 
 Each Cargo manifest has two basic sections: "package" and "dependencies". This Cargo manifest is called "Cargo.toml". The two sections each Rust project consists of are written in a format called TOML. In this format you specify which sections a TOML file has by enclosing the section name in square brackets. You will see that both the words "package" and "dependencies" are declared as sections. Inside these sections you store some data by assigning some data to a name. In TOML this is done as shown in the code sample below.
 
-```TOML
+```
 name = "shonkbot"
 ```
 
 We will not have to modify the "package" section of our manifest, only the "dependencies" section. In the dependencies section we tell Cargo which libraries we will need for our bot project. Each dependency declared generally has the version number required, any parts needed from the library, and optionally if the library is not on "crates.io", Rust's central "warehouse" where all of Rust's libraries are kept, we have to specify where Cargo can download the code for the library. Open your "Cargo.toml" and add the following lines in the "dependencies" section:
 
-```TOML
-chrono = "0.4.38"
-reqwest = "0.12.5"
-serde_json = "1.0.120"
-tokio = { version = "1.38.1", features = ["full"] }
-serde = { version = "1.0.204", features = ["derive"] }
-sharkey = { git = "https://github.com/angeldollface/sharkey.rs.git" }
-```
+# ADD CODE SNIPPET!
 
 Here's a brief explanation of the libraries we just added and why we added them:
 
 - chrono: We need this library to get the current time as a string of text.
 - reqwest: This library is needed to download and upload things to and from our code to a Sharkey instance's servers.
-
-- serde\_json: We need this library to put the responses the instance's server sends back into a format we can modify and read from our Rust code.
-
+- serde-json: We need this library to put the responses the instance's server sends back into a format we can modify and read from our Rust code.
 - tokio: This library adds features that will help us run asynchronous code.
-
 - serde: We need this library to import some special functions that add features to a structure we will be writing to "understand" the response the instance's server sends back.
-
 - sharkey: This library I wrote makes working with Sharkey from Rust very easy.
-
 
 ## Custom data structures
 
@@ -272,7 +256,6 @@ To get the count of users and post it, we need to define a function that does th
 - 3.) Posts that information along with the current time to our Sharkey account.
 
 Before we can proceed we need to import a few functions and enums.
-
 Add the following code to the top of your "main.rs" file:
 
 ```Rust
@@ -284,6 +267,7 @@ use sharkey::NoteVisibility;
 use sharkey::ReactionAcceptance;
 use sharkey::create_note_for_user;
 ```
+
 
 In line 1 we import the "reqwest" library to make network requests to the server of our Sharkey instance. In line 2 we import an error structure to handle any errors that may occur inside operations we conduct in our function. In line 3 we import a function to put the data we get from the instance's server into our "UsersOnline" data structure. In line 4 we import a data structure from the "chrono" library to get the current time. In line 5 we import an enum from the Sharkey library to describe the visibility of the posts we make from our bot. This visibility only tells Sharkey who can see the posts our bot makes. In line 6 we import an enum from the Sharkey library to describe what reactions we would like on the posts we make from our bot. In line 7 we import the "create\_note\_for\_user" function from the Sharkey library to post notes to our Sharkey account from our bot code.
 
@@ -303,12 +287,13 @@ pub async fn get_count_and_post(
 
 In the first line we define the asynchronous "get\_count\_and\_post" function. This function needs to be asynchronous because network requests take time to complete and may fail to do so. This also takes time. Our function accepts six paramaters. Here's a brief explanation of them:
 
-- 1.) "url": This parameter contains the URL to the information on the Sharkey instance's server that will return the count of users currently online.
-- 2.) "api\_base": This parameter will be needed for posting a note and describes the path on the Sharkey instance's server that returns information when requested in a computer-readable format.
-- 3.) "base\_url": This is the basic URL to Sharkey instance we are trying to post to.
-- 4.) "token": Since an action like posting to your account requires you to login to your account first, this parameter is a string of text which is a shortcut to login to your Sharkey from code you write, in this case Rust.
-- 5.) "reaction\_acceptance": This parameter is an enum from my Sharkey library to describe what sort of reactions we would like to accept on our posts from our bot.
-- 6.) "visibility": This parameter is an enum from my Sharkey library to describe who can see the posts we make from our bot.
+- "url": This parameter contains the URL to the information on the Sharkey instance's server that will return the count of users currently online.
+- "apibase": This parameter will be needed for posting a note and describes the path on the Sharkey instance's server that returns information when requested in a computer-readable format.
+- "baseurl": This is the basic URL to Sharkey instance we are trying to post to.
+- "token": Since an action like posting to your account requires you to login to your account first, this parameter is a string of text which is a shortcut to login to your Sharkey from code you write, in this case Rust.
+- "reactionacceptance": This parameter is an enum from my Sharkey library to describe what sort of reactions we would like to accept on our posts from our bot.
+- "visibility": This parameter is an enum from my Sharkey library to describe who can see the posts we make from our bot.
+
 
 The function does not return any data but operations inside the function can go wrong which is why we return a result.
 
@@ -317,7 +302,9 @@ Let us get to operation one in our function: get the current count of users onli
 ```Rust
 let resp = match reqwest::get(url).await {
     Ok(resp) => resp,
-    Err(e) => return Err::<(), Error>(Error::new(std::io::ErrorKind::Other,e))
+    Err(e) => return Err::<(), Error>(
+        Error::new(std::io::ErrorKind::Other,e)
+    )
 };
 ```
 
@@ -326,7 +313,9 @@ In line one we call the "get" function from the "reqwest" library and give it th
 ```Rust
 let body: String = match resp.text().await{
     Ok(body) => body,
-    Err(e) => return Err::<(), Error>(Error::new(std::io::ErrorKind::Other,e))
+    Err(e) => return Err::<(), Error>(
+        Error::new(std::io::ErrorKind::Other,e)
+    )
 };
 ```
 
