@@ -4,8 +4,8 @@ title: "Crabs and Sharks I"
 authorAvatar: "https://avatars.githubusercontent.com/u/112771657?v=4"
 author: "Angel Dollface"
 description: "How to make a bot for Sharkey in Rust! (Part I)"
-date: "27/07/2024"
-show: "true"
+date: "08/17/2024"
+show: "false"
 ---
 
 ## Introduction
