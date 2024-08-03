@@ -1,14 +1,6 @@
 # A DOLL'S WEBSITE :ribbon: :dolls:
 
-[![Mandy CI](https://github.com/angeldollface/angeldollface.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/angeldollface/angeldollface.github.io/actions/workflows/main.yml)
-
 ***A doll's website. :ribbon: :dolls:***
-
-## Screenshot :camera:
-
-<p align="center">
- <img src="screenie/desktop-screenie.png"/>
-</p>
 
 ## About :books:
 
